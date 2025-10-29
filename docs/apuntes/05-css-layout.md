@@ -4,7 +4,9 @@ Ya conoces los fundamentos de CSS: selectores, colores, tipografía y el modelo 
 
 ## 5.1. Display
 
-La propiedad `display` controla cómo se comporta un elemento **en el flujo del documento**, es decir, *cómo se muestra, ocupa espacio y se relaciona con otros elementos*. Es fundamental para entender cómo se colocan los elementos en la página.
+!!!note "Dispay"
+    La propiedad `display` controla cómo se comporta un elemento **en el flujo del documento**, es decir, *cómo se muestra, ocupa espacio y se relaciona con otros elementos*. 
+    Es fundamental para entender cómo se colocan los elementos en la página.
 
 **Sintaxis básica**:
 
@@ -411,7 +413,9 @@ Un elemento con `display: in-line` fluye en línea con otros pero respeta `width
 
 ## 5.2. Position
 
-La propiedad `position` controla cómo se posiciona un elemento en la página. Es esencial para crear layouts complejos y efectos avanzados.
+!!!notion "Position"
+    La propiedad `position` controla **cómo se posiciona un elemento en la página**.
+    Es esencial para crear layouts complejos y efectos avanzados.
 
 ### Static (por defecto)
 

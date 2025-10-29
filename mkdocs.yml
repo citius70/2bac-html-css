@@ -80,7 +80,9 @@ nav:
     - 02. HTML Básico: apuntes/02-html-basico.md
     - 03. HTML Avanzado: apuntes/03-html-avanzado.md
     - 04. CSS Fundamentos: apuntes/04-css-fundamentos.md
-    - 05. CSS Layout: apuntes/05-css-layout.md
+    - 05. CSS Layout: 
+      - 05.01. Introducción al layout y display: apuntes/05-css-layout.md
+      - 05.02. Position: apuntes/position.md
   
   - Ejercicios resueltos:
     - HTML Básico: ejercicios/html-basico.md
