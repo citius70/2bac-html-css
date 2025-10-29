@@ -234,18 +234,5 @@ Revisa la sección de [Recursos Adicionales](#-recursos-adicionales).
 📢 **Comparte este recurso con otros estudiantes**
 
 🚀 **¡Happy coding!**
-```
 
-***
 
-✅ **README.md completo para un curso de HTML & CSS de 2º Bachillerato** con:
-- Badges profesionales
-- Tabla de contenidos clara
-- Estructura del proyecto
-- Metodología de aprendizaje
-- Recursos adicionales
-- Calendario del curso
-- FAQ
-- Sección de evaluación
-
-¿Te parece bien así?
