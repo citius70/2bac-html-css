@@ -1,4 +1,3 @@
-```markdown
 # 🌐 Curso HTML & CSS - 2º Bachillerato
 
 > Material didáctico completo para aprender desarrollo web desde cero
