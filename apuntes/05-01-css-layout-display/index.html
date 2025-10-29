@@ -12,13 +12,13 @@
         <meta name="author" content="Profesor TIC 2º Bachillerato">
       
       
-        <link rel="canonical" href="https://tu-usuario.github.io/curso-html-css/apuntes/05-css-layout/">
+        <link rel="canonical" href="https://tu-usuario.github.io/curso-html-css/apuntes/05-01-css-layout-display/">
       
       
-        <link rel="prev" href="../04-css-fundamentos/">
+        <link rel="prev" href="../05-00-css-layout/">
       
       
-        <link rel="next" href="../position/">
+        <link rel="next" href="../05-02-css-layout-position/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>05.01. Introducción al layout y display - Curso HTML y CSS - 2º Bachillerato</title>
+        <title>05.01. Display - Curso HTML y CSS - 2º Bachillerato</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modulo-5-css-layout" class="md-skip">
+        <a href="#modulo-51-display" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              05.01. Introducción al layout y display
+              05.01. Display
             
           </span>
         </div>
@@ -577,6 +577,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-00-css-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    05.00. Introducción al Layout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -594,7 +617,7 @@
   
   
   <span class="md-ellipsis">
-    05.01. Introducción al layout y display
+    05.01. Display
     
   </span>
   
@@ -607,7 +630,7 @@
   
   
   <span class="md-ellipsis">
-    05.01. Introducción al layout y display
+    05.01. Display
     
   </span>
   
@@ -630,16 +653,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#51-display" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.1. Display
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.1. Display">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#valores-principales" class="md-nav__link">
     <span class="md-ellipsis">
       Valores principales
@@ -647,8 +660,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#block-vs-inline-vs-inline-block" class="md-nav__link">
     <span class="md-ellipsis">
       Block vs Inline vs Inline-block
@@ -656,8 +669,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#elementos-con-display-block" class="md-nav__link">
     <span class="md-ellipsis">
       Elementos con display: block
@@ -665,8 +678,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#elementos-con-display-inline" class="md-nav__link">
     <span class="md-ellipsis">
       Elementos con display: inline
@@ -674,8 +687,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#elementos-con-display-inline-block-lo-mejor-de-ambos" class="md-nav__link">
     <span class="md-ellipsis">
       Elementos con display: inline-block (lo mejor de ambos)
@@ -683,211 +696,11 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#display-inline-block" class="md-nav__link">
     <span class="md-ellipsis">
       display: inline-block
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#52-position" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.2. Position
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.2. Position">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#static-por-defecto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Static (por defecto)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#relative" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relative
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#absolute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Absolute
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fixed" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fixed
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sticky" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sticky
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#53-flexbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.3. Flexbox
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.3. Flexbox">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contenedor-flex" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contenedor flex
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#elementos-flex" class="md-nav__link">
-    <span class="md-ellipsis">
-      Elementos flex
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#54-css-grid" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.4. CSS Grid
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.4. CSS Grid">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contenedor-grid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contenedor grid
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#elementos-grid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Elementos grid
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#55-unidades-responsive" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.5. Unidades responsive
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#56-media-queries-responsive" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.6. Media Queries (Responsive)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.6. Media Queries (Responsive)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sintaxis-basica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sintaxis básica
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#breakpoints-comunes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Breakpoints comunes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#otras-caracteristicas-utiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Otras características útiles
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumen" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Resumen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ejercicios" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Ejercicios
     </span>
   </a>
   
@@ -918,12 +731,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../position/" class="md-nav__link">
+      <a href="../05-02-css-layout-position/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     05.02. Position
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../borrra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    fsfsf
     
   </span>
   
@@ -1337,16 +1173,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#51-display" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.1. Display
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.1. Display">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#valores-principales" class="md-nav__link">
     <span class="md-ellipsis">
       Valores principales
@@ -1354,8 +1180,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#block-vs-inline-vs-inline-block" class="md-nav__link">
     <span class="md-ellipsis">
       Block vs Inline vs Inline-block
@@ -1363,8 +1189,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#elementos-con-display-block" class="md-nav__link">
     <span class="md-ellipsis">
       Elementos con display: block
@@ -1372,8 +1198,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#elementos-con-display-inline" class="md-nav__link">
     <span class="md-ellipsis">
       Elementos con display: inline
@@ -1381,8 +1207,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#elementos-con-display-inline-block-lo-mejor-de-ambos" class="md-nav__link">
     <span class="md-ellipsis">
       Elementos con display: inline-block (lo mejor de ambos)
@@ -1390,211 +1216,11 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#display-inline-block" class="md-nav__link">
     <span class="md-ellipsis">
       display: inline-block
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#52-position" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.2. Position
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.2. Position">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#static-por-defecto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Static (por defecto)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#relative" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relative
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#absolute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Absolute
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fixed" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fixed
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sticky" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sticky
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#53-flexbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.3. Flexbox
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.3. Flexbox">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contenedor-flex" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contenedor flex
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#elementos-flex" class="md-nav__link">
-    <span class="md-ellipsis">
-      Elementos flex
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#54-css-grid" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.4. CSS Grid
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.4. CSS Grid">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contenedor-grid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contenedor grid
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#elementos-grid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Elementos grid
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#55-unidades-responsive" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.5. Unidades responsive
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#56-media-queries-responsive" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.6. Media Queries (Responsive)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.6. Media Queries (Responsive)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sintaxis-basica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sintaxis básica
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#breakpoints-comunes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Breakpoints comunes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#otras-caracteristicas-utiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Otras características útiles
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumen" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Resumen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ejercicios" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Ejercicios
     </span>
   </a>
   
@@ -1625,9 +1251,7 @@
 
 
 
-<h1 id="modulo-5-css-layout">Módulo 5: CSS Layout</h1>
-<p>Ya conoces los fundamentos de CSS: selectores, colores, tipografía y el modelo de caja. Ahora es momento de aprender a <strong>estructurar y posicionar elementos</strong> en la página para crear layouts profesionales.</p>
-<h2 id="51-display">5.1. Display</h2>
+<h1 id="modulo-51-display">Módulo 5.1: Display</h1>
 <div class="admonition note">
 <p class="admonition-title">Dispay</p>
 <p>La propiedad <code>display</code> controla cómo se comporta un elemento <strong>en el flujo del documento</strong>, es decir, <em>cómo se muestra, ocupa espacio y se relaciona con otros elementos</em>. 
@@ -1639,7 +1263,7 @@ Es fundamental para entender cómo se colocan los elementos en la página.</p>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
 </span></code></pre></div>
 El <strong>elemento</strong> puede ser cualquier entidad de HTML: párrafo, título, imagen.... Pero, ¿qué <strong>valores</strong> puede tomar?</p>
-<h3 id="valores-principales">Valores principales</h3>
+<h2 id="valores-principales">Valores principales</h2>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">/* Bloque: ocupa todo el ancho disponible */</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">display</span><span class="o">:</span><span class="w"> </span><span class="nt">block</span><span class="o">;</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -1761,8 +1385,8 @@ El <strong>elemento</strong> puede ser cualquier entidad de HTML: párrafo, tít
 </tr>
 </tbody>
 </table>
-<h3 id="block-vs-inline-vs-inline-block">Block vs Inline vs Inline-block</h3>
-<h3 id="elementos-con-display-block">Elementos con <strong>display: block</strong></h3>
+<h2 id="block-vs-inline-vs-inline-block">Block vs Inline vs Inline-block</h2>
+<h2 id="elementos-con-display-block">Elementos con <strong>display: block</strong></h2>
 <p>Un elemento con <code>display: block</code> ocupa todo el ancho disponible, comienza en una línea nueva y respeta todas sus dimensiones y espacios. NO fluye con el texto.</p>
 <p><strong>Características clave de <code>display: block</code>:</strong></p>
 <ul>
@@ -1890,8 +1514,7 @@ no permitiendo ningún elemento más a su lado.</p>
 </div>
 </div>
 </div>
-<hr />
-<h3 id="elementos-con-display-inline">Elementos con <strong>display: inline</strong></h3>
+<h2 id="elementos-con-display-inline">Elementos con <strong>display: inline</strong></h2>
 <p>Un elemento con <code>display: inline</code>que fluye con el texto, ocupa solo el espacio de su contenido y no respeta <code>width</code> ni <code>height</code>. SÍ fluye con el texto.</p>
 <p><strong>Características clave de <code>display: inline</code>:</strong></p>
 <ul>
@@ -2021,7 +1644,7 @@ no permitiendo ningún elemento más a su lado.</p>
 </div>
 </div>
 </div>
-<h3 id="elementos-con-display-inline-block-lo-mejor-de-ambos">Elementos con <strong>display: inline-block</strong> (lo mejor de ambos)</h3>
+<h2 id="elementos-con-display-inline-block-lo-mejor-de-ambos">Elementos con <strong>display: inline-block</strong> (lo mejor de ambos)</h2>
 <p>Un elemento con <code>display: in-line</code> fluye en línea con otros pero respeta <code>width</code>, <code>height</code> y todos los <code>márgenes</code> (lo mejor de block e inline combinados)</p>
 <p><strong>Características clave de <code>display: inline-block</code>:</strong></p>
 <ul>
@@ -2040,7 +1663,7 @@ no permitiendo ningún elemento más a su lado.</p>
 <p><strong>Regla simple:</strong> Elementos interactivos y multimedia tienen <code>inline-block</code> por defecto (o similar).</p>
 </blockquote>
 <p><strong>Ejemplo práctico:</strong></p>
-<h3 id="display-inline-block">display: inline-block</h3>
+<h2 id="display-inline-block">display: inline-block</h2>
 <p><strong>Sintaxis:</strong>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">.</span><span class="nc">elemento</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">inline-block</span><span class="p">;</span>
@@ -2145,382 +1768,11 @@ no permitiendo ningún elemento más a su lado.</p>
 </div>
 </div>
 </div>
-<h2 id="52-position">5.2. Position</h2>
-<div class="admonition notion">
-<p class="admonition-title">Position</p>
-<p>La propiedad <code>position</code> controla <strong>cómo se posiciona un elemento en la página</strong>.
-Es esencial para crear layouts complejos y efectos avanzados.</p>
-</div>
-<h3 id="static-por-defecto">Static (por defecto)</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>position: static;
-</span></code></pre></div>
-<p>El elemento sigue el flujo normal del documento. Las propiedades <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> no tienen efecto.</p>
-<h3 id="relative">Relative</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>.elemento {
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    position: relative;
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    top: 20px;    /* Se desplaza 20px hacia abajo */
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    left: 30px;   /* Se desplaza 30px hacia la derecha */
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>}
-</span></code></pre></div>
-<p>El elemento se desplaza <strong>desde su posición original</strong>, pero el espacio original se mantiene reservado. Otros elementos no se mueven.</p>
-<p><strong>Cuándo usarlo:</strong>
-- Para ajustes pequeños de posición
-- Como referencia para elementos <code>absolute</code> dentro de él</p>
-<h3 id="absolute">Absolute</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>.elemento {
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    position: absolute;
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    top: 0;
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    right: 0;
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>}
-</span></code></pre></div>
-<p>El elemento se posiciona respecto al <strong>ancestro más cercano con <code>position</code> distinto de <code>static</code></strong> (normalmente un padre con <code>position: relative</code>). Se saca del flujo normal: otros elementos lo ignoran.</p>
-<p><strong>Ejemplo común:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>&lt;div style=&quot;position: relative;&quot;&gt;
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    &lt;div style=&quot;position: absolute; top: 10px; right: 10px;&quot;&gt;
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>        Insignia
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    &lt;/div&gt;
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>&lt;/div&gt;
-</span></code></pre></div></p>
-<p><strong>Cuándo usarlo:</strong>
-- Tooltips, insignias, overlays
-- Elementos decorativos
-- Posicionamiento preciso dentro de un contenedor</p>
-<h3 id="fixed">Fixed</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>.header {
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    position: fixed;
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    top: 0;
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    left: 0;
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    width: 100%;
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>}
-</span></code></pre></div>
-<p>El elemento se posiciona respecto a la <strong>ventana del navegador</strong> y permanece fijo al hacer scroll.</p>
-<p><strong>Cuándo usarlo:</strong>
-- Headers o menús de navegación fijos
-- Botones flotantes (volver arriba, chat)
-- Barras de notificaciones</p>
-<h3 id="sticky">Sticky</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>.menu {
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    position: sticky;
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    top: 0;
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>}
-</span></code></pre></div>
-<p>El elemento es <code>relative</code> hasta que alcanza cierta posición al hacer scroll, entonces se vuelve <code>fixed</code>. Cuando su contenedor sale de la vista, deja de ser fijo.</p>
-<p><strong>Cuándo usarlo:</strong>
-- Headers que se fijan al hacer scroll
-- Menús de navegación de secciones</p>
-<hr />
-<h2 id="53-flexbox">5.3. Flexbox</h2>
-<p>Flexbox es un sistema de layout <strong>unidimensional</strong> (trabaja con filas O columnas) perfecto para distribuir elementos de forma flexible.</p>
-<h3 id="contenedor-flex">Contenedor flex</h3>
-<p>Para activar Flexbox, aplica <code>display: flex</code> al contenedor:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>.contenedor {
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    display: flex;
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>}
-</span></code></pre></div>
-<p><strong>Propiedades principales del contenedor:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>.contenedor {
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    display: flex;
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    /* Dirección: fila o columna */
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    flex-direction: row;           /* row | column | row-reverse | column-reverse */
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
-</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    /* Alineación horizontal (eje principal) */
-</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    justify-content: center;       /* flex-start | flex-end | center | space-between | space-around | space-evenly */
-</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
-</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>    /* Alineación vertical (eje cruzado) */
-</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>    align-items: center;           /* flex-start | flex-end | center | stretch | baseline */
-</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>
-</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>    /* Permitir salto de línea */
-</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>    flex-wrap: wrap;               /* nowrap | wrap | wrap-reverse */
-</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>
-</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>    /* Espaciado entre elementos */
-</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>    gap: 20px;
-</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>}
-</span></code></pre></div>
-<p><strong>Valores comunes de justify-content:</strong>
-- <code>flex-start</code>: al inicio (izquierda si es row)
-- <code>flex-end</code>: al final (derecha si es row)
-- <code>center</code>: centrados
-- <code>space-between</code>: espacio entre elementos, sin espacio en los bordes
-- <code>space-around</code>: espacio alrededor de cada elemento
-- <code>space-evenly</code>: espacio igual entre todos</p>
-<p><strong>Valores comunes de align-items:</strong>
-- <code>flex-start</code>: arriba
-- <code>flex-end</code>: abajo
-- <code>center</code>: centrados verticalmente
-- <code>stretch</code>: estiran para ocupar toda la altura</p>
-<h3 id="elementos-flex">Elementos flex</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>.elemento {
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    /* Cuánto crece el elemento */
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    flex-grow: 1;
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    /* Cuánto se encoge el elemento */
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    flex-shrink: 1;
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>    /* Tamaño base del elemento */
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    flex-basis: 200px;
-</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>
-</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>    /* Atajo: flex-grow flex-shrink flex-basis */
-</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>    flex: 1;
-</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>
-</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>    /* Cambiar el orden visual */
-</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>    order: 2;
-</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>}
-</span></code></pre></div>
-<p><strong>Ejemplo práctico: menú horizontal centrado</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>&lt;nav class=&quot;menu&quot;&gt;
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    &lt;a href=&quot;#&quot;&gt;Inicio&lt;/a&gt;
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    &lt;a href=&quot;#&quot;&gt;Sobre mí&lt;/a&gt;
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    &lt;a href=&quot;#&quot;&gt;Proyectos&lt;/a&gt;
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    &lt;a href=&quot;#&quot;&gt;Contacto&lt;/a&gt;
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>&lt;/nav&gt;
-</span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>.menu {
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    display: flex;
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    justify-content: center;
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    align-items: center;
-</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    gap: 30px;
-</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    background: #333;
-</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    padding: 20px;
-</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>}
-</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
-</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>.menu a {
-</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>    color: white;
-</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>    text-decoration: none;
-</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>}
-</span></code></pre></div>
-<p><strong>Ejemplo: tres columnas iguales</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>&lt;div class=&quot;contenedor&quot;&gt;
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    &lt;div class=&quot;columna&quot;&gt;Columna 1&lt;/div&gt;
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    &lt;div class=&quot;columna&quot;&gt;Columna 2&lt;/div&gt;
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    &lt;div class=&quot;columna&quot;&gt;Columna 3&lt;/div&gt;
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>&lt;/div&gt;
-</span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>.contenedor {
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    display: flex;
-</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    gap: 20px;
-</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>}
-</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
-</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>.columna {
-</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    flex: 1;  /* Todas crecen igual */
-</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    padding: 20px;
-</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    background: #f0f0f0;
-</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>}
-</span></code></pre></div>
-<hr />
-<h2 id="54-css-grid">5.4. CSS Grid</h2>
-<p>Grid es un sistema <strong>bidimensional</strong> (trabaja con filas Y columnas simultáneamente) ideal para layouts complejos.</p>
-<h3 id="contenedor-grid">Contenedor grid</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>.contenedor {
-</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    display: grid;
-</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
-</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    /* Definir columnas */
-</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>    grid-template-columns: 200px 1fr 1fr;
-</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    grid-template-columns: repeat(3, 1fr);
-</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
-</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>    /* Definir filas */
-</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>    grid-template-rows: 100px auto 100px;
-</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
-</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>    /* Espaciado */
-</span><span id="__span-22-13"><a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>    gap: 20px;
-</span><span id="__span-22-14"><a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>    row-gap: 10px;
-</span><span id="__span-22-15"><a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>    column-gap: 20px;
-</span><span id="__span-22-16"><a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>}
-</span></code></pre></div>
-<p><strong>Unidad <code>fr</code> (fracción):</strong>
-<code>1fr</code> significa "una fracción del espacio disponible". Si tienes <code>1fr 2fr</code>, el segundo elemento será el doble de ancho.</p>
-<h3 id="elementos-grid">Elementos grid</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>.elemento {
-</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    /* Ocupar desde columna 1 hasta columna 3 */
-</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    grid-column: 1 / 3;
-</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
-</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    /* Ocupar 2 columnas */
-</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    grid-column: span 2;
-</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>
-</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>    /* Ocupar desde fila 1 hasta fila 3 */
-</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>    grid-row: 1 / 3;
-</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>
-</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>    /* Ocupar 2 filas */
-</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>    grid-row: span 2;
-</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>}
-</span></code></pre></div>
-<p><strong>Ejemplo: layout de página completa</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>&lt;div class=&quot;contenedor&quot;&gt;
-</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    &lt;header&gt;Header&lt;/header&gt;
-</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    &lt;aside&gt;Sidebar&lt;/aside&gt;
-</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>    &lt;main&gt;Main Content&lt;/main&gt;
-</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    &lt;footer&gt;Footer&lt;/footer&gt;
-</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>&lt;/div&gt;
-</span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>.contenedor {
-</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    display: grid;
-</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    grid-template-columns: 250px 1fr;
-</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    grid-template-rows: auto 1fr auto;
-</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    gap: 20px;
-</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>    min-height: 100vh;
-</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>}
-</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>
-</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>header {
-</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>    grid-column: 1 / 3;  /* Ocupa ambas columnas */
-</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>    background: #333;
-</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>    color: white;
-</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>    padding: 20px;
-</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>}
-</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>
-</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>aside {
-</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>    background: #f0f0f0;
-</span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>    padding: 20px;
-</span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>}
-</span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a>
-</span><span id="__span-25-21"><a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a>main {
-</span><span id="__span-25-22"><a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a>    background: white;
-</span><span id="__span-25-23"><a id="__codelineno-25-23" name="__codelineno-25-23" href="#__codelineno-25-23"></a>    padding: 20px;
-</span><span id="__span-25-24"><a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a>}
-</span><span id="__span-25-25"><a id="__codelineno-25-25" name="__codelineno-25-25" href="#__codelineno-25-25"></a>
-</span><span id="__span-25-26"><a id="__codelineno-25-26" name="__codelineno-25-26" href="#__codelineno-25-26"></a>footer {
-</span><span id="__span-25-27"><a id="__codelineno-25-27" name="__codelineno-25-27" href="#__codelineno-25-27"></a>    grid-column: 1 / 3;  /* Ocupa ambas columnas */
-</span><span id="__span-25-28"><a id="__codelineno-25-28" name="__codelineno-25-28" href="#__codelineno-25-28"></a>    background: #333;
-</span><span id="__span-25-29"><a id="__codelineno-25-29" name="__codelineno-25-29" href="#__codelineno-25-29"></a>    color: white;
-</span><span id="__span-25-30"><a id="__codelineno-25-30" name="__codelineno-25-30" href="#__codelineno-25-30"></a>    padding: 20px;
-</span><span id="__span-25-31"><a id="__codelineno-25-31" name="__codelineno-25-31" href="#__codelineno-25-31"></a>}
-</span></code></pre></div>
-<p><strong>Ejemplo: galería responsive</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>.galeria {
-</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    display: grid;
-</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    gap: 20px;
-</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>}
-</span></code></pre></div>
-<p>Esto crea columnas automáticas: cada elemento mide mínimo 250px y crece para llenar el espacio disponible.</p>
-<hr />
-<h2 id="55-unidades-responsive">5.5. Unidades responsive</h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>/* Porcentajes (relativo al padre) */
-</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>width: 50%;
-</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
-</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>/* Viewport units (relativo a la ventana) */
-</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>width: 50vw;        /* 50% del ancho de la ventana */
-</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>height: 100vh;      /* 100% del alto de la ventana */
-</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>font-size: 5vw;     /* 5% del ancho de la ventana */
-</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>
-</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>/* Relativas a fuente */
-</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>font-size: 1rem;    /* Relativo a la raíz (html, por defecto 16px) */
-</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>font-size: 1.5em;   /* Relativo al padre */
-</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>padding: 2rem;
-</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>
-</span><span id="__span-27-14"><a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>/* Máximos y mínimos */
-</span><span id="__span-27-15"><a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>max-width: 1200px;
-</span><span id="__span-27-16"><a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>min-height: 500px;
-</span></code></pre></div>
-<p><strong>Truco común para contenedores:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>.contenedor {
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    max-width: 1200px;
-</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    margin: 0 auto;     /* Centrado */
-</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    padding: 0 20px;    /* Espacio en móviles */
-</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>}
-</span></code></pre></div></p>
-<hr />
-<h2 id="56-media-queries-responsive">5.6. Media Queries (Responsive)</h2>
-<p>Las media queries permiten aplicar estilos según el tamaño de la pantalla, orientación u otras características del dispositivo.</p>
-<h3 id="sintaxis-basica">Sintaxis básica</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>/* Estilos base (móvil primero) */
-</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>.contenedor {
-</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    flex-direction: column;
-</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    padding: 10px;
-</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>}
-</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
-</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>/* Tablet (768px y superior) */
-</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>@media (min-width: 768px) {
-</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>    .contenedor {
-</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>        flex-direction: row;
-</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>        padding: 20px;
-</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>    }
-</span><span id="__span-29-13"><a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>}
-</span><span id="__span-29-14"><a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>
-</span><span id="__span-29-15"><a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>/* Desktop (1024px y superior) */
-</span><span id="__span-29-16"><a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>@media (min-width: 1024px) {
-</span><span id="__span-29-17"><a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>    .contenedor {
-</span><span id="__span-29-18"><a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>        max-width: 1200px;
-</span><span id="__span-29-19"><a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>        margin: 0 auto;
-</span><span id="__span-29-20"><a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>    }
-</span><span id="__span-29-21"><a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>}
-</span></code></pre></div>
-<h3 id="breakpoints-comunes">Breakpoints comunes</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>/* Móvil pequeño */
-</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>@media (max-width: 480px) { }
-</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
-</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>/* Móvil / Tablet */
-</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>@media (min-width: 481px) and (max-width: 767px) { }
-</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>
-</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>/* Tablet */
-</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>@media (min-width: 768px) and (max-width: 1023px) { }
-</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>
-</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>/* Desktop */
-</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>@media (min-width: 1024px) { }
-</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>
-</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>/* Desktop grande */
-</span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>@media (min-width: 1440px) { }
-</span></code></pre></div>
-<h3 id="otras-caracteristicas-utiles">Otras características útiles</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>/* Orientación */
-</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>@media (orientation: landscape) {
-</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    /* Horizontal */
-</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>}
-</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
-</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>@media (orientation: portrait) {
-</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>    /* Vertical */
-</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>}
-</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>
-</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>/* Preferencia de tema */
-</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>@media (prefers-color-scheme: dark) {
-</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>    /* Modo oscuro */
-</span><span id="__span-31-13"><a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>}
-</span></code></pre></div>
-<p><strong>Ejemplo completo responsive:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>/* Móvil (por defecto) */
-</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>.galeria {
-</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>    display: grid;
-</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    grid-template-columns: 1fr;
-</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>    gap: 10px;
-</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>}
-</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>
-</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>/* Tablet */
-</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>@media (min-width: 768px) {
-</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a>    .galeria {
-</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>        grid-template-columns: repeat(2, 1fr);
-</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>        gap: 20px;
-</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a>    }
-</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a>}
-</span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>
-</span><span id="__span-32-16"><a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a>/* Desktop */
-</span><span id="__span-32-17"><a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a>@media (min-width: 1024px) {
-</span><span id="__span-32-18"><a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a>    .galeria {
-</span><span id="__span-32-19"><a id="__codelineno-32-19" name="__codelineno-32-19" href="#__codelineno-32-19"></a>        grid-template-columns: repeat(3, 1fr);
-</span><span id="__span-32-20"><a id="__codelineno-32-20" name="__codelineno-32-20" href="#__codelineno-32-20"></a>        gap: 30px;
-</span><span id="__span-32-21"><a id="__codelineno-32-21" name="__codelineno-32-21" href="#__codelineno-32-21"></a>    }
-</span><span id="__span-32-22"><a id="__codelineno-32-22" name="__codelineno-32-22" href="#__codelineno-32-22"></a>}
-</span></code></pre></div>
-<hr />
-<h2 id="resumen">📝 Resumen</h2>
-<p>En este módulo has aprendido:</p>
-<ul>
-<li>La propiedad <code>display</code> y sus valores (block, inline, inline-block, none)</li>
-<li>Posicionamiento con <code>position</code> (static, relative, absolute, fixed, sticky)</li>
-<li>Flexbox para layouts unidimensionales</li>
-<li>CSS Grid para layouts bidimensionales complejos</li>
-<li>Unidades responsive (%, vw, vh, rem, em)</li>
-<li>Media queries para diseño responsive</li>
-</ul>
-<hr />
-<h2 id="ejercicios">🎯 Ejercicios</h2>
-<p>Ver <a href="../ejercicios/css-layout.md">Ejercicios CSS Layout</a></p>
 <hr />
 <h2 id="siguiente-modulo">➡️ Siguiente módulo</h2>
 <p><a href="06-css-avanzado.md">Módulo 6: CSS Avanzado</a> - Transiciones, animaciones y efectos
 ```</p>
 <hr />
-<p>✅ <strong>Módulo 5 reelaborado sin Box Model</strong>, enfocado completamente en layout: display, position, Flexbox, Grid y responsive.</p>
-<p>¿Te parece bien así o necesitas ajustes?</p>
 
 
 
@@ -2556,7 +1808,7 @@ Es esencial para crear layouts complejos y efectos avanzados.</p>
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="../04-css-fundamentos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 04. CSS Fundamentos">
+          <a href="../05-00-css-layout/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 05.00. Introducción al Layout">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2566,14 +1818,14 @@ Es esencial para crear layouts complejos y efectos avanzados.</p>
                 Anterior
               </span>
               <div class="md-ellipsis">
-                04. CSS Fundamentos
+                05.00. Introducción al Layout
               </div>
             </div>
           </a>
         
         
           
-          <a href="../position/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 05.02. Position">
+          <a href="../05-02-css-layout-position/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 05.02. Position">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
