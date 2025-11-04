@@ -1,37 +1,61 @@
-# Módulo 3: HTML Avanzado
-
-En este módulo aprenderás las etiquetas y estructuras más complejas y útiles de HTML:  
-* tablas para organizar información,
-* formularios para recopilar datos de los usuarios y 
-* añadir elementos multimedia como audio y vídeo.
+# HTML avanzado
 
 ---
 
-## 3.1. Tablas en HTML
+**🎯 Objetivos del capítulo**
+
+En este módulo aprenderás las etiquetas y estructuras más complejas y útiles de HTML:
+
+* tablas para organizar información,    
+* formularios para recopilar datos de los usuarios y     
+* añadir elementos multimedia como audio y vídeo. 
+
+---
+
+## Tablas en HTML
 
 Las **tablas** permiten presentar datos organizados en **filas** y **columnas**, como en hojas de cálculo. Aunque no se usan para maquetar páginas modernas, son fundamentales para datos.
 
-**Estructura básica:**
+### Etiquetas para tablas
+
+**Las 4 etiquetas más importantes son:** `<table>`, `<tr>`, `<td>` y `<th>`. Con estas cuatro puedes crear cualquier tabla básica. Las demás son complementarias para estructura y estilos.
+
+| Etiqueta | Descripción | Ejemplo |
+|----------|-------------|---------|
+| **`<table>`** | **Define una tabla completa.** Contenedor principal obligatorio. | `<table>...</table>` |
+| **`<tr>`** | **Define una fila (table row).** Agrupa celdas horizontalmente. | `<tr><td>Celda</td></tr>` |
+| **`<td>`** | **Define una celda de datos (table data).** Contenedor de contenido. | `<td>Contenido</td>` |
+| **`<th>`** | **Define una celda de encabezado (table header).** Se muestra en negrita. | `<th>Título</th>` |
+| `<thead>` | Agrupa el encabezado de la tabla (filas de títulos). | `<thead>...</thead>` |
+| `<tbody>` | Agrupa el cuerpo o contenido principal de la tabla. | `<tbody>...</tbody>` |
+| `<tfoot>` | Agrupa el pie de la tabla (totales, resúmenes). | `<tfoot>...</tfoot>` |
+| `<caption>` | Define un título o descripción de la tabla. | `<caption>Mis datos</caption>` |
+| `<colgroup>` | Agrupa columnas para aplicar estilos. | `<colgroup><col></colgroup>` |
+| `<col>` | Define propiedades para una o varias columnas. | `<col style="width: 100px;">` |
+
+
+
+**Ejemplo:**
 
 === "Código"
-    ```html
+    ```html  linenums="1"
     <table>
-    <thead>
-        <tr>
-        <th>Nombre</th>
-        <th>Edad</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td>Ana</td>
-        <td>17</td>
-        </tr>
-        <tr>
-        <td>Luis</td>
-        <td>18</td>
-        </tr>
-    </tbody>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>18</td>
+            </tr>
+        </tbody>
     </table>
     ```
 === "Renderizado *(clic para expandir)*"
@@ -56,76 +80,253 @@ Las **tablas** permiten presentar datos organizados en **filas** y **columnas**,
     </table>
     </div>
 
-**Explicación:**    
-- `<table>`: define la **tabla**.  
-- `<tr>`: **fila** de la tabla.  
-- `<th>`: celda de **encabezado** (negrita).  
-- `<td>`: celda de **datos**.  
 
-**Atributos útiles:**  
-- `colspan`: Celda ocupa varias columnas.  
-- `rowspan`: Celda ocupa varias filas.
+## Formularios en HTML
 
----
+Un formulario permite a los usuarios **enviar información**. Está compuesto por diferentes campos de entrada como textos, contraseñas, emails, casillas y botones.
 
-## 3.2. Formularios HTML
+### Etiquetas para formularios
 
-Un formulario permite a los usuarios enviar información. Está compuesto por diferentes campos de entrada como textos, contraseñas, emails, casillas y botones.
+**Las 4 etiquetas  más importantes son:** `<form>`, `<input>`, `<label>` y `<button>`. Con estas cuatro puedes crear cualquier formulario básico funcional.
+
+| Etiqueta | Descripción | Ejemplo |
+|----------|-------------|---------|
+| **`<form>`**| **Define un formulario completo.** Contenedor principal obligatorio. | `<form action="enviar.php" method="POST">...</form>` |
+| **`<input>`** | **Define un campo de entrada.** El más versátil (texto, botón, checkbox, radio, etc.). | `<input type="text" name="nombre">` |
+| **`<label>`** | **Define una etiqueta para un campo.** Mejora accesibilidad. | `<label for="email">Email:</label>` |
+| **`<button>`** | **Define un botón interactivo.** Puede enviar o ejecutar acciones. | `<button type="submit">Enviar</button>` |
+| `<textarea>` | **Define un área de texto multilínea.** Para textos largos. | `<textarea name="mensaje" rows="4"></textarea>` |
+| `<select>` | **Define una lista desplegable.** Para seleccionar una opción. | `<select name="país">...</select>` |
+| `<option>` | **Define una opción dentro de un select.** | `<option value="es">España</option>` |
+| `<fieldset>` | Agrupa campos relacionados de un formulario. | `<fieldset><legend>Datos personales</legend></fieldset>` |
+| `<legend>` | Define el título de un fieldset. | `<legend>Contacto</legend>` |
+| `<datalist>` | Define una lista de opciones predefinidas para un input. | `<datalist id="ciudades"><option value="Madrid"></datalist>` |
+
 
 **Ejemplo básico:**
 
 === "Código"
-```html
-<form action="/enviar" method="POST">
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre" required>
+    ```html linenums="1"
+    <form action="/enviar" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
 
-  <button type="submit">Enviar</button>
-</form>
-```
+    <button type="submit">Enviar</button>
+    </form>
+    ```
 === "Renderizado *(haz clic para expandir*)"
-<div>
-<form action="/enviar" method="POST">
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre" required>
+    <div style="background-color:#f5f5f5;">
+        <form action="/enviar" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <button type="submit">Enviar</button>
+        </form>
+    </div>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email">
-
-  <button type="submit">Enviar</button>
-</form>
-<\div>
-
-- `<input type="text">`: Campo de texto corto.
-- `<input type="email">`: Campo para email (comprueba formato).
-- `<button type="submit">`: Botón para enviar el formulario.
-
-**Otros campos útiles:**  
-- `<textarea>`: área de texto largo.  
-- `<input type="checkbox">`: casilla.  
-- `<input type="radio">`: opción única.  
-- `<select>...</select>`: menú desplegable.
 
 **Tips:**
 - Usa siempre etiquetas `<label>` conectadas al campo con `for` e `id` para accesibilidad.
 - `required` obliga a rellenar el campo.
 
----
+**Ejemplo completo:**
 
-## 3.3. Elementos multimedia: audio y vídeo
+=== "Código"
+    ```html linenums="1"
+        <form action="/enviar" method="POST">
+            <fieldset>
+                <legend>Información Personal</legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="18" max="120">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Asunto</legend>
+                
+                <label for="asunto">Selecciona un tema:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">-- Elige una opción --</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Mensaje</legend>
+                
+                <label for="mensaje">Tu mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                
+                <label>
+                    <input type="checkbox" name="privacidad" required>
+                    Acepto la política de privacidad
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferencias</legend>
+                
+                <label>
+                    <input type="radio" name="contacto" value="email"> Preferencia por email
+                </label>
+                
+                <label>
+                    <input type="radio" name="contacto" value="telefono"> Preferencia por teléfono
+                </label>
+            </fieldset>
+            
+            <button type="submit">Enviar Formulario</button>
+            <button type="reset">Limpiar</button>
+            <button type="button" onclick="alert('Formulario en desarrollo')">Vista previa</button>
+        </form>
+
+    ```
+=== "Renderizado"
+    <form action="/enviar" method="POST">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="120">
+        </fieldset>
+        <fieldset>
+            <legend>Asunto</legend>
+            <label for="asunto">Selecciona un tema:</label>
+            <select id="asunto" name="asunto" required>
+                <option value="">-- Elige una opción --</option>
+                <option value="consulta">Consulta general</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otro">Otro</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Mensaje</legend>
+            <label for="mensaje">Tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <label>
+                <input type="checkbox" name="privacidad" required>
+                Acepto la política de privacidad
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label>
+                <input type="radio" name="contacto" value="email"> Preferencia por email
+            </label>
+            <label>
+                <input type="radio" name="contacto" value="telefono"> Preferencia por teléfono
+            </label>
+        </fieldset>
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Limpiar</button>
+        <button type="button" onclick="alert('Formulario en desarrollo')">Vista previa</button>
+    </form>
+
+
+## Elementos multimedia: audio y vídeo
 
 Añadir audio y vídeo es muy sencillo con HTML5.
 
-**Audio:**
-```
-<audio controls>
-  <source src="musica.mp3" type="audio/mpeg">
-  Tu navegador no soporta audio.
-</audio>
-```
+### Audio
+
+Para insertar audio en HTML5, utiliza la etiqueta `<audio>` con controles básicos y múltiples formatos para compatibilidad. Aquí tienes un ejemplo completo.
+
+### Atributos del elemento `<audio>`
+
+| Atributo | Descripción |
+|----------|-------------|
+| `controls` | Muestra los controles de reproducción (play, pausa, volumen, barra de progreso, etc.) en el reproductor. |
+| `src` | Especifica la ruta del archivo de audio. Puede ir en `<audio>` directamente o dentro de etiquetas `<source>`. |
+| `type` | Define el formato MIME del audio (usado en `<source>`) para que el navegador identifique el tipo de archivo. |
+| `autoplay` | El audio se reproduce automáticamente al cargar la página. |
+| `loop` | El audio se repite en bucle indefinidamente. |
+| `muted` | El audio comienza silenciado. |
+| `preload` | Indica cómo cargar el audio: `none` (no precargar), `metadata` (solo metadatos), `auto` (precarga completa). |
+
+
+=== "Código"
+    ```html linenums="1"
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Audio en HTML5</title>
+    </head>
+    <body>
+        <audio loop controls>
+            <source src="../media/running-night.mp3" type="audio/mpeg">
+            <source src="../media/running-night.ogg" type="audio/ogg">
+            Su navegador no soporta el formato.
+        </audio>
+    </body>
+    </html>
+    ```
+=== "Resultado"
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>AudioenHTML5</title>
+    </head>
+    <body>
+        <audio loop controls>
+            <source src="../media/running-night.mp3" type="audio/mpeg">
+            <source src="../media/running-night.ogg" type="audio/ogg">
+            Su navegador no soporta el formato.
+        </audio>
+    </body>
+    </html>
+
+**Explicación:**
+- El navegador intentará reproducir el primer formato compatible (`mp3`).
+- Si no lo soporta, probará con el siguiente (`ogg`).
+- El texto final se muestra solo si ningún formato funciona.
+
+### Formatos de audio y compatibilidad
+
+| Formato | Tipo MIME | Navegadores compatibles |
+|---------|-----------|-------------------------|
+| **MP3** | `audio/mpeg` | Chrome, Firefox, Edge, Safari, Opera |
+| **OGG** | `audio/ogg` | Firefox, Chrome, Opera |
+| **WAV** | `audio/wav` | Safari, Firefox, Chrome, Edge |
+| **AAC** | `audio/aac` | Safari, Chrome, Edge |
+| **WebM** | `audio/webm` | Firefox, Chrome, Opera |   
+
+**Notas importantes:**
+
+1. Evita el `autoplay` en páginas web, puede ser molesto para los usuarios  
+2. Siempre incluye un mensaje para navegadores antiguos  
+3. Usa el atributo `preload="metadata"` para solo cargar información básica del audio  
+4. Verifica que los archivos de audio estén en la ruta correcta  
+
+¡Así tendrás un reproductor de audio funcional en todos los navegadores modernos! 🎵
+
 
 **Vídeo:**
 ```
@@ -138,7 +339,7 @@ Añadir audio y vídeo es muy sencillo con HTML5.
 
 ---
 
-## 3.4. Iframes: contenido externo incrustado
+## Iframes: contenido externo incrustado
 
 Los iframes sirven para mostrar dentro de tu web contenido de otras webs, como mapas o vídeos de YouTube.
 

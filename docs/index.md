@@ -22,10 +22,10 @@ Este curso tiene una duración de **4-5 semanas (20 sesiones)** y está diseñad
 
 1. **Introducción al Desarrollo Web**
 2. **HTML Básico**
-3. **HTML Avanzado** (próximamente)
-4. **CSS Fundamentos** (próximamente)
-5. **CSS Layout** (próximamente)
-6. **CSS Avanzado** (próximamente)
+3. **HTML Avanzado**
+4. **CSS Fundamentos**
+5. **CSS Layout**
+6. **CSS Avanzado**
 
 ### 💪 Ejercicios prácticos
 
@@ -43,7 +43,7 @@ Proyecto en 4 fases:
 
 ## 🛠️ Herramientas necesarias
 
-- **Editor**: Visual Studio Code
+- **Editor web**: Visual Studio Code
 - **Navegador**: Chrome, Firefox o Edge
 - **DevTools**: Herramientas de desarrollo del navegador
 
@@ -58,3 +58,14 @@ Proyecto en 4 fases:
 | 5 | 17-20 | Refinamiento | Proyecto final |
 
 ¡Mucha suerte! 💻✨
+
+---
+
+
+### 🔀 ¿Y ahora qué...?
+
+
+!!! abstract "➡️ Módulo siguiente"
+    En el [**Módulo 1 — Introducción**](apuntes/01-introduccion.md) aprenderás los conceptos más generales del desarrollo web.
+
+---

@@ -605,11 +605,7 @@ Ver [Ejercicios CSS Básico](../ejercicios/css-basico.md)
 
 ## ➡️ Siguiente módulo
 
-[Módulo 5: CSS Layout](05-css-layout.md) - Flexbox, Grid y diseño responsive
+[Módulo 05: CSS  Introducción](05-css-layout.md) - Flexbox, Grid y diseño responsive
 ```
 
 ***
-
-✅ **Módulo 4 completo y listo**. Es equilibrado: explica bien los conceptos sin ser demasiado extenso.
-
-¿Necesitas el siguiente módulo (05-css-layout.md) o los ejercicios de CSS básico primero?

@@ -6,6 +6,7 @@ site_url: https://tu-usuario.github.io/curso-html-css/
 theme:
   name: material
   language: es
+  # navigation_depth: 2
   palette:
     # Modo claro
     - scheme: default
@@ -24,73 +25,112 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.numbered
+    - navigation.indexes
+    - navigation.breadcrumbs
     - navigation.top
     - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.code.annotate
+    # - toc.integrate
+    # - toc.numbered 
+    - header.autohide
+    - navigation.sections.collapsible
+    - navigation.prev_next 
   font:
-    text: Nunito
+    text: Poppins
     code: Cascadia Code
   icon:
     repo: fontawesome/brands/github
-
+ 
 plugins:
   - search:
       lang: es
+  # - awesome-nav
+  - enumerate-headings:
+      toc_depth: 3
+      strict: true
+      increment_across_pages: true
+      include:
+        - "*"
+      exclude:
+        - index.md
+        - another_page.md
+      restart_increment_after:
+        - ejercicios/introduccion-ejercicios.md
+        - ejercicios-evaluables/html-basico-evaluable.md
+        - proyecto/descripcion.md
+        - recursos/html-cheatsheet.md
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
-      - name: mermaid
-        class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      # base_path: !relative  # Relative to the current Markdown file
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  # - pymdownx.grid
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
- 
-       
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - attr_list
   - md_in_html
   - tables
   - footnotes
   - def_list
+  - toc:
+      permalink: true
+      baselevel: 1
+      # numbered: true
+      title: "En esta página"
+      # separator: "_"
+    
 
 nav:
-  - Inicio: index.md
+  - Presentación del curso: index.md
   
-  - Apuntes:
-    - 01. Introducción: apuntes/01-introduccion.md
-    - 02. HTML Básico: apuntes/02-html-basico.md
-    - 03. HTML Avanzado: apuntes/03-html-avanzado.md
+  - Teoría:
+    - 1. Introducción: apuntes/01-introduccion.md
+    - 2. HTML básico: apuntes/02-html-basico.md
+    - 3. HTML semántico: apuntes/02-01-html-semantico.md
+    - 4. HTML avanzado: apuntes/03-html-avanzado.md
     - 04. CSS Fundamentos: apuntes/04-css-fundamentos.md
+    - 04.01. CSS Efectos: apuntes/04-01-css-efectos.md
     - 05. CSS Layout: 
-      - 05.01. Introducción al layout y display: apuntes/05-css-layout.md
-      - 05.02. Position: apuntes/position.md
-  
+      - 05.00. Introducción al Layout: apuntes/05-00-css-layout.md
+      - 05.01. Display: apuntes/05-01-css-layout-display.md
+      - 05.02. Position: apuntes/05-02-css-layout-position.md
+      - 05.03. Flexbox: apuntes/05-03-css-layout-flexbox.md
+      - 05.04. Grid: apuntes/05-04-css-layout-grid.md
+    - 06. Diseño adaptable (Media queries): apuntes/06-responsive.md
+    - fsfsf: apuntes/borrra.md
+    - dczdfdd: apuntes/sdad.md
+
   - Ejercicios resueltos:
+    - Introducción Ejercicios: ejercicios/introduccion-ejercicios.md
     - HTML Básico: ejercicios/html-basico.md
     - HTML Avanzado: ejercicios/html-avanzado.md
     - CSS Básico: ejercicios/css-basico.md
+    - CSS Avanzado:
+      - CSS Flexbox: ejercicios/css-flexbox.md
+      - CSS Grid: ejercicios/css-grid.md
   
   - Ejercicios evaluables:
-    - HTML Básico evaluable: ejercicios-evaluables/html-basico-evaluable.md
+    - HTML Básico (evaluable): ejercicios-evaluables/html-basico-evaluable.md
+    - HTML Semántico (evaluable): ejercicios-evaluables/html-semantico-evaluable.md
 
   - Proyecto Web:
     - Descripción General: proyecto/descripcion.md

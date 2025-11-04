@@ -87,3 +87,44 @@ Avísame y desarrollaremos:
 - Cualquier otro material que necesites
 
 **¡Mucha suerte con tu curso!** 🎓✨ Cuando quieras que sigamos desarrollando material, solo tienes que decírmelo.
+
+
+
+
+
+
+
+
+Después de aprender **CSS Grid**, los siguientes pasos para completar tu formación en diseño web moderno serían:
+
+***
+
+## 1. **Media Queries y Responsive Design**
+- Adaptar tus layouts (ya sean con Flexbox o Grid) para que se vean bien en móviles, tablets y escritorio.
+- Aprender los conceptos de *breakpoints* para modificar el diseño según el tamaño de pantalla.
+
+***
+
+## 2. **Practicar layouts complejos y páginas reales**
+- Realizar clones de páginas famosas.
+- Montar páginas de ejemplo que mezclen Flexbox, Grid y media queries.
+
+***
+
+## 3. **Animaciones y transiciones CSS**
+- Aprender cómo animar elementos, hacer efectos de hover, transiciones suaves, etc.
+
+***
+
+## 4. **Accesibilidad y buenas prácticas**
+- Uso correcto de HTML semántico, etiquetas ARIA y contrastes en CSS para crear sitios accesibles.
+
+***
+
+## 5. **Preprocesadores CSS**
+- Explorar herramientas como **Sass** o **Less** para organizar tu CSS profesionalmente.
+
+***
+
+En resumen: **Responsive Design → Layouts avanzados → Animaciones → Accesibilidad → Preprocesadores**.  
+¡Así dominarás cualquier diseño web moderno!

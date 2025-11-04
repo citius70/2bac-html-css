@@ -1,9 +1,6 @@
 # Ejercicio evaluable : HTML Básico
 
-## Archivo: `docs/ejercicios/proyecto-integrador-html.md`
-
-`markdown
-# Proyecto Integrador: Mi Página de Perfil
+***
 
 ## 🎯 Objetivo
 
