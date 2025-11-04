@@ -235,7 +235,7 @@ mi-proyecto/
 - **README.md** para documentación o instrucciones.
 
 ---
-
+<!-- 
 ## 🎯 Ejercicios prácticos
 
 ### Ejercicio 1: Explorar sitios web 🟢
@@ -278,3 +278,4 @@ Modifica tu `index.html` para incluir:
     y cómo crear contenido estructurado correctamente.
 
 ---
+ -->

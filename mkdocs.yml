@@ -40,7 +40,7 @@ theme:
     - navigation.sections.collapsible
     - navigation.prev_next 
   font:
-    text: Poppins
+    text: Poppins, Sans
     code: Cascadia Code
   icon:
     repo: fontawesome/brands/github
@@ -60,7 +60,7 @@ plugins:
         - another_page.md
       restart_increment_after:
         - ejercicios/introduccion-ejercicios.md
-        - ejercicios-evaluables/html-basico-evaluable.md
+        - ejercicios-evaluables/1-html-basico-evaluable.md
         - proyecto/descripcion.md
         - recursos/html-cheatsheet.md
 
@@ -116,8 +116,7 @@ nav:
       - 05.03. Flexbox: apuntes/05-03-css-layout-flexbox.md
       - 05.04. Grid: apuntes/05-04-css-layout-grid.md
     - 06. Diseño adaptable (Media queries): apuntes/06-responsive.md
-    - fsfsf: apuntes/borrra.md
-    - dczdfdd: apuntes/sdad.md
+
 
   - Ejercicios resueltos:
     - Introducción Ejercicios: ejercicios/introduccion-ejercicios.md
@@ -129,8 +128,8 @@ nav:
       - CSS Grid: ejercicios/css-grid.md
   
   - Ejercicios evaluables:
-    - HTML Básico (evaluable): ejercicios-evaluables/html-basico-evaluable.md
-    - HTML Semántico (evaluable): ejercicios-evaluables/html-semantico-evaluable.md
+    - 1. HTML Básico (evaluable): ejercicios-evaluables/1-html-basico-evaluable.md
+    - 2. HTML Semántico (evaluable): ejercicios-evaluables/2-html-semantico-evaluable.md
 
   - Proyecto Web:
     - Descripción General: proyecto/descripcion.md

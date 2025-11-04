@@ -8,6 +8,8 @@
 - Estructurar contenido con elementos semánticos.
 ---
 
+## HTML vs. HTML5
+
 Antes de HTML5, **la mayoría de los desarrolladores utilizaban únicamente las etiquetas `<div>` y `<span>`** para estructurar y dar formato a las páginas web, ya que **no existían etiquetas semánticas** que indicaran el propósito o significado del contenido.
 
 Estas dos etiquetas servían principalmente como **contenedores genéricos**, que podían ser **estilizados mediante atributos o reglas CSS** para componer la apariencia visual del sitio.
@@ -43,7 +45,7 @@ Por ejemplo, antes de HTML5, una página podía verse así:
 
 Con la llegada de HTML5, estas estructuras fueron reemplazadas por **etiquetas semánticas** como `<header>`, `<nav>`, `<main>`, `<section>` y `<footer>`, que además de organizar visualmente el contenido, **expresan su función dentro del documento**, mejorando el **SEO**, la **accesibilidad** y la **legibilidad del código**.
 
-## Comparación
+### Comparación
 
 <div class="grid cards" markdown>
 
@@ -115,7 +117,7 @@ Con la llegada de HTML5, estas estructuras fueron reemplazadas por **etiquetas s
 * Código más **mantenible y profesional**.
 
 
-## Comparación visual resumida
+#### Comparación visual resumida
 
 | Elemento NO semántico   | Elemento semántico     | Significado             |
 | ----------------------- | ---------------------- | ----------------------- |
@@ -129,57 +131,52 @@ Con la llegada de HTML5, estas estructuras fueron reemplazadas por **etiquetas s
 ![semantica](../img/semantica.png){width:70% align:center}  
 
 
-## Ejemplo de estructura *anterior* de HTML5 (no semántica)
+=== "Código con etiquetas no semánticas"
+    ```html
+    <div id="header">
+    <h1>Mi sitio web</h1>
+    <div id="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacto</a>
+    </div>
+    </div>
 
-```html
-<div id="header">
-  <h1>Mi sitio web</h1>
-  <div id="menu">
-    <a href="#">Inicio</a>
-    <a href="#">Blog</a>
-    <a href="#">Contacto</a>
-  </div>
-</div>
+    <div id="content">
+    <div class="article">
+        <h2>Título del artículo</h2>
+        <p>Texto del artículo...</p>
+    </div>
+    </div>
 
-<div id="content">
-  <div class="article">
-    <h2>Título del artículo</h2>
-    <p>Texto del artículo...</p>
-  </div>
-</div>
+    <div id="footer">
+    <p>© 2025 Mi Sitio Web</p>
+    </div>
+    ```
+=== "Código con etiquetas semánticas"
+    ```html
+    <header>
+    <h1>Mi sitio web</h1>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacto</a>
+    </nav>
+    </header>
 
-<div id="footer">
-  <p>© 2025 Mi Sitio Web</p>
-</div>
-```
+    <main>
+    <article>
+        <h2>Título del artículo</h2>
+        <p>Texto del artículo...</p>
+    </article>
+    </main>
 
+    <footer>
+    <p>© 2025 Mi Sitio Web</p>
+    </footer>
+    ```
 
-
-## Ejemplo *moderno* con etiquetas semánticas (HTML5)
-
-```html
-<header>
-  <h1>Mi sitio web</h1>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Blog</a>
-    <a href="#">Contacto</a>
-  </nav>
-</header>
-
-<main>
-  <article>
-    <h2>Título del artículo</h2>
-    <p>Texto del artículo...</p>
-  </article>
-</main>
-
-<footer>
-  <p>© 2025 Mi Sitio Web</p>
-</footer>
-```
-
-## Ventajas del enfoque semántico
+**Ventajas del enfoque semántico**
 
 * Los motores de búsqueda entienden mejor la estructura.
 * Mejora la accesibilidad (lectores de pantalla).
@@ -321,7 +318,7 @@ Con la llegada de HTML5, estas estructuras fueron reemplazadas por **etiquetas s
     ```
 === "... renderizado  |"
     [ver resultado](../apuntes/html_semantico-2.html){target=_blank}
-    ![sdffsd](../img/html5.png)
+
 
 
 ## Entidades HTML

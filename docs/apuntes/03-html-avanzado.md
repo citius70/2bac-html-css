@@ -258,19 +258,6 @@ Añadir audio y vídeo es muy sencillo con HTML5.
 
 Para insertar audio en HTML5, utiliza la etiqueta `<audio>` con controles básicos y múltiples formatos para compatibilidad. Aquí tienes un ejemplo completo.
 
-### Atributos del elemento `<audio>`
-
-| Atributo | Descripción |
-|----------|-------------|
-| `controls` | Muestra los controles de reproducción (play, pausa, volumen, barra de progreso, etc.) en el reproductor. |
-| `src` | Especifica la ruta del archivo de audio. Puede ir en `<audio>` directamente o dentro de etiquetas `<source>`. |
-| `type` | Define el formato MIME del audio (usado en `<source>`) para que el navegador identifique el tipo de archivo. |
-| `autoplay` | El audio se reproduce automáticamente al cargar la página. |
-| `loop` | El audio se repite en bucle indefinidamente. |
-| `muted` | El audio comienza silenciado. |
-| `preload` | Indica cómo cargar el audio: `none` (no precargar), `metadata` (solo metadatos), `auto` (precarga completa). |
-
-
 === "Código"
     ```html linenums="1"
     <!DOCTYPE html>
@@ -308,7 +295,19 @@ Para insertar audio en HTML5, utiliza la etiqueta `<audio>` con controles básic
 - Si no lo soporta, probará con el siguiente (`ogg`).
 - El texto final se muestra solo si ningún formato funciona.
 
-### Formatos de audio y compatibilidad
+#### Atributos del elemento `<audio>`
+
+| Atributo | Descripción |
+|----------|-------------|
+| `controls` | Muestra los controles de reproducción (play, pausa, volumen, barra de progreso, etc.) en el reproductor. |
+| `src` | Especifica la ruta del archivo de audio. Puede ir en `<audio>` directamente o dentro de etiquetas `<source>`. |
+| `type` | Define el formato MIME del audio (usado en `<source>`) para que el navegador identifique el tipo de archivo. |
+| `autoplay` | El audio se reproduce automáticamente al cargar la página. |
+| `loop` | El audio se repite en bucle indefinidamente. |
+| `muted` | El audio comienza silenciado. |
+| `preload` | Indica cómo cargar el audio: `none` (no precargar), `metadata` (solo metadatos), `auto` (precarga completa). |
+
+#### Formatos de audio y compatibilidad
 
 | Formato | Tipo MIME | Navegadores compatibles |
 |---------|-----------|-------------------------|
@@ -328,7 +327,11 @@ Para insertar audio en HTML5, utiliza la etiqueta `<audio>` con controles básic
 ¡Así tendrás un reproductor de audio funcional en todos los navegadores modernos! 🎵
 
 
-**Vídeo:**
+### Video
+
+Para insertar video en HTML5, utiliza la etiqueta `<video>` con controles básicos y múltiples formatos para compatibilidad. Aquí tienes un ejemplo básico.
+
+=== "Código"
 ```
 <video width="320" height="240" controls>
   <source src="video.mp4" type="video/mp4">
@@ -337,29 +340,65 @@ Para insertar audio en HTML5, utiliza la etiqueta `<audio>` con controles básic
 ```
 - Atributo `controls` añade los botones de reproducir y volumen.
 
----
+#### Atributos del elemento `<video>`
+
+| Atributo  | Descripción                                               | Valores posibles             | Uso típico                 |
+|-----------|-----------------------------------------------------------|-----------------------------|----------------------------|
+| src       | URL o ruta del archivo de vídeo                           | URL                         | Definir el vídeo a reproducir |
+| controls  | Muestra controles de reproducción                         | Presencia (atributo booleano) | Mostrar controles (play, pausa, volumen) |
+| width     | Ancho visual del reproductor en píxeles                   | Número                      | Ajustar tamaño ancho del vídeo |
+| height    | Alto visual del reproductor en píxeles                    | Número                      | Ajustar tamaño alto del vídeo  |
+| autoplay  | Reproducción automática al cargar la página               | Presencia (atributo booleano) | Iniciar reproducción sin interacción |
+| loop      | Repetición automática del vídeo                           | Presencia (atributo booleano) | Reproducir en bucle continuo |
+| muted     | Silenciar el audio al iniciar                             | Presencia (atributo booleano) | Silenciar para permitir autoplay sin sonido |
+| poster    | Imagen mostrada antes de que empiece el vídeo             | URL a imagen                | Mostrar imagen de portada previa |
+| preload   | Controla precarga de vídeo                                | none, metadata, auto        | Optimizar carga según dispositivo y contexto |
+
+#### Formatos de video y compatibilidad
+
+Aquí tienes una tabla resumen con los formatos de vídeo más comunes en HTML5, sus tipos MIME y la compatibilidad con navegadores principales:
+
+| Formato  | Tipo MIME        | Navegadores compatibles                         |
+|----------|------------------|------------------------------------------------|
+| **MP4 (H.264)** | `video/mp4`     | Chrome, Firefox, Edge, Safari, Opera          |
+| **WebM (VP8/VP9)** | `video/webm`    | Chrome, Firefox, Edge, Opera (no Safari)      |
+| **Ogg Theora** | `video/ogg`     | Firefox, Chrome, Opera (no Edge ni Safari)    |
+| **HEVC (H.265)** | `video/mp4`     | Safari, Edge (Windows 10+), Chrome (limitado) |
+| **AV1**      | `video/mp4`     | Chrome, Firefox, Edge, Opera (no Safari)      |
+
+- MP4 con códec H.264 es el formato más universalmente compatible.  
+- WebM es un formato abierto que funciona muy bien en navegadores basados en Chromium y Firefox, pero no en Safari.  
+- Ogg Theora tiene compatibilidad variada y es menos usado actualmente.  
+- HEVC (H.265) tiene soporte en hardware moderno y Safari, pero no universal para todos los navegadores.  
+- AV1 es un formato más nuevo con buena compatibilidad en navegadores modernos, menos en Safari.
+
 
 ## Iframes: contenido externo incrustado
 
-Los iframes sirven para mostrar dentro de tu web contenido de otras webs, como mapas o vídeos de YouTube.
+Los iframes en HTML son elementos que permiten **incrustar contenido externo** dentro de una página web. Su función principal es mostrar **documentos HTML completos, vídeos, mapas u otros recursos** que provienen de otra página web distinta a la principal, sin que el usuario tenga que salir de la navegación actual.
 
-```
-<iframe src="https://www.youtube.com/embed/ID_VIDEO" width="560" height="315" allowfullscreen></iframe>
-```
+### Puntos clave sobre iframes:
+
+- La etiqueta es `<iframe>`, y uno de sus atributos principales es `src`, que indica la URL del contenido externo a mostrar.  
+- Se pueden definir dimensiones con `width` (ancho) y `height` (alto), para controlar el tamaño visible del iframe.  
+- El contenido incrustado opera de forma aislada, por lo que cualquier código o error en ese contenido no afecta a la página principal.  
+- Es muy usado para insertar vídeos (por ejemplo de YouTube), mapas interactivos (como Google Maps), formularios o cualquier recurso externo.  
+- Permite mejorar la experiencia del usuario al integrar contenido externo sin redireccionar ni recargar la página.  
+- Tiene ventajas y desventajas en rendimiento, seguridad y SEO y debe usarse con cuidado especialmente si el contenido externo no es confiable.  
+
+Ejemplo básico de uso: 
+
+=== "Código"
+    ```html
+    <iframe src="https://www.youtube.com/embed/Imeq3GeRttw" width="560" height="315" title="Vídeo YouTube"></iframe>
+    ```
+=== "Resultado"
+    <iframe src="https://www.youtube.com/embed/Imeq3GeRttw" width="560" height="315" title="Vídeo YouTube"></iframe>
 
 --- 
 
-## 📝 Resumen
 
-En este módulo has aprendido:
-- Cómo crear tablas para organizar datos.
-- Cómo crear formularios con campos útiles y buenas prácticas.
-- Cómo insertar audio y vídeo en la web.
-- Cómo incrustar contenido externo con iframes.
-
----
-
-## 🎯 Ejercicios prácticos
+<!-- ## 🎯 Ejercicios prácticos
 
 1. **Crea una tabla** con 3 columnas (Nombre, Asignatura, Nota) y al menos tres alumnos.
 2. **Crea un formulario de registro** que pida nombre, correo, curso y comentarios (área de texto), y un botón de enviar.
@@ -371,4 +410,4 @@ En este módulo has aprendido:
 
 Ver [Ejercicios HTML Avanzado](../ejercicios/html-avanzado.md)
 
-➡️ Sigue con el [Módulo 4: CSS Fundamentos](04-css-fundamentos.md)
+➡️ Sigue con el [Módulo 4: CSS Fundamentos](04-css-fundamentos.md) -->

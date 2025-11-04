@@ -1,6 +1,6 @@
 # Ejercicios: Introducción al desarrollo web
 
-### Pregunta 1  
+## Pregunta 1  
 ¿Cuál de las siguientes afirmaciones sobre el desarrollo web es correcta?
 
    - Es solo programación de servidores.  
@@ -15,7 +15,7 @@ Crear aplicaciones y sitios que funcionan en Internet usando creatividad, lógic
 
 ***
 
-### Pregunta 2 
+## Pregunta 2 
 ¿Qué área del desarrollo web se encarga de lo que ves y usas en el navegador?
    
    - Backend
@@ -30,7 +30,7 @@ Frontend
 
 ***
 
-### Pregunta 3
+## Pregunta 3
 ¿Cuál es el propósito principal de CSS en el desarrollo web?
    
    - Procesar pagos
@@ -45,7 +45,7 @@ Dar estilo visual: colores, tamaños, posiciones y apariencia
 
 ***
 
-### Pregunta 4
+## Pregunta 4
 ¿Qué herramienta de desarrollo te permite ver y modificar el código de una página web en tiempo real?
 
    - Adobe Photoshop  
@@ -60,7 +60,7 @@ DevTools del navegador
 
 ***
 
-### Pregunta 5
+## Pregunta 5
 ¿Qué archivo es imprescindible como punto de entrada en todo proyecto web?
 
    - main.py  
@@ -74,7 +74,7 @@ index.html
 </details>
 
 ***
-### Pregunta 6
+## Pregunta 6
 ¿Cuál de las siguientes NO es una de las tecnologías fundamentales del Frontend?
 
    - HTML  
@@ -89,7 +89,7 @@ PHP
 
 ***
 
-### Pregunta 7
+## Pregunta 7
 ¿Para qué sirve la carpeta `img/` en la estructura recomendada de un proyecto web?
 
    - Para scripts de JavaScript  
@@ -103,7 +103,7 @@ Para guardar imágenes usadas en la web
 </details>
 
 ---
-
+<!-- 
 
 ### 🔀 ¿Y ahora qué...?
 
@@ -118,4 +118,4 @@ Para guardar imágenes usadas en la web
       [**Módulo 2 — HTML Básico**](../apuntes/02-html-basico.md)
 
       
----
+--- -->

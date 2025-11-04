@@ -397,7 +397,7 @@ Las media queries permiten aplicar estilos según el tamaño de la pantalla, ori
 
 ---
 
-## 📝 Resumen
+<!-- ## 📝 Resumen
 
 En este módulo has aprendido:
 
@@ -421,4 +421,4 @@ Ver [Ejercicios CSS Layout](../ejercicios/css-layout.md)
 [Módulo 05.01: Display](05-01-css-layout.display.md) - Layout con Display
 
 
-***
+*** -->

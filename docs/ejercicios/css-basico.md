@@ -626,6 +626,7 @@ Tu código será evaluado según:
 
 ---
 
-## ⬅️ Volver
+<!-- ## ⬅️ Volver
 
 Volver a [Apuntes CSS Fundamentos](../apuntes/04-css-fundamentos.md)
+ -->

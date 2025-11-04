@@ -389,10 +389,10 @@ Un elemento con `display: in-line` fluye en línea con otros pero respeta `width
     </div>    
 
 ---
-
+<!-- 
 ## ➡️ Siguiente módulo
 
 [Módulo 6: CSS Avanzado](06-css-avanzado.md) - Transiciones, animaciones y efectos
 ```
 
-***
+*** -->

@@ -432,7 +432,7 @@ La etiqueta `<img>` se utiliza en HTML para insertar imágenes en una página we
 <p>Para escribir HTML usa &lt;etiquetas&gt;</p>
 <p>Copyright &copy; 2025</p>
 ```
-
+<!-- 
 ## 📝 Resumen
 
 En este Capítulo has aprendido:
@@ -452,4 +452,4 @@ Ver [Ejercicios HTML Básico](../ejercicios/html-basico.md)
 
 [Capítulo 3: HTML Avanzado](03-html-avanzado.md)
 
-***
+*** -->

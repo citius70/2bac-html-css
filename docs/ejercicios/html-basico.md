@@ -1,6 +1,6 @@
 # Ejercicios HTML Básico
 
-## 🎯 Instrucciones generales
+**🎯 Instrucciones generales**
 
 - Intenta resolver cada ejercicio por tu cuenta antes de ver la solución
 - Valida tu código con el [validador W3C](https://validator.w3.org/)
@@ -19,11 +19,12 @@
 **Objetivo:** Crear una página HTML válida con estructura básica.
 
 **Requisitos:**
-- Estructura HTML5 completa (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)
-- Título en la pestaña: "Mi primera página"
-- Un encabezado `<h1>` con tu nombre
-- Tres párrafos sobre ti (quién eres, qué estudias, qué te gusta)
-- Usa al menos una etiqueta `<strong>` y una `<em>`
+
+- Estructura HTML5 completa (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)  
+- Título en la pestaña: "Mi primera página"  
+- Un encabezado `<h1>` con tu nombre  
+- Tres párrafos sobre ti (quién eres, qué estudias, qué te gusta)  
+- Usa al menos una etiqueta `<strong>` y una `<em>`  
 
 ??? success "✅ Solución"
     ```
@@ -52,13 +53,14 @@
 **Objetivo:** Practicar encabezados, párrafos y formato de texto.
 
 **Requisitos:**
-- Elige un personaje histórico o celebridad
-- `<h1>` con el nombre del personaje
-- `<h2>` "Biografía"
-- 2-3 párrafos sobre su vida
-- `<h2>` "Logros importantes"
-- Lista con sus logros
-- Usa `<strong>`, `<em>`, `<mark>` donde sea apropiado
+
+- Elige un personaje histórico o celebridad  
+- `<h1>` con el nombre del personaje  
+- `<h2>` "Biografía"  
+- 2-3 párrafos sobre su vida  
+- `<h2>` "Logros importantes"  
+- Lista con sus logros  
+- Usa `<strong>`, `<em>`, `<mark>` donde sea apropiado  
 
 ??? success "✅ Solución"
     ```
@@ -97,13 +99,14 @@
 **Objetivo:** Practicar listas ordenadas y desordenadas.
 
 **Requisitos:**
-- `<h1>` "Mi lista de compras"
-- `<h2>` "Frutas y verduras"
-- Lista desordenada con 5 items
-- `<h2>` "Productos de limpieza"
-- Lista desordenada con 3 items
-- `<h2>` "Pasos para hacer la compra"
-- Lista ordenada con 4 pasos
+
+- `<h1>` "Mi lista de compras"  
+- `<h2>` "Frutas y verduras"  
+- Lista desordenada con 5 items  
+- `<h2>` "Productos de limpieza"  
+- Lista desordenada con 3 items  
+- `<h2>` "Pasos para hacer la compra"  
+- Lista ordenada con 4 pasos  
 
 ??? success "✅ Solución"
     ```
@@ -152,12 +155,13 @@
 **Objetivo:** Practicar la inserción de imágenes.
 
 **Requisitos:**
-- `<h1>` "Mi galería de fotos"
-- 4 imágenes (pueden ser de internet)
-- Cada imagen debe tener:
-  - Atributo `alt` descriptivo
-  - Atributo `title`
-  - Un párrafo debajo describiendo la imagen
+
+- `<h1>` "Mi galería de fotos"  
+- 4 imágenes (pueden ser de internet)  
+- Cada imagen debe tener:  
+  - Atributo `alt` descriptivo  
+  - Atributo `title`  
+  - Un párrafo debajo describiendo la imagen  
 
 ??? success "✅ Solución"
     ```
@@ -206,13 +210,14 @@
 **Objetivo:** Practicar enlaces internos y externos.
 
 **Requisitos:**
-- `<h1>` "Mis sitios web favoritos"
-- `<h2>` "Educación"
-- Lista con 3 enlaces a sitios educativos (que abran en nueva pestaña)
-- `<h2>` "Entretenimiento"
-- Lista con 3 enlaces a sitios de entretenimiento
-- `<h2>` "Contacto"
-- Un enlace de correo electrónico
+
+- `<h1>` "Mis sitios web favoritos"  
+- `<h2>` "Educación"  
+- Lista con 3 enlaces a sitios educativos (que abran en nueva pestaña)  
+- `<h2>` "Entretenimiento"  
+- Lista con 3 enlaces a sitios de entretenimiento  
+- `<h2>` "Contacto"  
+- Un enlace de correo electrónico  
 
 ??? success "✅ Solución"
     ```
@@ -256,6 +261,7 @@
 **Objetivo:** Combinar múltiples elementos HTML.
 
 **Requisitos:**
+
 - Estructura HTML5 completa
 - `<h1>` con nombre de la receta
 - Una imagen del plato
@@ -1035,7 +1041,8 @@ Tu código será evaluado según:
 - [HTML Validator](https://validator.w3.org/)
 
 ---
-
+<!-- 
 ## ⬅️ Volver
 
 Volver a [Apuntes HTML Avanzado](../apuntes/03-html-avanzado.md)
+ -->

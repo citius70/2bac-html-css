@@ -398,6 +398,6 @@
 
 ---
 
-⬅️ Volver a [Apuntes HTML Avanzado](../apuntes/03-html-avanzado.md)
+<!-- ⬅️ Volver a [Apuntes HTML Avanzado](../apuntes/03-html-avanzado.md)
 
-***
+*** -->

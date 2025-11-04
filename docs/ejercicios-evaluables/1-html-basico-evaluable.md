@@ -1,20 +1,21 @@
-# Ejercicio evaluable : HTML Básico
+# Ejercicio evaluable : HTML básico
 
-***
+---
 
 ## 🎯 Objetivo
 
 Crear una **página HTML única y completa** que integre todos los conceptos principales de HTML Básico: estructura, encabezados, párrafos, formato de texto, imágenes, enlaces, listas y etiquetas semánticas.
 
-## Nombre archivo: 
+## Nombre archivo:
 
 Entregar el archivo con el nombre `index.html`
 
 ## 📋 Requisitos del proyecto
 
-### 1. Estructura HTML5 Completa
+### Estructura HTML5 Completa
 
 Tu página debe tener una estructura HTML5 válida con:
+
 - `<!DOCTYPE html>`
 - `<html lang="es">`
 - `<head>` con meta tags (charset, viewport)
@@ -25,20 +26,23 @@ Tu página debe tener una estructura HTML5 válida con:
 
 ---
 
-### 2. Encabezados y Jerarquía
+### Encabezados y jerarquía
 
 **Requisitos:**
-- 1 `<h1>` con tu nombre (debe ser el principal)
-- Mínimo 4 `<h2>` para cada sección
+
+- Un `<h1>` con tu nombre (debe ser el principal)
+- Mínimo cuatro `<h2>` para cada sección
 - Estructura jerárquica correcta (no saltar niveles)
 
 **Secciones sugeridas:**
+
 - Sobre mí
 - Habilidades
 - Intereses
 - Enlaces de interés
 
 **Ejemplo:**
+
 ```
 <h1>Juan García López</h1>
 <p>Desarrollador Web Junior</p>
@@ -54,24 +58,27 @@ Tu página debe tener una estructura HTML5 válida con:
 
 ---
 
-### 3. Párrafos con Formato de Texto
+### Párrafos con Formato de Texto
 
 **Requisitos:**
+
 - Mínimo 4-5 párrafos en total
 - Usa `<strong>` para palabras importante (se ve en negrita)
 - Usa `<em>` para palabras énfasis (se ve en cursiva)
 - Cada párrafo debe tener sentido completo
 
 **Ejemplo:**
+
 ```
 <p>
-    Hola, mi nombre es <strong>Juan García</strong> y estudio 
-    <strong>2º de Bachillerato</strong>. Me apasiona la 
+    Hola, mi nombre es <strong>Juan García</strong> y estudio
+    <strong>2º de Bachillerato</strong>. Me apasiona la
     <em>tecnología</em> y quiero aprender a crear páginas web.
 </p>
 ```
 
 **Dónde usarlos:**
+
 - `<strong>`: nombres, fechas, datos importantes
 - `<em>`: énfasis, conceptos especiales, palabras en otro idioma
 
@@ -79,9 +86,10 @@ Tu página debe tener una estructura HTML5 válida con:
 
 ---
 
-### 4. Imágenes
+### Imágenes
 
 **Requisitos:**
+
 - Mínimo 2-3 imágenes
 - Cada imagen debe tener:
   - Atributo `src` (ruta de la imagen)
@@ -89,21 +97,23 @@ Tu página debe tener una estructura HTML5 válida con:
   - Atributo `title` (aparece al pasar el ratón)
 
 **Ejemplo:**
+
 ```
-<img 
-    src="https://via.placeholder.com/300" 
-    alt="Mi foto de perfil" 
+<img
+    src="https://via.placeholder.com/300"
+    alt="Mi foto de perfil"
     title="Juan García - 2025"
 >
 
-<img 
-    src="mi-proyecto.jpg" 
-    alt="Captura de pantalla de mi primer proyecto web" 
+<img
+    src="mi-proyecto.jpg"
+    alt="Captura de pantalla de mi primer proyecto web"
     title="Proyecto 1: Landing Page"
 >
 ```
 
 **Tipos de imágenes a incluir:**
+
 - Tu foto de perfil
 - Imágenes de proyectos o intereses
 - Capturas de pantalla
@@ -112,17 +122,18 @@ Tu página debe tener una estructura HTML5 válida con:
 
 ---
 
-### 5. Enlaces (Internos y Externos)
-
-#### Enlaces Internos (Anclas)
+### Enlaces (Internos y Externos)
+es Internos (Anclas)
 
 Permiten navegar dentro de la misma página usando `#id`.
 
 **Requisitos:**
+
 - Crea una navegación con al menos 4 enlaces internos
 - Cada enlace apunta a una sección con `id` correspondiente
 
 **Ejemplo:**
+
 ```
 <!-- Navegación -->
 <nav>
@@ -151,11 +162,13 @@ Permiten navegar dentro de la misma página usando `#id`.
 Apuntan a sitios web externos.
 
 **Requisitos:**
+
 - Mínimo 3-4 enlaces externos
 - Usa `target="_blank"` para abrir en nueva pestaña
 - Cada enlace debe ser relevante y funcionar
 
 **Ejemplo:**
+
 ```
 <section id="enlaces">
     <h2>Enlaces de Interés</h2>
@@ -183,17 +196,19 @@ Apuntan a sitios web externos.
 
 ---
 
-### 6. Listas
+### Listas
 
 #### Lista Desordenada
 
 Se usa cuando el orden no importa. Los elementos aparecen con viñetas.
 
 **Requisitos:**
+
 - Una lista desordenada con mínimo 5 elementos
 - Úsala para: habilidades, intereses, características
 
 **Ejemplo:**
+
 ```
 <h2>Habilidades</h2>
 <ul>
@@ -210,10 +225,12 @@ Se usa cuando el orden no importa. Los elementos aparecen con viñetas.
 Se usa cuando el orden es importante. Los elementos aparecen numerados.
 
 **Requisitos:**
+
 - Una lista ordenada con mínimo 3-4 elementos
 - Úsala para: ranking, pasos, procesos
 
 **Ejemplo:**
+
 ```
 <h2>Top 3 Intereses</h2>
 <ol>
@@ -227,17 +244,19 @@ Se usa cuando el orden es importante. Los elementos aparecen numerados.
 
 ---
 
-### 7. Etiquetas Semánticas
+### Etiquetas Semánticas
 
 Las etiquetas semánticas dan significado al contenido, no solo presentación.
 
 **Requisitos:**
+
 - `<header>` para el encabezado de la página
 - `<nav>` para la navegación
 - `<section>` para agrupar contenido relacionado
 - `<footer>` para el pie de página
 
 **Ejemplo completo:**
+
 ```
 <header>
     <h1>Tu Nombre</h1>
@@ -256,7 +275,7 @@ Las etiquetas semánticas dan significado al contenido, no solo presentación.
         <h2>Sobre mí</h2>
         <p>Contenido...</p>
     </section>
-    
+
     <section id="habilidades">
         <h2>Habilidades</h2>
         <p>Contenido...</p>
@@ -272,14 +291,16 @@ Las etiquetas semánticas dan significado al contenido, no solo presentación.
 
 ---
 
-### 8. Entidades HTML
+### Entidades HTML
 
 Las entidades HTML representan caracteres especiales.
 
 **Requisitos:**
+
 - Usa al menos 3-4 entidades HTML diferentes
 
 **Entidades comunes:**
+
 ```
 &amp;    <!-- & (ampersand) -->
 &copy;   <!-- © (copyright) -->
@@ -290,6 +311,7 @@ Las entidades HTML representan caracteres especiales.
 ```
 
 **Ejemplo:**
+
 ```
 <p>HTML &amp; CSS son complementarios</p>
 <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
@@ -316,7 +338,7 @@ Las entidades HTML representan caracteres especiales.
         <h1>Tu Nombre</h1>
         <p>Tu especialidad o profesión</p>
     </header>
-    
+
     <!-- Navegación -->
     <nav>
         <ul>
@@ -326,7 +348,7 @@ Las entidades HTML representan caracteres especiales.
             <li><a href="#enlaces">Enlaces</a></li>
         </ul>
     </nav>
-    
+
     <!-- Contenido Principal -->
     <main>
         <section id="sobre">
@@ -336,7 +358,7 @@ Las entidades HTML representan caracteres especiales.
             <p>Párrafo 2: Qué te apasiona...</p>
             <p>Párrafo 3: Tus metas...</p>
         </section>
-        
+
         <section id="habilidades">
             <h2>Habilidades</h2>
             <ul>
@@ -347,7 +369,7 @@ Las entidades HTML representan caracteres especiales.
                 <li>Comunicación Efectiva</li>
             </ul>
         </section>
-        
+
         <section id="intereses">
             <h2>Top 3 Intereses</h2>
             <ol>
@@ -356,7 +378,7 @@ Las entidades HTML representan caracteres especiales.
                 <li>Innovación Tecnológica</li>
             </ol>
         </section>
-        
+
         <section id="enlaces">
             <h2>Enlaces de Interés</h2>
             <ul>
@@ -378,7 +400,7 @@ Las entidades HTML representan caracteres especiales.
             </ul>
         </section>
     </main>
-    
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
@@ -412,41 +434,31 @@ Antes de entregar, verifica que tu página incluya:
 
 ## 📊 Rúbrica de Evaluación
 
-| Criterio | Puntos |
-|----------|--------|
-| Estructura HTML5 completa y válida | 15 pts |
-| Encabezados con jerarquía correcta | 10 pts |
-| Párrafos con `<strong>` y `<em>` | 10 pts |
-| Imágenes con `alt` descriptivo | 10 pts |
-| Enlaces internos y externos funcionales | 15 pts |
-| Listas desordenada y ordenada | 15 pts |
-| Etiquetas semánticas | 10 pts |
-| Entidades HTML | 5 pts |
-| Validez W3C | 5 pts |
-| **TOTAL** | **95 pts** |
+| Criterio                                | Puntos     |
+| --------------------------------------- | ---------- |
+| Estructura HTML5 completa y válida      | 15 pts     |
+| Encabezados con jerarquía correcta      | 10 pts     |
+| Párrafos con `<strong>` y `<em>`        | 10 pts     |
+| Imágenes con `alt` descriptivo          | 10 pts     |
+| Enlaces internos y externos funcionales | 15 pts     |
+| Listas desordenada y ordenada           | 15 pts     |
+| Etiquetas semánticas                    | 15 pts     |
+| Entidades HTML                          | 5 pts      |
+| Validez W3C                             | 5 pts      |
+| **TOTAL**                               | **100 pts** |
 
 ---
 
 ## 💡 Consejos Importantes
 
-!!! warning "No olvides"
-    - Todos los `<img>` necesitan `alt` descriptivo
-    - Los enlaces internos necesitan `#id` que coincida con el `id` de la sección
-    - No olvides cerrar todas las etiquetas
-    - La estructura debe ser jerárquica: `<h1>` → `<h2>` → `<h3>`
+!!! warning "No olvides" 
+    - Todos los `<img>` necesitan `alt` descriptivo - Los enlaces internos necesitan `#id` que coincida con el `id` de la sección - No olvides cerrar todas las etiquetas - La estructura debe ser jerárquica: `<h1>` → `<h2>` → `<h3>`
 
 !!! tip "Para mejorar"
-    - Usa nombres descriptivos para tus ids: `id="sobre-mi"` es mejor que `id="s1"`
-    - Añade comentarios en tu HTML para explicar secciones
-    - Usa imágenes de buena calidad (pero optimizadas)
-    - Escribe contenido auténtico y personal
+     - Usa nombres descriptivos para tus ids: `id="sobre-mi"` es mejor que `id="s1"` - Añade comentarios en tu HTML para explicar secciones - Usa imágenes de buena calidad (pero optimizadas) - Escribe contenido auténtico y personal
 
 !!! error "Errores comunes"
-    - ❌ Olvidar el `alt` en imágenes
-    - ❌ No cerrar etiquetas correctamente
-    - ❌ No usar jerarquía correcta de encabezados
-    - ❌ Enlaces internos sin `#id` correspondiente
-    - ❌ No validar en W3C
+     - ❌ Olvidar el `alt` en imágenes - ❌ No cerrar etiquetas correctamente - ❌ No usar jerarquía correcta de encabezados - ❌ Enlaces internos sin `#id` correspondiente - ❌ No validar en W3C
 
 ---
 

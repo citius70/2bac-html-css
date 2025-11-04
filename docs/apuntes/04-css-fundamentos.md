@@ -584,7 +584,7 @@ visibility: visible;
 ```
 
 ---
-
+<!-- 
 ## 📝 Resumen
 
 En este módulo has aprendido:
@@ -608,4 +608,4 @@ Ver [Ejercicios CSS Básico](../ejercicios/css-basico.md)
 [Módulo 05: CSS  Introducción](05-css-layout.md) - Flexbox, Grid y diseño responsive
 ```
 
-***
+*** -->
