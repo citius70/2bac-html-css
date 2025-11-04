@@ -39,7 +39,8 @@ El **desarrollo web** se divide en dos áreas complementarias:
 
 ![frontend](../img/frontend.png){width=35% align="right"}
 
-Si el desarrollo web fuera construir una casa, **HTML** sería la estructura (paredes, puertas, ventanas), **CSS** la decoración (pintura, muebles), y **JavaScript** la instalación eléctrica (luces, automatizaciones). Veamos cada una.
+Si el desarrollo web fuera construir una casa, **HTML** sería la estructura (paredes, puertas, ventanas), **CSS** la decoración (pintura, muebles), y **JavaScript** la instalación eléctrica (luces, automatizaciones).  
+¿Sabría relacionar nuestro cuerpo con estas tres tecnologías?
 
 ### HTML: La estructura y el contenido
 
@@ -57,7 +58,7 @@ Por ejemplo, en lugar de simplemente escribir "Título" y hacerlo grande, en HTM
 
 === "Ver resultado *(click para expandir)*"
     <div style="background-color: #f8f8f8ff; padding: 20px;">
-    <h3>Esto es un título de nivel 3</h3>
+    <p style="font-size:1.3em">Esto es un título de nivel 3</p>
     <p>Esto es <strong>muy importante</strong></p>
     <a href="https://www.google.com">Esto es un enlace a Google</a>
     </div>
@@ -82,7 +83,7 @@ Funciona mediante **reglas** que le dicen al navegador cómo debe verse cada ele
     ```
 === "Ver resultado *(click para expandir)*"
     <div style="background-color: #f8f8f8ff; padding: 20px;">
-    <h3 style="color: blue; font-size: 32px;">Esto es un título de nivel 3</h3>
+    <p style="color: blue; font-size: 2em;">Esto es un título de nivel 3</p>
     <p style="color: gray; line-height: 1.6;">Esto es muy un párrafo</p>
     </div>
 

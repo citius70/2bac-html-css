@@ -1,7 +1,8 @@
 site_name: Curso HTML y CSS - 2º Bachillerato
 site_description: Material didáctico completo para aprender HTML y CSS desde cero
 site_author: Profesor TIC 2º Bachillerato
-site_url: https://tu-usuario.github.io/curso-html-css/
+site_url: https://citius70.github.io/2bac-html-css/
+
 
 theme:
   name: material
@@ -141,7 +142,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/tu-usuario
+      link: https://citius70.github.io/2bac-html-css/
       name: GitHub
     - icon: fontawesome/solid/envelope
       link: mailto:profesor@ejemplo.com
