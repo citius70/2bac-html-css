@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    
+    <form action="/enviar" method="POST">
+        <fieldset>
+            <legend>Información Personal</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="120">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Asunto</legend>
+            
+            <label for="asunto">Selecciona un tema:</label>
+            <select id="asunto" name="asunto" required>
+                <option value="">-- Elige una opción --</option>
+                <option value="consulta">Consulta general</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otro">Otro</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Mensaje</legend>
+            
+            <label for="mensaje">Tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+            <label>
+                <input type="checkbox" name="privacidad" required>
+                Acepto la política de privacidad
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferencias</legend>
+            
+            <label>
+                <input type="radio" name="contacto" value="email"> Preferencia por email
+            </label>
+            
+            <label>
+                <input type="radio" name="contacto" value="telefono"> Preferencia por teléfono
+            </label>
+        </fieldset>
+        
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Limpiar</button>
+        <button type="button" onclick="alert('Formulario en desarrollo')">Vista previa</button>
+    </form>
+    
+    <footer>
+        <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
