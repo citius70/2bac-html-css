@@ -122,9 +122,11 @@ Después de aprender **CSS Grid**, los siguientes pasos para completar tu formac
 ***
 
 ## 5. **Preprocesadores CSS**
-- Explorar herramientas como **Sass** o **Less** para organizar tu CSS profesionalmente.
+- Explorar herramientas como **Smass** o **Less** para organizar tu CSS profesionalmente.
 
 ***
 
 En resumen: **Responsive Design → Layouts avanzados → Animaciones → Accesibilidad → Preprocesadores**.  
 ¡Así dominarás cualquier diseño web moderno!
+
+***
