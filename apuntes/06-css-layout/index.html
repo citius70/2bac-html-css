@@ -7,12 +7,12 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Material didáctico completo para aprender HTML y CSS desde cero" name="description"/>
 <meta content="Profesor TIC 2º Bachillerato" name="author"/>
-<link href="https://citius70.github.io/2bac-html-css/apuntes/04-01-css-efectos/" rel="canonical"/>
-<link href="../04-css-fundamentos/" rel="prev"/>
-<link href="../05-00-css-layout/" rel="next"/>
+<link href="https://citius70.github.io/2bac-html-css/apuntes/06-css-layout/" rel="canonical"/>
+<link href="../05-css-boxmodel/" rel="prev"/>
+<link href="../07-css-layout-display/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.22" name="generator"/>
-<title>CSS efectos - Curso HTML y CSS - 2º Bachillerato</title>
+<title>Introducción al Layout - Curso HTML y CSS - 2º Bachillerato</title>
 <link href="../../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -26,7 +26,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#animaciones-y-transiciones-css">7. 
+<a class="md-skip" href="#css-layout">7. 
           Saltar a contenido
         </a>
 </div>
@@ -50,7 +50,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              CSS efectos
+              Introducción al Layout
             
           </span>
 </div>
@@ -249,18 +249,41 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../05-css-boxmodel/">
+<span class="md-ellipsis">
+    CSS box model
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+<span class="md-ellipsis">
+    CSS Layout
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+            CSS Layout
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    CSS efectos
+    Introducción al Layout
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
-    CSS efectos
+    Introducción al Layout
     
   </span>
 </a>
@@ -271,42 +294,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#que-son">7.1 
+<a class="md-nav__link" href="#que-es-css-layout">7.1 
 <span class="md-ellipsis">
-      ¿Qué son?
+      ¿Qué es CSS Layout?
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#transiciones-css">7.2 
+<a class="md-nav__link" href="#por-que-es-importante">7.2 
 <span class="md-ellipsis">
-      Transiciones CSS
-    </span>
-</a>
-<nav aria-label="Transiciones CSS" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-basico">7.2.1 
-<span class="md-ellipsis">
-      Ejemplo básico
+      ¿Por qué es importante?
     </span>
 </a>
 </li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#animaciones-css">7.3 
+<a class="md-nav__link" href="#tecnicas-principales">7.3 
 <span class="md-ellipsis">
-      Animaciones CSS
-    </span>
-</a>
-<nav aria-label="Animaciones CSS" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-basico_1">7.3.1 
-<span class="md-ellipsis">
-      Ejemplo básico
+      Técnicas principales
     </span>
 </a>
 </li>
@@ -314,40 +318,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#por-que-usar-animaciones-y-transiciones">7.4 
-<span class="md-ellipsis">
-      ¿Por qué usar animaciones y transiciones?
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
-<span class="md-ellipsis">
-    CSS Layout
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_7_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_7">
-<span class="md-nav__icon md-icon"></span>
-            CSS Layout
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../05-00-css-layout/">
-<span class="md-ellipsis">
-    Introducción al Layout
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../05-01-css-layout-display/">
+<a class="md-nav__link" href="../07-css-layout-display/">
 <span class="md-ellipsis">
     Display
     
@@ -355,7 +326,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../05-02-css-layout-position/">
+<a class="md-nav__link" href="../08-css-layout-position/">
 <span class="md-ellipsis">
     Position
     
@@ -363,7 +334,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../05-03-css-layout-flexbox/">
+<a class="md-nav__link" href="../09-css-layout-flexbox/">
 <span class="md-ellipsis">
     Flexbox
     
@@ -385,6 +356,14 @@
 <a class="md-nav__link" href="../06-responsive/">
 <span class="md-ellipsis">
     Diseño adaptable
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../04-01-css-efectos.md">
+<span class="md-ellipsis">
+    CSS efectos
     
   </span>
 </a>
@@ -523,6 +502,38 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/5-css-boxmodel-ejercicios/">
+<span class="md-ellipsis">
+    5. CSS box model (evaluable)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/6-css-display-evaluable/">
+<span class="md-ellipsis">
+    6. CSS display (evaluable)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/7-css-position-evaluable/">
+<span class="md-ellipsis">
+    7. CSS position (evaluable)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/8-css-flexbox-evaluable/">
+<span class="md-ellipsis">
+    8. CSS flexbox (evaluable)
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -601,52 +612,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#que-son">7.1 
+<a class="md-nav__link" href="#que-es-css-layout">7.1 
 <span class="md-ellipsis">
-      ¿Qué son?
+      ¿Qué es CSS Layout?
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#transiciones-css">7.2 
+<a class="md-nav__link" href="#por-que-es-importante">7.2 
 <span class="md-ellipsis">
-      Transiciones CSS
-    </span>
-</a>
-<nav aria-label="Transiciones CSS" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-basico">7.2.1 
-<span class="md-ellipsis">
-      Ejemplo básico
+      ¿Por qué es importante?
     </span>
 </a>
 </li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#animaciones-css">7.3 
+<a class="md-nav__link" href="#tecnicas-principales">7.3 
 <span class="md-ellipsis">
-      Animaciones CSS
-    </span>
-</a>
-<nav aria-label="Animaciones CSS" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-basico_1">7.3.1 
-<span class="md-ellipsis">
-      Ejemplo básico
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#por-que-usar-animaciones-y-transiciones">7.4 
-<span class="md-ellipsis">
-      ¿Por qué usar animaciones y transiciones?
+      Técnicas principales
     </span>
 </a>
 </li>
@@ -657,64 +639,58 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="animaciones-y-transiciones-css"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.</span> Animaciones y transiciones CSS<a class="headerlink" href="#animaciones-y-transiciones-css" title="Permanent link">¶</a></h1>
-<hr/>
-<h2 id="que-son"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.1</span> ¿Qué son?<a class="headerlink" href="#que-son" title="Permanent link">¶</a></h2>
-<p>Las <strong>transiciones</strong> y <strong>animaciones</strong> en CSS permiten que los cambios de estilo ocurran de manera suave y visualmente atractiva, en vez de forma instantánea. Son ideales para mejorar la experiencia del usuario y hacer la página más profesional y dinámica.</p>
-<hr/>
-<h2 id="transiciones-css"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.2</span> Transiciones CSS<a class="headerlink" href="#transiciones-css" title="Permanent link">¶</a></h2>
-<p><strong>Las transiciones</strong> hacen que los cambios entre dos estados (por ejemplo, al poner el mouse encima de un botón) sean graduales.</p>
-<h3 id="ejemplo-basico"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.2.1</span> Ejemplo básico<a class="headerlink" href="#ejemplo-basico" title="Permanent link">¶</a></h3>
-<p><div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">.</span><span class="nc">boton</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#379</span><span class="p">;</span>
-</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
-</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">background</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">,</span><span class="w"> </span><span class="k">transform</span><span class="w"> </span><span class="mf">0.2</span><span class="kt">s</span><span class="p">;</span>
-</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">}</span>
-</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">.</span><span class="nc">boton</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#fa7</span><span class="p">;</span>
-</span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mf">1.1</span><span class="p">);</span>
-</span><span id="__span-0-9"><a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<strong>¿Qué ocurre?</strong> El fondo cambia de color y el botón se agranda de forma suave al pasar el mouse.</p>
-<p><strong>Propiedades clave:</strong>
-- <code>transition-property</code>: Qué propiedad se anima
-- <code>transition-duration</code>: Cuánto dura
-- <code>transition-timing-function</code>: Velocidad/interpolación (ej. <code>ease</code>, <code>linear</code>)
-- <code>transition-delay</code>: Espera antes de comenzar</p>
-<hr/>
-<h2 id="animaciones-css"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.3</span> Animaciones CSS<a class="headerlink" href="#animaciones-css" title="Permanent link">¶</a></h2>
-<p><strong>Las animaciones</strong> permiten crear movimientos y efectos más complejos, controlando varios pasos y repeticiones.</p>
-<h3 id="ejemplo-basico_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.3.1</span> Ejemplo básico<a class="headerlink" href="#ejemplo-basico_1" title="Permanent link">¶</a></h3>
-<p><div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">.</span><span class="nc">cuadro</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#5ac</span><span class="p">;</span>
-</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="n">mover</span><span class="w"> </span><span class="mi">2</span><span class="kt">s</span><span class="w"> </span><span class="kc">infinite</span><span class="w"> </span><span class="kc">alternate</span><span class="p">;</span>
-</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
-</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="nt">mover</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-9"><a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="nt">from</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateX</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-1-10"><a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">  </span><span class="nt">to</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateX</span><span class="p">(</span><span class="mi">200</span><span class="kt">px</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-1-11"><a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="p">}</span>
-</span></code></pre></div>
-<strong>¿Qué ocurre?</strong> El cuadro se mueve suavemente de izquierda a derecha y vuelve.</p>
-<p><strong>Propiedades clave:</strong>
-- <code>animation-name</code>: Nombre de la animación (<code>@keyframes</code>)
-- <code>animation-duration</code>: Duración
-- <code>animation-timing-function</code>: Interpolación
-- <code>animation-iteration-count</code>: Número de repeticiones
-- <code>animation-delay</code>: Espera antes de empezar
-- <code>animation-direction</code>: Sentido, normal o alternando</p>
-<hr/>
-<h2 id="por-que-usar-animaciones-y-transiciones"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.4</span> ¿Por qué usar animaciones y transiciones?<a class="headerlink" href="#por-que-usar-animaciones-y-transiciones" title="Permanent link">¶</a></h2>
+<h1 id="css-layout"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.</span> CSS Layout<a class="headerlink" href="#css-layout" title="Permanent link">¶</a></h1>
+<p><img align="right" alt="layout" src="../../img/layout.png" width="40%"/></p>
+<p>Ya conoces los fundamentos de CSS: selectores, colores, tipografía y el modelo de caja. Ahora es momento de aprender a <strong>estructurar y posicionar elementos</strong> en la página para crear layouts profesionales.</p>
+<p>Probablemente, una de las partes más complejas de CSS sea la creación de layouts, <strong>colocación y distribución de los elementos</strong> a lo largo de una página, y sin duda el que más le cuesta a los desarrolladores que están comenzando. Sin embargo, es una parte fundamental dentro de CSS, y es necesario entenderla correctamente para que resulte más fácil de trabajar y crear nuestros diseños.</p>
+<h2 id="que-es-css-layout"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.1</span> ¿Qué es CSS Layout?<a class="headerlink" href="#que-es-css-layout" title="Permanent link">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">CSS Layout</p>
+<p>CSS <strong>Layout</strong> es el conjunto de técnicas y propiedades que controlan <strong>cómo se organizan y posicionan los elementos en una página web</strong>.<br/>
+Define la estructura visual y la distribución del contenido.</p>
+</div>
+<h2 id="por-que-es-importante"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.2</span> ¿Por qué es importante?<a class="headerlink" href="#por-que-es-importante" title="Permanent link">¶</a></h2>
 <ul>
-<li>Mejoran la experiencia del usuario.</li>
-<li>Destacan acciones importantes (ej: notificaciones).</li>
-<li>Hacen la web más atractiva y profesional.</li>
+<li>✅ Permite crear diseños profesionales y organizados</li>
+<li>✅ Facilita la creación de páginas responsive (adaptables a diferentes dispositivos)</li>
+<li>✅ Mejora la experiencia del usuario con layouts intuitivos</li>
+<li>✅ Es fundamental para el diseño web moderno</li>
 </ul>
-<hr/>
-<p><strong>Consejo:</strong><br/>
-No abuses de las animaciones. Úsalas para reforzar interactividad y claridad visual, no para distraer.</p>
+<h2 id="tecnicas-principales"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.3</span> Técnicas principales<a class="headerlink" href="#tecnicas-principales" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[CSS Layout y Responsive] --&gt; B[**Display**]
+    A --&gt; C[**Position**]
+    A --&gt; D[**Flexbox**]
+    A --&gt; E[**Grid**]
+    A --&gt; F[**Media Queries**]
+    B --&gt; G[block&lt;br&gt; inline&lt;br&gt; inline-block&lt;br&gt; none&lt;br&gt;]
+    C --&gt; H[static&lt;br&gt; relative&lt;br&gt; absolute&lt;br&gt; fixed&lt;br&gt; sticky&lt;br&gt;]
+    D --&gt; I["Layout unidimensional (fila o columna)"]
+    E --&gt; J["Layout bidimensional (filas y columnas)"]
+    F --&gt; K[Responsive design según tamaño de pantalla]</code></pre>
+<ol>
+<li>
+<p><strong>Display</strong><br/>
+Controla el comportamiento del elemento en el flujo del documento (block, inline, inline-block, none).</p>
+</li>
+<li>
+<p><strong>Position</strong><br/>
+Determina el tipo de posicionamiento del elemento (static, relative, absolute, fixed, sticky).</p>
+</li>
+<li>
+<p><strong>Flexbox</strong><br/>
+Sistema de layout unidimensional (fila <strong>O</strong> columna) para organizar elementos de forma flexible.</p>
+</li>
+<li>
+<p><strong>Grid</strong><br/>
+Sistema de layout bidimensional (filas <strong>Y</strong> columnas) para crear estructuras complejas.</p>
+</li>
+<li>
+<p><strong>Media Queries</strong><br/>
+Permite adaptar el diseño según el tamaño de la pantalla (responsive design).</p>
+</li>
+</ol>
+<p>https://tailwindcss.com/docs/display</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -726,7 +702,7 @@ No abuses de las animaciones. Úsalas para reforzar interactividad y claridad vi
 </main>
 <footer class="md-footer">
 <nav aria-label="Pie" class="md-footer__inner md-grid">
-<a aria-label="Anterior: CSS fundamentos" class="md-footer__link md-footer__link--prev" href="../04-css-fundamentos/">
+<a aria-label="Anterior: CSS box model" class="md-footer__link md-footer__link--prev" href="../05-css-boxmodel/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -735,17 +711,17 @@ No abuses de las animaciones. Úsalas para reforzar interactividad y claridad vi
                 Anterior
               </span>
 <div class="md-ellipsis">
-                CSS fundamentos
+                CSS box model
               </div>
 </div>
 </a>
-<a aria-label="Siguiente: Introducción al Layout" class="md-footer__link md-footer__link--next" href="../05-00-css-layout/">
+<a aria-label="Siguiente: Display" class="md-footer__link md-footer__link--next" href="../07-css-layout-display/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Siguiente
               </span>
 <div class="md-ellipsis">
-                Introducción al Layout
+                Display
               </div>
 </div>
 <div class="md-footer__button md-icon">

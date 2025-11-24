@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio evaluable Flexbox Web Personal</title>
+    <style>
+        /* NAV flex horizontal */
+        nav {
+            display: flex;
+            flex-direction: row;        /* horizontal */
+            justify-content: space-between;
+            align-items: center;
+            background: #e3f2fd;
+            padding: 12px 32px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #1976d2;
+            font-weight: bold;
+            padding: 9px 19px;
+            transition: background .2s;
+        }
+        nav a:hover {
+            background: #bbdefb;
+            border-radius: 4px;
+        }
+
+        /* Galería flexible con varias líneas */
+        .galeria-intereses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+        .item {
+            flex-basis: 110px;   /* tamaño base */
+            flex-grow: 1;        /* puede crecer igual que otras cajas */
+            background: #fcf3cf;
+            color: #6c4c12;
+            border: 2px solid #f7c948;
+            border-radius: 8px;
+            padding: 16px 12px;
+            margin: 0;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 1px 2px 6px #bfc9d9;
+            transition: all .3s;
+        }
+        /* Elemento destacado, ocupa más y va antes visualmente */
+        .item.destacado {
+            flex-grow: 3;
+            order: -1;
+            background: #aed9e0;
+        }
+        /* Elemento perfil alineado abajo */
+        .item.perfil {
+            align-self: flex-end;
+            background: #b6fcd5;
+        }
+        /* Elemento que no se encoge nunca */
+        .item.noshrink {
+            flex-shrink: 0;
+            background: #ffc6ff;
+        }
+
+        /* Responsive para pantallas pequeñas */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 5px;
+            }
+            .galeria-intereses {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <h2>Galería de intereses con Flexbox</h2>
+    <div class="galeria-intereses">
+        <div class="item destacado">Programación</div>
+        <div class="item">Música</div>
+        <div class="item perfil">Perfil</div>
+        <div class="item">Viajes</div>
+        <div class="item noshrink">Deportes</div>
+        <div class="item">Fotografía</div>
+    </div>
+
+    <section style="max-width:600px; margin:0 auto;">
+        <h3>Reflexión</h3>
+        <p>
+            Con Flexbox he organizado la barra de navegación y la galería de intereses de forma mucho más flexible y adaptable.
+            Cambiando <b>flex-direction</b>, <b>justify-content</b> y <b>flex-wrap</b> la disposición cambia automáticamente. <br>
+            He hecho que "Programación" ocupe más espacio (<b>flex-grow</b>), que "Perfil" se alinee abajo (<b>align-self</b>), y que "Deportes" nunca se encoge (<b>flex-shrink: 0</b>). En móvil, todo se adapta con <b>media queries</b>.
+        </p>
+    </section>
+</body>
+</html>

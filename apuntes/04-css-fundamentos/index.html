@@ -9,7 +9,7 @@
 <meta content="Profesor TIC 2º Bachillerato" name="author"/>
 <link href="https://citius70.github.io/2bac-html-css/apuntes/04-css-fundamentos/" rel="canonical"/>
 <link href="../03-html-avanzado/" rel="prev"/>
-<link href="../04-01-css-efectos/" rel="next"/>
+<link href="../05-css-boxmodel/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.22" name="generator"/>
 <title>CSS fundamentos - Curso HTML y CSS - 2º Bachillerato</title>
@@ -338,13 +338,6 @@
 <nav aria-label="Selectores CSS" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#selector-de-id">
-<span class="md-ellipsis">
-      Selector de ID
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#ejemplo-practico-completo">5.4.1 
 <span class="md-ellipsis">
       Ejemplo práctico completo
@@ -352,14 +345,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#combinadores">6.0.1 
+<a class="md-nav__link" href="#combinadores">5.4.2 
 <span class="md-ellipsis">
       Combinadores
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#pseudo-clases">6.0.2 
+<a class="md-nav__link" href="#pseudo-clases">5.4.3 
 <span class="md-ellipsis">
       Pseudo-clases
     </span>
@@ -368,80 +361,13 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#45-el-modelo-de-caja-box-model">6.1 
-<span class="md-ellipsis">
-      4.5. El modelo de caja (Box Model)
-    </span>
-</a>
-<nav aria-label="4.5. El modelo de caja (Box Model)" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-de-box-model">6.1.1 
-<span class="md-ellipsis">
-      Ejemplo de box model
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#el-problema-content-box-comportamiento-por-defecto">6.1.2 
-<span class="md-ellipsis">
-      El problema: content-box (comportamiento por defecto)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#la-solucion-border-box">6.1.3 
-<span class="md-ellipsis">
-      La solución: border-box
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-con-elementos-reales">6.1.4 
-<span class="md-ellipsis">
-      Ejemplo con elementos reales
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#consejo-esencial">6.1.5 
-<span class="md-ellipsis">
-      Consejo esencial
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#propiedades">6.1.6 
-<span class="md-ellipsis">
-      Propiedades
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#box-sizing">6.1.7 
-<span class="md-ellipsis">
-      Box-sizing
-    </span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#46-display-y-visibilidad">6.2 
+<a class="md-nav__link" href="../05-css-boxmodel/">
 <span class="md-ellipsis">
-      4.6. Display y visibilidad
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../04-01-css-efectos/">
-<span class="md-ellipsis">
-    CSS efectos
+    CSS box model
     
   </span>
 </a>
@@ -462,7 +388,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../05-00-css-layout/">
+<a class="md-nav__link" href="../06-css-layout/">
 <span class="md-ellipsis">
     Introducción al Layout
     
@@ -470,7 +396,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../05-01-css-layout-display/">
+<a class="md-nav__link" href="../07-css-layout-display/">
 <span class="md-ellipsis">
     Display
     
@@ -478,7 +404,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../05-02-css-layout-position/">
+<a class="md-nav__link" href="../08-css-layout-position/">
 <span class="md-ellipsis">
     Position
     
@@ -486,7 +412,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../05-03-css-layout-flexbox/">
+<a class="md-nav__link" href="../09-css-layout-flexbox/">
 <span class="md-ellipsis">
     Flexbox
     
@@ -508,6 +434,14 @@
 <a class="md-nav__link" href="../06-responsive/">
 <span class="md-ellipsis">
     Diseño adaptable
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../04-01-css-efectos.md">
+<span class="md-ellipsis">
+    CSS efectos
     
   </span>
 </a>
@@ -642,6 +576,38 @@
 <a class="md-nav__link" href="../../ejercicios-evaluables/4-css-fundamentos-evaluable/">
 <span class="md-ellipsis">
     4. CSS fundamentos (evaluable)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/5-css-boxmodel-ejercicios/">
+<span class="md-ellipsis">
+    5. CSS box model (evaluable)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/6-css-display-evaluable/">
+<span class="md-ellipsis">
+    6. CSS display (evaluable)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/7-css-position-evaluable/">
+<span class="md-ellipsis">
+    7. CSS position (evaluable)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ejercicios-evaluables/8-css-flexbox-evaluable/">
+<span class="md-ellipsis">
+    8. CSS flexbox (evaluable)
     
   </span>
 </a>
@@ -799,13 +765,6 @@
 <nav aria-label="Selectores CSS" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#selector-de-id">
-<span class="md-ellipsis">
-      Selector de ID
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#ejemplo-practico-completo">5.4.1 
 <span class="md-ellipsis">
       Ejemplo práctico completo
@@ -813,14 +772,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#combinadores">6.0.1 
+<a class="md-nav__link" href="#combinadores">5.4.2 
 <span class="md-ellipsis">
       Combinadores
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#pseudo-clases">6.0.2 
+<a class="md-nav__link" href="#pseudo-clases">5.4.3 
 <span class="md-ellipsis">
       Pseudo-clases
     </span>
@@ -828,73 +787,6 @@
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#45-el-modelo-de-caja-box-model">6.1 
-<span class="md-ellipsis">
-      4.5. El modelo de caja (Box Model)
-    </span>
-</a>
-<nav aria-label="4.5. El modelo de caja (Box Model)" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-de-box-model">6.1.1 
-<span class="md-ellipsis">
-      Ejemplo de box model
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#el-problema-content-box-comportamiento-por-defecto">6.1.2 
-<span class="md-ellipsis">
-      El problema: content-box (comportamiento por defecto)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#la-solucion-border-box">6.1.3 
-<span class="md-ellipsis">
-      La solución: border-box
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ejemplo-con-elementos-reales">6.1.4 
-<span class="md-ellipsis">
-      Ejemplo con elementos reales
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#consejo-esencial">6.1.5 
-<span class="md-ellipsis">
-      Consejo esencial
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#propiedades">6.1.6 
-<span class="md-ellipsis">
-      Propiedades
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#box-sizing">6.1.7 
-<span class="md-ellipsis">
-      Box-sizing
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#46-display-y-visibilidad">6.2 
-<span class="md-ellipsis">
-      4.6. Display y visibilidad
-    </span>
-</a>
 </li>
 </ul>
 </nav>
@@ -1062,7 +954,7 @@ Mientras HTML estructura el contenido, CSS decide cómo se ve ese contenido: col
 <p class="admonition-title">Selectores CSS</p>
 <p>Los selectores son patrones que le dicen a CSS qué elementos HTML deben recibir los estilos. Son la forma de "apuntar" a los elementos que quieres estilizar.</p>
 </div>
-<p><strong>1. Selector universal</strong></p>
+<p><strong>1. Selector universal (*)</strong></p>
 <p>Selecciona <strong>todos</strong> los elementos (párrafos, títulos,...) de la página. Se utiliza el asterico (<code>*</code>)</p>
 <div class="language-css highlight"><span class="filename">archivo.css</span><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="o">*</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-12-2"><a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
@@ -1105,7 +997,7 @@ Mientras HTML estructura el contenido, CSS decide cómo se ve ese contenido: col
 </div>
 </input></input></input></div>
 <p><strong>Cuándo usarlo:</strong> Para aplicar estilos generales a <strong>todos</strong> los elementos del mismo tipo (todos los párrafos, todos los h1, etc.).</p>
-<p><strong>3. Selector de clase</strong></p>
+<p><strong>3. Selector de clase (.class)</strong></p>
 <p>Las <strong>clases</strong> se utilizan para aplicar estilos a uno o varios elementos concretos de una página.<br/>
 En CSS, una clase se identifica escribiendo un <strong>punto (<code>.</code>)</strong> delante de su nombre.</p>
 <p>Por ejemplo, si queremos destacar algunos elementos del documento, podemos crear una clase llamada <code>.destacado</code>. Este nombre puede cambiarse por otro, pero debe coincidir con el valor del atributo <code>class</code> en el archivo HTML.</p>
@@ -1128,9 +1020,13 @@ En CSS, una clase se identifica escribiendo un <strong>punto (<code>.</code>)</s
 <div class="tabbed-block">
 <div class="language-html highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
 <span class="normal"><a href="#__codelineno-16-2">2</a></span>
-<span class="normal"><a href="#__codelineno-16-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado"</span><span class="p">&gt;</span>Este párrafo está etiquetado, entonces, irá en verde y negrita.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este NO está destacado.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado"</span><span class="p">&gt;</span>Este títlulo también está etiquetado, entonces, irá en verde y negrita.<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a>...
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado"</span><span class="p">&gt;</span>Este párrafo está etiquetado, entonces, irá en verde y negrita.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este NO está destacado.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado"</span><span class="p">&gt;</span>Este título también está etiquetado, entonces, irá en verde y negrita.<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5"></a>...
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
@@ -1145,67 +1041,87 @@ En CSS, una clase se identifica escribiendo un <strong>punto (<code>.</code>)</s
 - ✅ Funciona en cualquier tipo de elemento<br/>
 - ✅ Un elemento puede tener varias clases: <code>class="destacado importante"</code> </p>
 <p><strong>Cuándo usarlo:</strong> Cuando quieres aplicar los mismos estilos a varios elementos que pueden ser de dhtmliferentes tipos.</p>
-<h4 id="selector-de-id"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.4.0.1</span> Selector de ID<a class="headerlink" href="#selector-de-id" title="Permanent link">¶</a></h4>
-<p>Selecciona el elemento que tiene un atributo <code>id</code> específico. Se usa con almohadilla (<code>#</code>) delante del nombre.</p>
-<div class="language-css highlight"><span class="filename">archivo.css</span><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="p">#</span><span class="nn">principal</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-2"><a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-17-3"><a href="#__codelineno-17-3" id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
-</span><span id="__span-17-4"><a href="#__codelineno-17-4" id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-html highlight"><span class="filename">archivo.html</span><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"principal"</span><span class="p">&gt;</span>Este título será rojo y de 24px<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span><span id="__span-18-2"><a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"importante"</span><span class="p">&gt;</span>Este es otro título, pero no será rojo ni de 24px<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span></code></pre></div>
-<p><strong>Importante:</strong>
-- ⚠️ El ID debe ser <strong>único</strong> en toda la página (solo un elemento puede tener ese ID)
-- Los IDs tienen mayor especificidad que las clases</p>
-<p><strong>Cuándo usarlo:</strong>
-- Para elementos únicos en la página
-- Para crear anclas de navegación (<code>&lt;a href="#principal"&gt;</code>)
-- Con moderación: generalmente las clases son más flexibles</p>
-<hr/>
-<h3 id="ejemplo-practico-completo"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.4.1</span> Ejemplo práctico completo<a class="headerlink" href="#ejemplo-practico-completo" title="Permanent link">¶</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Código HTML y CSS</label><label for="__tabbed_4_2">Renderizado <em>(haz clic para expandir)</em></label></div>
+<p><strong>4. Selector de ID (<code>#id</code>)</strong></p>
+<p>Permite aplicar estilos a un <strong>único elemento</strong> identificado por su atributo <code>id</code>. Se usa anteponiendo una <strong>almohadilla (<code>#</code>)</strong> al nombre del identificador.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><input id="__tabbed_4_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Archivo .css</label><label for="__tabbed_4_2">Archivo .html</label><label for="__tabbed_4_3">Resultado</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-html highlight"><span class="filename">index.html</span><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"titulo-principal"</span><span class="p">&gt;</span>Mi Blog<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span><span id="__span-19-2"><a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Un párrafo normal.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span><span id="__span-19-3"><a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado"</span><span class="p">&gt;</span>Un párrafo destacado.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span><span id="__span-19-4"><a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado importante"</span><span class="p">&gt;</span>Otro párrafo con dos clases.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span>
+<span class="normal"><a href="#__codelineno-17-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="hll"><span class="p">#</span><span class="nn">principal</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="language-html highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"principal"</span><span class="p">&gt;</span>Este título será rojo y de 32px<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"importante"</span><span class="p">&gt;</span>Este es otro título, pero no será rojo ni de 32px<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><p style="color:red; font-size:32px">Este título será rojo y de 32px</p>
+<p style="font-size:24px">Este es otro título, pero no será rojo ni de 32px</p></p>
+</div>
+</div>
+</input></input></input></div>
+<div class="admonition note">
+<p class="admonition-title">Importante</p>
+<ul>
+<li>⚠️ El <code>id</code> debe ser <strong>único</strong> en todo el documento HTML.</li>
+<li>Tiene <strong>mayor prioridad</strong> que las clases al aplicar estilos.</li>
+</ul>
+</div>
+<p><strong>Usos recomendados</strong></p>
+<ul>
+<li>Para elementos <strong>únicos</strong> (por ejemplo, encabezado principal <code>&lt;HEADER&gt;</code> o pie de página <code>&lt;FOOTER&gt;</code>).</li>
+<li>Para <strong>anclas de navegación</strong> (<code>&lt;a href="#principal"&gt;</code>).</li>
+<li>Con <strong>moderación</strong>, ya que las clases son más reutilizables y escalables.</li>
+</ul>
+<h3 id="ejemplo-practico-completo"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.4.1</span> Ejemplo práctico completo<a class="headerlink" href="#ejemplo-practico-completo" title="Permanent link">¶</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">Archivo .css y .html</label><label for="__tabbed_5_2">Renderizado <em>(haz clic para expandir)</em></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-css highlight"><span class="filename">archivo.css</span><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="c">/* Todos los párrafos */</span>
+</span><span id="__span-19-2"><a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-3"><a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-19-4"><a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="p">}</span>
+</span><span id="__span-19-5"><a href="#__codelineno-19-5" id="__codelineno-19-5" name="__codelineno-19-5"></a>
+</span><span id="__span-19-6"><a href="#__codelineno-19-6" id="__codelineno-19-6" name="__codelineno-19-6"></a><span class="c">/* Solo el elemento con id="titulo-principal" */</span>
+</span><span id="__span-19-7"><a href="#__codelineno-19-7" id="__codelineno-19-7" name="__codelineno-19-7"></a><span class="p">#</span><span class="nn">titulo-principal</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-8"><a href="#__codelineno-19-8" id="__codelineno-19-8" name="__codelineno-19-8"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">navy</span><span class="p">;</span>
+</span><span id="__span-19-9"><a href="#__codelineno-19-9" id="__codelineno-19-9" name="__codelineno-19-9"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-19-10"><a href="#__codelineno-19-10" id="__codelineno-19-10" name="__codelineno-19-10"></a><span class="p">}</span>
+</span><span id="__span-19-11"><a href="#__codelineno-19-11" id="__codelineno-19-11" name="__codelineno-19-11"></a>
+</span><span id="__span-19-12"><a href="#__codelineno-19-12" id="__codelineno-19-12" name="__codelineno-19-12"></a><span class="c">/* Todos los elementos con class="destacado" */</span>
+</span><span id="__span-19-13"><a href="#__codelineno-19-13" id="__codelineno-19-13" name="__codelineno-19-13"></a><span class="p">.</span><span class="nc">destacado</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-14"><a href="#__codelineno-19-14" id="__codelineno-19-14" name="__codelineno-19-14"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+</span><span id="__span-19-15"><a href="#__codelineno-19-15" id="__codelineno-19-15" name="__codelineno-19-15"></a><span class="p">}</span>
+</span><span id="__span-19-16"><a href="#__codelineno-19-16" id="__codelineno-19-16" name="__codelineno-19-16"></a>
+</span><span id="__span-19-17"><a href="#__codelineno-19-17" id="__codelineno-19-17" name="__codelineno-19-17"></a><span class="c">/* Todos los elementos con class="importante" */</span>
+</span><span id="__span-19-18"><a href="#__codelineno-19-18" id="__codelineno-19-18" name="__codelineno-19-18"></a><span class="p">.</span><span class="nc">importante</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-19"><a href="#__codelineno-19-19" id="__codelineno-19-19" name="__codelineno-19-19"></a><span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
+</span><span id="__span-19-20"><a href="#__codelineno-19-20" id="__codelineno-19-20" name="__codelineno-19-20"></a><span class="w">    </span><span class="k">border-left</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+</span><span id="__span-19-21"><a href="#__codelineno-19-21" id="__codelineno-19-21" name="__codelineno-19-21"></a><span class="p">}</span>
 </span></code></pre></div>
-<div class="language-css highlight"><span class="filename">mi_estilo.css</span><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="c">/* Todos los párrafos */</span>
-</span><span id="__span-20-2"><a href="#__codelineno-20-2" id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-20-3"><a href="#__codelineno-20-3" id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="w">    </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6</span><span class="p">;</span>
-</span><span id="__span-20-4"><a href="#__codelineno-20-4" id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="p">}</span>
-</span><span id="__span-20-5"><a href="#__codelineno-20-5" id="__codelineno-20-5" name="__codelineno-20-5"></a>
-</span><span id="__span-20-6"><a href="#__codelineno-20-6" id="__codelineno-20-6" name="__codelineno-20-6"></a><span class="c">/* Solo el elemento con id="titulo-principal" */</span>
-</span><span id="__span-20-7"><a href="#__codelineno-20-7" id="__codelineno-20-7" name="__codelineno-20-7"></a><span class="p">#</span><span class="nn">titulo-principal</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-20-8"><a href="#__codelineno-20-8" id="__codelineno-20-8" name="__codelineno-20-8"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">navy</span><span class="p">;</span>
-</span><span id="__span-20-9"><a href="#__codelineno-20-9" id="__codelineno-20-9" name="__codelineno-20-9"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-20-10"><a href="#__codelineno-20-10" id="__codelineno-20-10" name="__codelineno-20-10"></a><span class="p">}</span>
-</span><span id="__span-20-11"><a href="#__codelineno-20-11" id="__codelineno-20-11" name="__codelineno-20-11"></a>
-</span><span id="__span-20-12"><a href="#__codelineno-20-12" id="__codelineno-20-12" name="__codelineno-20-12"></a><span class="c">/* Todos los elementos con class="destacado" */</span>
-</span><span id="__span-20-13"><a href="#__codelineno-20-13" id="__codelineno-20-13" name="__codelineno-20-13"></a><span class="p">.</span><span class="nc">destacado</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-20-14"><a href="#__codelineno-20-14" id="__codelineno-20-14" name="__codelineno-20-14"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
-</span><span id="__span-20-15"><a href="#__codelineno-20-15" id="__codelineno-20-15" name="__codelineno-20-15"></a><span class="p">}</span>
-</span><span id="__span-20-16"><a href="#__codelineno-20-16" id="__codelineno-20-16" name="__codelineno-20-16"></a>
-</span><span id="__span-20-17"><a href="#__codelineno-20-17" id="__codelineno-20-17" name="__codelineno-20-17"></a><span class="c">/* Todos los elementos con class="importante" */</span>
-</span><span id="__span-20-18"><a href="#__codelineno-20-18" id="__codelineno-20-18" name="__codelineno-20-18"></a><span class="p">.</span><span class="nc">importante</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-20-19"><a href="#__codelineno-20-19" id="__codelineno-20-19" name="__codelineno-20-19"></a><span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
-</span><span id="__span-20-20"><a href="#__codelineno-20-20" id="__codelineno-20-20" name="__codelineno-20-20"></a><span class="w">    </span><span class="k">border-left</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
-</span><span id="__span-20-21"><a href="#__codelineno-20-21" id="__codelineno-20-21" name="__codelineno-20-21"></a><span class="p">}</span>
+<div class="language-html highlight"><span class="filename">archivo.html</span><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="p">&lt;</span><span class="nt">header</span> <span class="na">id</span><span class="o">=</span><span class="s">"titulo-principal"</span><span class="p">&gt;</span>Mi Blog<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-20-2"><a href="#__codelineno-20-2" id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Un párrafo normal.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-20-3"><a href="#__codelineno-20-3" id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado"</span><span class="p">&gt;</span>Un párrafo destacado con fondo amarillo.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-20-4"><a href="#__codelineno-20-4" id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"destacado importante"</span><span class="p">&gt;</span>Otro párrafo con dos clases.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <p><div>
-<h1 style="color: navy; font-size: 32px;"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.</span> Mi Blog</h1>
-<p style="line-height: 1.6;">Un párrafo normal.</p>
-<p style="line-height: 1.6; background-color: yellow;">Un párrafo destacado.</p>
-<p style="line-height: 1.6; background-color: yellow; font-weight: bold; border-left: 4px solid red;">Otro párrafo con dos clases.</p>
+<p style="color: navy; font-size: 32px;">Mi Blog</p>
+<p style="font-size:18px;">Un párrafo de 18px.</p>
+<p style="background-color: yellow;">Un párrafo destacado con fondo amarillo.</p>
+<p style="background-color: yellow; font-weight: bold; border-left: 4px solid red;">Otro párrafo con dos clases.</p>
 </div></p>
 </div>
 </div>
 </input></input></div>
-<hr/>
 <div class="admonition tip">
 <p class="admonition-title">Buena práctica</p>
 <ul>
@@ -1215,251 +1131,198 @@ En CSS, una clase se identifica escribiendo un <strong>punto (<code>.</code>)</s
 <li>Los nombres de clases e IDs deben ser descriptivos: <code>.boton-principal</code> mejor que <code>.azul</code></li>
 </ul>
 </div>
-<hr/>
-<h3 id="combinadores"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.0.1</span> Combinadores<a class="headerlink" href="#combinadores" title="Permanent link">¶</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a>/* Descendiente (cualquier nivel) */
-</span><span id="__span-21-2"><a href="#__codelineno-21-2" id="__codelineno-21-2" name="__codelineno-21-2"></a>article p {
-</span><span id="__span-21-3"><a href="#__codelineno-21-3" id="__codelineno-21-3" name="__codelineno-21-3"></a>    line-height: 1.6;
-</span><span id="__span-21-4"><a href="#__codelineno-21-4" id="__codelineno-21-4" name="__codelineno-21-4"></a>}
-</span><span id="__span-21-5"><a href="#__codelineno-21-5" id="__codelineno-21-5" name="__codelineno-21-5"></a>
-</span><span id="__span-21-6"><a href="#__codelineno-21-6" id="__codelineno-21-6" name="__codelineno-21-6"></a>/* Hijo directo */
-</span><span id="__span-21-7"><a href="#__codelineno-21-7" id="__codelineno-21-7" name="__codelineno-21-7"></a>nav &gt; ul {
-</span><span id="__span-21-8"><a href="#__codelineno-21-8" id="__codelineno-21-8" name="__codelineno-21-8"></a>    list-style: none;
-</span><span id="__span-21-9"><a href="#__codelineno-21-9" id="__codelineno-21-9" name="__codelineno-21-9"></a>}
-</span><span id="__span-21-10"><a href="#__codelineno-21-10" id="__codelineno-21-10" name="__codelineno-21-10"></a>
-</span><span id="__span-21-11"><a href="#__codelineno-21-11" id="__codelineno-21-11" name="__codelineno-21-11"></a>/* Hermano siguiente */
-</span><span id="__span-21-12"><a href="#__codelineno-21-12" id="__codelineno-21-12" name="__codelineno-21-12"></a>h2 + p {
-</span><span id="__span-21-13"><a href="#__codelineno-21-13" id="__codelineno-21-13" name="__codelineno-21-13"></a>    font-size: 18px;
-</span><span id="__span-21-14"><a href="#__codelineno-21-14" id="__codelineno-21-14" name="__codelineno-21-14"></a>}
+<h3 id="combinadores"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.4.2</span> Combinadores<a class="headerlink" href="#combinadores" title="Permanent link">¶</a></h3>
+<p>Los <strong>combinadores</strong> en CSS permiten seleccionar elementos en función de su relación estructural dentro del HTML. Son esenciales <strong>para aplicar estilos precisos</strong> sin necesidad de añadir más clases o IDs.</p>
+<p>Vemos algún ejemplo típico:</p>
+<p><strong>1. Descendiente</strong> </p>
+<p>Este selector usa el <strong>combinador de hijo directo (espacio)</strong>, que selecciona  los elementos que son hijos de otro elemento sin importar el subnivel (selecciona hijos, nietos y más profundo).</p>
+<p>Ese selector es uno de los más comunes en CSS.</p>
+<table>
+<thead>
+<tr>
+<th>Combinador</th>
+<th>Sintaxis</th>
+<th>Descripción</th>
+<th>Ejemplo 1</th>
+<th>Ejemplo 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descendiente</strong></td>
+<td><code>A B</code></td>
+<td>Selecciona todos los elementos <code>B</code> que estén dentro de <code>A</code>, sin importar el nivel.</td>
+<td><code>div p</code> <br/> <em>(todos los <code>&lt;p&gt;</code> dentro de un <code>&lt;div&gt;</code>)</em></td>
+<td><code>article p</code> <br/> <em>(todos los <code>&lt;p&gt;</code> dentro de un <code>&lt;article&gt;</code>)</em></td>
+</tr>
+</tbody>
+</table>
+<p>📘 Sintaxis de ejemplo:
+<div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="hll"><span class="nt">article</span><span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="w">    </span><span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">italic</span><span class="p">;</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div></p>
+<p>Ejemplo:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-22-1"><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-22-2"><a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este párrafo se verá en itálica (o currsiva).<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-22-3"><a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-22-4"><a href="#__codelineno-22-4" id="__codelineno-22-4" name="__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a href="#__codelineno-22-5" id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este párrafo está fuera del article, no se ve afectado.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<h3 id="pseudo-clases"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.0.2</span> Pseudo-clases<a class="headerlink" href="#pseudo-clases" title="Permanent link">¶</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a>/* Al pasar el ratón */
-</span><span id="__span-22-2"><a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a>a:hover {
-</span><span id="__span-22-3"><a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a>    color: red;
-</span><span id="__span-22-4"><a href="#__codelineno-22-4" id="__codelineno-22-4" name="__codelineno-22-4"></a>}
-</span><span id="__span-22-5"><a href="#__codelineno-22-5" id="__codelineno-22-5" name="__codelineno-22-5"></a>
-</span><span id="__span-22-6"><a href="#__codelineno-22-6" id="__codelineno-22-6" name="__codelineno-22-6"></a>/* Primer hijo */
-</span><span id="__span-22-7"><a href="#__codelineno-22-7" id="__codelineno-22-7" name="__codelineno-22-7"></a>li:first-child {
-</span><span id="__span-22-8"><a href="#__codelineno-22-8" id="__codelineno-22-8" name="__codelineno-22-8"></a>    font-weight: bold;
-</span><span id="__span-22-9"><a href="#__codelineno-22-9" id="__codelineno-22-9" name="__codelineno-22-9"></a>}
-</span><span id="__span-22-10"><a href="#__codelineno-22-10" id="__codelineno-22-10" name="__codelineno-22-10"></a>
-</span><span id="__span-22-11"><a href="#__codelineno-22-11" id="__codelineno-22-11" name="__codelineno-22-11"></a>/* Elementos impares */
-</span><span id="__span-22-12"><a href="#__codelineno-22-12" id="__codelineno-22-12" name="__codelineno-22-12"></a>tr:nth-child(odd) {
-</span><span id="__span-22-13"><a href="#__codelineno-22-13" id="__codelineno-22-13" name="__codelineno-22-13"></a>    background: #f5f5f5;
-</span><span id="__span-22-14"><a href="#__codelineno-22-14" id="__codelineno-22-14" name="__codelineno-22-14"></a>}
-</span></code></pre></div>
-<h2 id="45-el-modelo-de-caja-box-model"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1</span> 4.5. El modelo de caja (Box Model)<a class="headerlink" href="#45-el-modelo-de-caja-box-model" title="Permanent link">¶</a></h2>
-<p><strong>Todos los elementos HTML</strong> son tratados por el navegador como contenido dentro de dos cajas rectangulares. Todo elemento (<code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;img&gt;</code>, etc.) tiene esta estructura de cajas, llamado <strong>box model</strong> (o modelo de cajas).</p>
-<p>Imagina que tienes unos <em>zapatos</em> (tu contenido: texto, imagen, botón) que vas a enviar por correo. Para protegerlos, los metes en dos cajas de protección:</p>
-<p><img alt="boxmodel" src="../../img/box_model_1.png"/> </p>
+<p>💡 Claves:</p>
 <ul>
-<li>
-<p><strong>Elemento:</strong> Son tus <em>zapatos</em>. En HTML puede ser texto, una imagen, un botón,... cualquier contenido HTML.</p>
-</li>
-<li>
-<p><strong>Content:</strong> Son las <em>dimensiones de la caja interior</em> para tus zapatos. En el dibujo superior es el rectángulo naranja.</p>
+<li>El espacio entre <code>article</code> y <code>p</code> indica la relación <em>“en cualquier nivel dentro de”</em>.</li>
+<li>Es útil para aplicar estilos globales dentro de una sección sin tener que añadir clases adicionales.</li>
+<li>Evita abusar de combinaciones muy profundas (<code>article section div p</code>) porque <strong>ralentizan el renderizado</strong> y complican el mantenimiento.</li>
+</ul>
+<p><strong>2. Hijo directo</strong></p>
+<p>Este selector usa el <strong>combinador de hijo directo</strong> (<code>&gt;</code>), que selecciona <strong>únicamente</strong> los elementos que son <strong>hijos inmediatos</strong> de otro elemento (no nietos ni más profundos).</p>
+<table>
+<thead>
+<tr>
+<th>Combinador</th>
+<th>Sintaxis</th>
+<th>Descripción</th>
+<th>Ejemplo 1</th>
+<th>Ejemplo 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hijo directo</strong></td>
+<td><code>A &gt; B</code></td>
+<td>Selecciona los elementos <code>B</code> que son <strong>hijos inmediatos</strong> de <code>A</code>.</td>
+<td><code>div &gt; p</code> <br/> <em>(solo los <code>&lt;p&gt;</code> directamente dentro de un <code>&lt;div&gt;</code>)</em></td>
+<td><code>section &gt; h2</code> <br/> <em>(solo los <code>&lt;h2&gt;</code> directamente dentro de un <code>&lt;section&gt;</code>)</em></td>
+</tr>
+</tbody>
+</table>
+<p>📘 Sintaxis de ejemplo:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="hll"><span class="nt">section</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">h2</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Ejemplo:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-24-1"><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-24-2"><a href="#__codelineno-24-2" id="__codelineno-24-2" name="__codelineno-24-2"></a>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Este título es hijo directo del div (azul).<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-24-3"><a href="#__codelineno-24-3" id="__codelineno-24-3" name="__codelineno-24-3"></a>    <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-24-4"><a href="#__codelineno-24-4" id="__codelineno-24-4" name="__codelineno-24-4"></a>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este título está dentro de un article, no directamente de section, no se ve afectado.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-24-5"><a href="#__codelineno-24-5" id="__codelineno-24-5" name="__codelineno-24-5"></a>    <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-24-6"><a href="#__codelineno-24-6" id="__codelineno-24-6" name="__codelineno-24-6"></a><span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>💡 Claves:</p>
 <ul>
-<li>Se dimensiona con: <code>width</code>y <code>height</code>. Por ejemplo: <code>width= 100px</code> <code>height= 30px</code>.  </li>
+<li>El símbolo <code>&gt;</code> indica que la relación debe ser <strong>directa</strong>: el elemento <code>B</code> debe estar justo dentro de <code>A</code>.</li>
+<li>Es útil cuando quieres aplicar estilos <strong>solo al primer nivel</strong> dentro de un contenedor.</li>
+<li>Si usas <code>A B</code>, se aplicará también a nietos y descendientes más profundos; si usas <code>A &gt; B</code>, solo a los hijos inmediatos.</li>
 </ul>
-</li>
-<li>
-<p><strong>Padding:</strong> Es el <em>espacio entre dos cajas interiores</em> que rodea el elemento. Crea "aire" entre las dos cajas de protección. En el dibujo superior es el espacio azul.</p>
+<p>Perfecto 👌 Aquí tienes la explicación del <strong>combinador de hermano siguiente</strong> (<code>+</code>) siguiendo exactamente el mismo formato:</p>
+<p><strong>3. Hermano siguiente</strong></p>
+<p>Este selector usa el <strong>combinador de hermano siguiente</strong> (<code>+</code>), que selecciona un elemento que está <strong>justo después</strong> de otro en el mismo nivel (es decir, comparten el mismo padre).</p>
+<table>
+<thead>
+<tr>
+<th>Combinador</th>
+<th>Sintaxis</th>
+<th>Descripción</th>
+<th>Ejemplo 1</th>
+<th>Ejemplo 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hermano siguiente</strong></td>
+<td><code>A + B</code></td>
+<td>Selecciona el elemento <code>B</code> que aparece <strong>inmediatamente después</strong> de <code>A</code>, compartiendo el mismo elemento padre.</td>
+<td><code>h2 + p</code> <br/> <em>(el primer <code>&lt;p&gt;</code> justo después de un <code>&lt;h2&gt;</code>)</em></td>
+<td><code>label + input</code> <br/> <em>(el <code>&lt;input&gt;</code> que sigue justo a un <code>&lt;label&gt;</code>)</em></td>
+</tr>
+</tbody>
+</table>
+<p>Sintaxis de ejemplo:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="hll"><span class="nt">h2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>📘 Ejemplo:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-26-1"><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Título<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-26-2"><a href="#__codelineno-26-2" id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este párrafo se pondrá verde (va justo después del h2).<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-26-3"><a href="#__codelineno-26-3" id="__codelineno-26-3" name="__codelineno-26-3"></a>
+</span><span id="__span-26-4"><a href="#__codelineno-26-4" id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este párrafo no se verá afectado.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>💡 Claves:</p>
 <ul>
-<li>Se pueden dimensionar los cuatro espacios <code>padding</code>: <code>padding-top</code>, <code>padding-bottom</code>, <code>padding-left</code> y<code>padding-right</code>.</li>
+<li>El combinador <code>+</code> <strong>solo afecta al primer elemento inmediatamente siguiente</strong> que cumpla la condición.</li>
+<li>Ambos elementos deben tener <strong>el mismo padre</strong> en el árbol del documento.</li>
+<li>Es útil para aplicar estilos a elementos que siempre van <strong>pegados a otro tipo de elemento</strong>, como un párrafo después de un título o un campo de entrada tras una etiqueta.</li>
 </ul>
-</li>
-<li>
-<p><strong>Border:</strong> Es el <em>borde de la caja exterior</em>. El borde visible del elemento (puede ser invisible si no lo defines). </p>
+<p>Perfecto 😄 Aquí tienes la explicación del <strong>combinador de hermano general</strong> (<code>~</code>) siguiendo el mismo formato que los anteriores:</p>
+<hr/>
+<p><strong>4. Hermano general</strong></p>
+<p>Este selector usa el <strong>combinador de hermano general</strong> (<code>~</code>), que selecciona <strong>todos los elementos que están después</strong> de otro en el mismo nivel (es decir, que comparten el mismo padre), <strong>no solo el primero</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Combinador</th>
+<th>Sintaxis</th>
+<th>Descripción</th>
+<th>Ejemplo 1</th>
+<th>Ejemplo 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hermano general</strong></td>
+<td><code>A ~ B</code></td>
+<td>Selecciona <strong>todos los elementos <code>B</code></strong> que aparecen después de <code>A</code> en el mismo nivel jerárquico (hermanos).</td>
+<td><code>h2 ~ p</code> <br/> <em>(todos los <code>&lt;p&gt;</code> que siguen a un <code>&lt;h2&gt;</code>)</em></td>
+<td><code>input ~ label</code> <br/> <em>(todas las etiquetas <code>&lt;label&gt;</code> que vienen después de un <code>&lt;input&gt;</code>)</em></td>
+</tr>
+</tbody>
+</table>
+<p>Sintaxis de ejemplo:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="hll"><span class="nt">h2</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">orange</span><span class="p">;</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>📘 Ejemplo:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-28-1"><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Título principal<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-28-2"><a href="#__codelineno-28-2" id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este párrafo será naranja.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-28-3"><a href="#__codelineno-28-3" id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este también, porque está después del h2.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-28-4"><a href="#__codelineno-28-4" id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-28-5"><a href="#__codelineno-28-5" id="__codelineno-28-5" name="__codelineno-28-5"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este no, porque está dentro de otro contenedor.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-28-6"><a href="#__codelineno-28-6" id="__codelineno-28-6" name="__codelineno-28-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>💡 Claves:</p>
 <ul>
-<li>Se pueden definir los cuatros bordes.</li>
+<li>El combinador <code>~</code> aplica el estilo a <strong>todos los elementos hermanos posteriores</strong>, no solo al primero como ocurre con <code>+</code>.</li>
+<li>Los elementos deben tener <strong>el mismo padre</strong>, pero pueden estar separados por otros elementos.</li>
+<li>Es útil cuando quieres afectar a <strong>varios elementos relacionados que vienen después de otro específico</strong>, como todos los párrafos tras un título o varias alertas consecutivas tras un aviso.</li>
 </ul>
-</li>
-<li>
-<p><strong>Margin:</strong> Espacio que separa la caja exterior de otras cajas de otros elementos distintos. En el dibujo superior es es espacio verde.</p>
-</li>
-</ul>
-<p><strong>Todos los párrafos, divs, títulos, etc. siguen este mismo sistema de capas.</strong></p>
-<p><img alt="boxmodel2" src="../../img/boxmodel2.png"/></p>
-<h3 id="ejemplo-de-box-model"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.1</span> Ejemplo de box model<a class="headerlink" href="#ejemplo-de-box-model" title="Permanent link">¶</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">Código</label><label for="__tabbed_5_2">Renderizado <em>(clic para expandir)</em></label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-html highlight"><span class="filename">archivo.html</span><pre><span></span><code><span id="__span-23-1"><a href="#__codelineno-23-1" id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">tarjeta</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae interdum felis. Morbi varius lobortis mi sed aliquam. Donec finibus sapien sem, a scelerisque elit lacinia at.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<h3 id="pseudo-clases"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.4.3</span> Pseudo-clases<a class="headerlink" href="#pseudo-clases" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a href="#__codelineno-29-1" id="__codelineno-29-1" name="__codelineno-29-1"></a>/* Al pasar el ratón */
+</span><span id="__span-29-2"><a href="#__codelineno-29-2" id="__codelineno-29-2" name="__codelineno-29-2"></a>a:hover {
+</span><span id="__span-29-3"><a href="#__codelineno-29-3" id="__codelineno-29-3" name="__codelineno-29-3"></a>    color: red;
+</span><span id="__span-29-4"><a href="#__codelineno-29-4" id="__codelineno-29-4" name="__codelineno-29-4"></a>}
+</span><span id="__span-29-5"><a href="#__codelineno-29-5" id="__codelineno-29-5" name="__codelineno-29-5"></a>
+</span><span id="__span-29-6"><a href="#__codelineno-29-6" id="__codelineno-29-6" name="__codelineno-29-6"></a>/* Primer hijo */
+</span><span id="__span-29-7"><a href="#__codelineno-29-7" id="__codelineno-29-7" name="__codelineno-29-7"></a>li:first-child {
+</span><span id="__span-29-8"><a href="#__codelineno-29-8" id="__codelineno-29-8" name="__codelineno-29-8"></a>    font-weight: bold;
+</span><span id="__span-29-9"><a href="#__codelineno-29-9" id="__codelineno-29-9" name="__codelineno-29-9"></a>}
+</span><span id="__span-29-10"><a href="#__codelineno-29-10" id="__codelineno-29-10" name="__codelineno-29-10"></a>
+</span><span id="__span-29-11"><a href="#__codelineno-29-11" id="__codelineno-29-11" name="__codelineno-29-11"></a>/* Elementos impares */
+</span><span id="__span-29-12"><a href="#__codelineno-29-12" id="__codelineno-29-12" name="__codelineno-29-12"></a>tr:nth-child(odd) {
+</span><span id="__span-29-13"><a href="#__codelineno-29-13" id="__codelineno-29-13" name="__codelineno-29-13"></a>    background: #f5f5f5;
+</span><span id="__span-29-14"><a href="#__codelineno-29-14" id="__codelineno-29-14" name="__codelineno-29-14"></a>}
 </span></code></pre></div>
-<div class="language-css highlight"><span class="filename">archivo.css</span><pre><span></span><code><span id="__span-24-1"><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="p">.</span><span class="nc">tarjeta</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-24-2"><a href="#__codelineno-24-2" id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="w">    </span><span class="c">/* El espacio para el elemento (zapatos) mide 300px  y tendrá un color rosa*/</span>
-</span><span id="__span-24-3"><a href="#__codelineno-24-3" id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="w">  </span>
-</span><span id="__span-24-4"><a href="#__codelineno-24-4" id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">pink</span><span class="p">;</span><span class="w">         </span>
-</span><span id="__span-24-5"><a href="#__codelineno-24-5" id="__codelineno-24-5" name="__codelineno-24-5"></a>
-</span><span id="__span-24-6"><a href="#__codelineno-24-6" id="__codelineno-24-6" name="__codelineno-24-6"></a><span class="w">    </span><span class="c">/* 20px de espacio interior (burbujas) menos el inferior de 60px */</span>
-</span><span id="__span-24-7"><a href="#__codelineno-24-7" id="__codelineno-24-7" name="__codelineno-24-7"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-24-8"><a href="#__codelineno-24-8" id="__codelineno-24-8" name="__codelineno-24-8"></a><span class="w">    </span><span class="k">padding-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">px</span><span class="p">;</span><span class="w">          </span>
-</span><span id="__span-24-9"><a href="#__codelineno-24-9" id="__codelineno-24-9" name="__codelineno-24-9"></a>
-</span><span id="__span-24-10"><a href="#__codelineno-24-10" id="__codelineno-24-10" name="__codelineno-24-10"></a><span class="w">    </span><span class="c">/* Borde azul de 2px y de 4px a puntos el borde inferior (caja de cartón) */</span>
-</span><span id="__span-24-11"><a href="#__codelineno-24-11" id="__codelineno-24-11" name="__codelineno-24-11"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"> </span>
-</span><span id="__span-24-12"><a href="#__codelineno-24-12" id="__codelineno-24-12" name="__codelineno-24-12"></a><span class="w">    </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="kc">dotted</span><span class="p">;</span>
-</span><span id="__span-24-13"><a href="#__codelineno-24-13" id="__codelineno-24-13" name="__codelineno-24-13"></a>
-</span><span id="__span-24-14"><a href="#__codelineno-24-14" id="__codelineno-24-14" name="__codelineno-24-14"></a><span class="w">    </span><span class="c">/* 30px de espacio izquierdo exterior (aire) */</span>
-</span><span id="__span-24-15"><a href="#__codelineno-24-15" id="__codelineno-24-15" name="__codelineno-24-15"></a><span class="w">    </span><span class="k">margin-left</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="w">        </span>
-</span><span id="__span-24-16"><a href="#__codelineno-24-16" id="__codelineno-24-16" name="__codelineno-24-16"></a><span class="w">    </span><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<p><div>
-<p style="width: 300px; background-color: pink; padding: 20px; padding-bottom: 60px; border: 2px solid blue; border-bottom: 4px dotted; margin-left: 30px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae interdum felis. Morbi varius lobortis mi sed aliquam. Donec finibus sapien sem, a scelerisque elit lacinia at.</p>
-</div></p>
-</div>
-</div>
-</input></input></div>
-<h3 id="el-problema-content-box-comportamiento-por-defecto"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.2</span> El problema: content-box (comportamiento por defecto)<a class="headerlink" href="#el-problema-content-box-comportamiento-por-defecto" title="Permanent link">¶</a></h3>
-<p>Por defecto, cuando dices <code>width: 300px</code>, solo estás midiendo el contenido (los zapatos):</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-25-1"><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="p">.</span><span class="nc">caja</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-25-2"><a href="#__codelineno-25-2" id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="w">         </span><span class="c">/* Solo los zapatos */</span>
-</span><span id="__span-25-3"><a href="#__codelineno-25-3" id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w">        </span><span class="c">/* + burbujas (40px total) */</span>
-</span><span id="__span-25-4"><a href="#__codelineno-25-4" id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span><span class="w">    </span><span class="c">/* + caja (10px total) */</span>
-</span><span id="__span-25-5"><a href="#__codelineno-25-5" id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>Tamaño total real:</strong> 300px + 40px + 10px = <strong>350px</strong> 😞mundo</p>
-<p>El elemento ocupa más espacio de lo que esperabas porque las burbujas y la caja también cuentan.</p>
-<hr/>
-<h3 id="la-solucion-border-box"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.3</span> La solución: border-box<a class="headerlink" href="#la-solucion-border-box" title="Permanent link">¶</a></h3>
-<p>Con <code>box-sizing: border-box</code>, el <code>width</code> incluye todo el paquete (zapatos + burbujas + caja):</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-26-1"><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="o">*</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-26-2"><a href="#__codelineno-26-2" id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="w">    </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span>
-</span><span id="__span-26-3"><a href="#__codelineno-26-3" id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="p">}</span>
-</span><span id="__span-26-4"><a href="#__codelineno-26-4" id="__codelineno-26-4" name="__codelineno-26-4"></a>
-</span><span id="__span-26-5"><a href="#__codelineno-26-5" id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="p">.</span><span class="nc">caja</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-26-6"><a href="#__codelineno-26-6" id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="w">         </span><span class="c">/* Todo el paquete */</span>
-</span><span id="__span-26-7"><a href="#__codelineno-26-7" id="__codelineno-26-7" name="__codelineno-26-7"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-26-8"><a href="#__codelineno-26-8" id="__codelineno-26-8" name="__codelineno-26-8"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span>
-</span><span id="__span-26-9"><a href="#__codelineno-26-9" id="__codelineno-26-9" name="__codelineno-26-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>Tamaño total real:</strong> <strong>300px exactos</strong> ✅</p>
-<p>Los zapatos se ajustan automáticamente para que todo quepa en 300px.</p>
-<hr/>
-<h3 id="ejemplo-con-elementos-reales"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.4</span> Ejemplo con elementos reales<a class="headerlink" href="#ejemplo-con-elementos-reales" title="Permanent link">¶</a></h3>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-27-1"><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="c">/* Todos los elementos HTML usan el mismo modelo */</span>
-</span><span id="__span-27-2"><a href="#__codelineno-27-2" id="__codelineno-27-2" name="__codelineno-27-2"></a>
-</span><span id="__span-27-3"><a href="#__codelineno-27-3" id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-27-4"><a href="#__codelineno-27-4" id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="w">    </span><span class="c">/* Espacio alrededor del texto */</span>
-</span><span id="__span-27-5"><a href="#__codelineno-27-5" id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">gray</span><span class="p">;</span>
-</span><span id="__span-27-6"><a href="#__codelineno-27-6" id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">   </span><span class="c">/* Espacio entre párrafos */</span>
-</span><span id="__span-27-7"><a href="#__codelineno-27-7" id="__codelineno-27-7" name="__codelineno-27-7"></a><span class="p">}</span>
-</span><span id="__span-27-8"><a href="#__codelineno-27-8" id="__codelineno-27-8" name="__codelineno-27-8"></a>
-</span><span id="__span-27-9"><a href="#__codelineno-27-9" id="__codelineno-27-9" name="__codelineno-27-9"></a><span class="p">.</span><span class="nc">boton</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-27-10"><a href="#__codelineno-27-10" id="__codelineno-27-10" name="__codelineno-27-10"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="w">   </span><span class="c">/* Espacio dentro del botón */</span>
-</span><span id="__span-27-11"><a href="#__codelineno-27-11" id="__codelineno-27-11" name="__codelineno-27-11"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
-</span><span id="__span-27-12"><a href="#__codelineno-27-12" id="__codelineno-27-12" name="__codelineno-27-12"></a><span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="w">         </span><span class="c">/* Espacio alrededor del botón */</span>
-</span><span id="__span-27-13"><a href="#__codelineno-27-13" id="__codelineno-27-13" name="__codelineno-27-13"></a><span class="p">}</span>
-</span><span id="__span-27-14"><a href="#__codelineno-27-14" id="__codelineno-27-14" name="__codelineno-27-14"></a>
-</span><span id="__span-27-15"><a href="#__codelineno-27-15" id="__codelineno-27-15" name="__codelineno-27-15"></a><span class="nt">img</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-27-16"><a href="#__codelineno-27-16" id="__codelineno-27-16" name="__codelineno-27-16"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span>
-</span><span id="__span-27-17"><a href="#__codelineno-27-17" id="__codelineno-27-17" name="__codelineno-27-17"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="w">         </span><span class="c">/* Marco blanco alrededor de la imagen */</span>
-</span><span id="__span-27-18"><a href="#__codelineno-27-18" id="__codelineno-27-18" name="__codelineno-27-18"></a><span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-27-19"><a href="#__codelineno-27-19" id="__codelineno-27-19" name="__codelineno-27-19"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>Todos estos elementos</strong> (<code>&lt;p&gt;</code>, <code>.boton</code>, <code>&lt;img&gt;</code>) siguen el mismo Box Model.</p>
-<hr/>
-<h3 id="consejo-esencial"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.5</span> Consejo esencial<a class="headerlink" href="#consejo-esencial" title="Permanent link">¶</a></h3>
-<p>Usa esto <strong>siempre</strong> al inicio de tu CSS:</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-28-1"><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="o">*</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-28-2"><a href="#__codelineno-28-2" id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-28-3"><a href="#__codelineno-28-3" id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-28-4"><a href="#__codelineno-28-4" id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="w">    </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span>
-</span><span id="__span-28-5"><a href="#__codelineno-28-5" id="__codelineno-28-5" name="__codelineno-28-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Esto aplica <code>border-box</code> a <strong>todos los elementos HTML</strong> de tu página, facilitando los cálculos.</p>
-<hr/>
-<p><strong>Resumen:</strong>
-- <strong>Todos los elementos HTML</strong> (<code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;button&gt;</code>, etc.) son cajas con 4 capas
-- <strong>Content:</strong> el elemento en sí (zapatos)
-- <strong>Padding:</strong> espacio interior (burbujas)
-- <strong>Border:</strong> borde (caja de cartón)
-- <strong>Margin:</strong> espacio exterior (aire entre elementos)
-- <strong><code>border-box</code>:</strong> hace que el <code>width</code> incluya todo el paquete</p>
-<hr/>
-<p>¿Así está perfecto? Deja claro que TODOS los elementos HTML funcionan así.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a href="#__codelineno-29-1" id="__codelineno-29-1" name="__codelineno-29-1"></a>┌─────────────────────────────────┐
-</span><span id="__span-29-2"><a href="#__codelineno-29-2" id="__codelineno-29-2" name="__codelineno-29-2"></a>│         Margin (exterior)       │
-</span><span id="__span-29-3"><a href="#__codelineno-29-3" id="__codelineno-29-3" name="__codelineno-29-3"></a>│  ┌──────────────────────────┐   │
-</span><span id="__span-29-4"><a href="#__codelineno-29-4" id="__codelineno-29-4" name="__codelineno-29-4"></a>│  │   Border (borde)         │   │
-</span><span id="__span-29-5"><a href="#__codelineno-29-5" id="__codelineno-29-5" name="__codelineno-29-5"></a>│  │  ┌───────────────────┐   │   │
-</span><span id="__span-29-6"><a href="#__codelineno-29-6" id="__codelineno-29-6" name="__codelineno-29-6"></a>│  │  │ Padding (relleno) │   │   │
-</span><span id="__span-29-7"><a href="#__codelineno-29-7" id="__codelineno-29-7" name="__codelineno-29-7"></a>│  │  │  ┌────────────┐   │   │   │
-</span><span id="__span-29-8"><a href="#__codelineno-29-8" id="__codelineno-29-8" name="__codelineno-29-8"></a>│  │  │  │  Content   │   │   │   │
-</span><span id="__span-29-9"><a href="#__codelineno-29-9" id="__codelineno-29-9" name="__codelineno-29-9"></a>│  │  │  └────────────┘   │   │   │
-</span><span id="__span-29-10"><a href="#__codelineno-29-10" id="__codelineno-29-10" name="__codelineno-29-10"></a>│  │  └───────────────────┘   │   │
-</span><span id="__span-29-11"><a href="#__codelineno-29-11" id="__codelineno-29-11" name="__codelineno-29-11"></a>│  └──────────────────────────┘   │
-</span><span id="__span-29-12"><a href="#__codelineno-29-12" id="__codelineno-29-12" name="__codelineno-29-12"></a>└─────────────────────────────────┘
-</span></code></pre></div>
-<h3 id="propiedades"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.6</span> Propiedades<a class="headerlink" href="#propiedades" title="Permanent link">¶</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a href="#__codelineno-30-1" id="__codelineno-30-1" name="__codelineno-30-1"></a>/* Dimensiones */
-</span><span id="__span-30-2"><a href="#__codelineno-30-2" id="__codelineno-30-2" name="__codelineno-30-2"></a>width: 300px;
-</span><span id="__span-30-3"><a href="#__codelineno-30-3" id="__codelineno-30-3" name="__codelineno-30-3"></a>height: 200px;
-</span><span id="__span-30-4"><a href="#__codelineno-30-4" id="__codelineno-30-4" name="__codelineno-30-4"></a>max-width: 100%;
-</span><span id="__span-30-5"><a href="#__codelineno-30-5" id="__codelineno-30-5" name="__codelineno-30-5"></a>
-</span><span id="__span-30-6"><a href="#__codelineno-30-6" id="__codelineno-30-6" name="__codelineno-30-6"></a>/* Margen (exterior) */
-</span><span id="__span-30-7"><a href="#__codelineno-30-7" id="__codelineno-30-7" name="__codelineno-30-7"></a>margin: 20px;
-</span><span id="__span-30-8"><a href="#__codelineno-30-8" id="__codelineno-30-8" name="__codelineno-30-8"></a>margin: 10px 20px;           /* vertical horizontal */
-</span><span id="__span-30-9"><a href="#__codelineno-30-9" id="__codelineno-30-9" name="__codelineno-30-9"></a>margin: 10px 20px 30px 40px; /* top right bottom left */
-</span><span id="__span-30-10"><a href="#__codelineno-30-10" id="__codelineno-30-10" name="__codelineno-30-10"></a>margin: 0 auto;              /* centrar horizontalmente */
-</span><span id="__span-30-11"><a href="#__codelineno-30-11" id="__codelineno-30-11" name="__codelineno-30-11"></a>
-</span><span id="__span-30-12"><a href="#__codelineno-30-12" id="__codelineno-30-12" name="__codelineno-30-12"></a>/* Relleno (interior) */
-</span><span id="__span-30-13"><a href="#__codelineno-30-13" id="__codelineno-30-13" name="__codelineno-30-13"></a>padding: 20px;
-</span><span id="__span-30-14"><a href="#__codelineno-30-14" id="__codelineno-30-14" name="__codelineno-30-14"></a>padding-top: 10px;
-</span><span id="__span-30-15"><a href="#__codelineno-30-15" id="__codelineno-30-15" name="__codelineno-30-15"></a>
-</span><span id="__span-30-16"><a href="#__codelineno-30-16" id="__codelineno-30-16" name="__codelineno-30-16"></a>/* Borde */
-</span><span id="__span-30-17"><a href="#__codelineno-30-17" id="__codelineno-30-17" name="__codelineno-30-17"></a>border: 2px solid #333;
-</span><span id="__span-30-18"><a href="#__codelineno-30-18" id="__codelineno-30-18" name="__codelineno-30-18"></a>border-radius: 10px;  /* esquinas redondeadas */
-</span><span id="__span-30-19"><a href="#__codelineno-30-19" id="__codelineno-30-19" name="__codelineno-30-19"></a>
-</span><span id="__span-30-20"><a href="#__codelineno-30-20" id="__codelineno-30-20" name="__codelineno-30-20"></a>/* Sombra */
-</span><span id="__span-30-21"><a href="#__codelineno-30-21" id="__codelineno-30-21" name="__codelineno-30-21"></a>box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-</span></code></pre></div>
-<h3 id="box-sizing"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.7</span> Box-sizing<a class="headerlink" href="#box-sizing" title="Permanent link">¶</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a href="#__codelineno-31-1" id="__codelineno-31-1" name="__codelineno-31-1"></a>/* Recomendado para todos los elementos */
-</span><span id="__span-31-2"><a href="#__codelineno-31-2" id="__codelineno-31-2" name="__codelineno-31-2"></a>* {
-</span><span id="__span-31-3"><a href="#__codelineno-31-3" id="__codelineno-31-3" name="__codelineno-31-3"></a>    box-sizing: border-box;
-</span><span id="__span-31-4"><a href="#__codelineno-31-4" id="__codelineno-31-4" name="__codelineno-31-4"></a>}
-</span></code></pre></div>
-<p>Con <code>border-box</code>, el <code>width</code> incluye padding y border, facilitando los cálculos.</p>
-<hr/>
-<h2 id="46-display-y-visibilidad"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2</span> 4.6. Display y visibilidad<a class="headerlink" href="#46-display-y-visibilidad" title="Permanent link">¶</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a href="#__codelineno-32-1" id="__codelineno-32-1" name="__codelineno-32-1"></a>/* Display */
-</span><span id="__span-32-2"><a href="#__codelineno-32-2" id="__codelineno-32-2" name="__codelineno-32-2"></a>display: block;        /* Ocupa todo el ancho */
-</span><span id="__span-32-3"><a href="#__codelineno-32-3" id="__codelineno-32-3" name="__codelineno-32-3"></a>display: inline;       /* En línea con el texto */
-</span><span id="__span-32-4"><a href="#__codelineno-32-4" id="__codelineno-32-4" name="__codelineno-32-4"></a>display: inline-block; /* En línea pero con dimensiones */
-</span><span id="__span-32-5"><a href="#__codelineno-32-5" id="__codelineno-32-5" name="__codelineno-32-5"></a>display: none;         /* Oculto (no ocupa espacio) */
-</span><span id="__span-32-6"><a href="#__codelineno-32-6" id="__codelineno-32-6" name="__codelineno-32-6"></a>
-</span><span id="__span-32-7"><a href="#__codelineno-32-7" id="__codelineno-32-7" name="__codelineno-32-7"></a>/* Visibilidad */
-</span><span id="__span-32-8"><a href="#__codelineno-32-8" id="__codelineno-32-8" name="__codelineno-32-8"></a>visibility: hidden;    /* Oculto pero sí ocupa espacio */
-</span><span id="__span-32-9"><a href="#__codelineno-32-9" id="__codelineno-32-9" name="__codelineno-32-9"></a>visibility: visible;
-</span></code></pre></div>
-<hr/>
-<!-- 
-## 📝 Resumen
-
-En este módulo has aprendido:
-
-- Qué es CSS y cómo vincularlo a HTML
-- Selectores básicos, combinadores y pseudo-clases
-- Cómo aplicar colores y trabajar con tipografía
-- El modelo de caja y sus propiedades
-- Display y visibilidad
-
----
-
-## 🎯 Ejercicios
-
-Ver [Ejercicios CSS Básico](../ejercicios/css-basico.md)
-
----
-
-## ➡️ Siguiente módulo
-
-[Módulo 05: CSS  Introducción](05-css-layout.md) - Flexbox, Grid y diseño responsive
-```
-
-*** -->
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -1484,13 +1347,13 @@ Ver [Ejercicios CSS Básico](../ejercicios/css-basico.md)
               </div>
 </div>
 </a>
-<a aria-label="Siguiente: CSS efectos" class="md-footer__link md-footer__link--next" href="../04-01-css-efectos/">
+<a aria-label="Siguiente: CSS box model" class="md-footer__link md-footer__link--next" href="../05-css-boxmodel/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Siguiente
               </span>
 <div class="md-ellipsis">
-                CSS efectos
+                CSS box model
               </div>
 </div>
 <div class="md-footer__button md-icon">
