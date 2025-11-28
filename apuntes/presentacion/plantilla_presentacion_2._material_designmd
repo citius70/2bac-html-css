@@ -1,0 +1,166 @@
+---
+marp: true
+paginate: true
+footer: "IES Frei Martín Sarmiento — Departamento de Tecnología"
+
+style: |
+  /* Fondo general estilo Material Design */
+  section {
+    background: #fafafa; /* gris claro */
+    color: #212121; /* texto oscuro */
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+  }
+
+  /* Títulos grandes y llamativos */
+  h1 {
+    color: #1976d2; /* azul vibrante */
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h2, h3 {
+    color: #424242; /* gris oscuro */
+    font-weight: 500;
+  }
+
+  /* Caja de información estilo Material */
+  .box {
+    background: #bbdefb; /* azul claro */
+    color: #0d47a1; /* azul oscuro */
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+  }
+
+  /* Columnas flexibles */
+  .cols { display:flex; gap:24px; margin-top:20px; }
+  .col { flex:1; }
+
+  /* Portada centrada */
+  .portada {
+    text-align:center;
+    padding-top:100px;
+  }
+
+  /* Pie de página más pequeño */
+  footer {
+    font-size: 0.8em;
+    color: #616161;
+  }
+---
+
+<!-- PORTADA ------------------------------------------------------------ -->
+
+class: portada
+
+# **Título de la Presentación**
+### Subtítulo
+**Departamento de Tecnología – IES Frei Martín Sarmiento**
+
+---
+
+# 🧭 Contenidos
+
+1. Introducción  
+2. Conceptos clave  
+3. Ejemplos  
+4. Actividades  
+5. Resumen  
+
+---
+
+# 🔧 1. Introducción
+
+<div class="box">
+Bienvenida al tema y explicación del contexto.  
+Esta caja resalta información importante.
+</div>
+
+---
+
+# 📘 2. Conceptos clave
+
+## Concepto 1
+Explicación breve.
+
+## Concepto 2
+Explicación complementaria.
+
+---
+
+# 💡 Ejemplo de código
+
+```python
+# Python ejemplo
+import pandas as pd
+df = pd.read_csv("datos.csv")
+df.head()
+````
+
+```sql
+-- SQL ejemplo
+SELECT nombre, curso FROM alumnos WHERE curso='2º BAC';
+```
+
+---
+
+# 📷 Ejemplo con imagen
+
+![width:70%](img/ejemplo.png)
+
+---
+
+# 🧱 Comparativa (columnas)
+
+<div class="cols">
+
+<div class="col">
+
+### ✔ Ventajas
+
+* Punto 1
+* Punto 2
+* Punto 3
+
+</div>
+
+<div class="col">
+
+### ✖ Desventajas
+
+* Punto A
+* Punto B
+* Punto C
+
+</div>
+
+</div>
+
+---
+
+# 📝 Actividad
+
+1. Investiga…
+2. Analiza…
+3. Construye o programa…
+
+> Añade pistas o ejemplos según el nivel de los alumnos.
+
+---
+
+# 📌 Resumen
+
+* Idea clave 1
+* Idea clave 2
+* Idea clave 3
+
+---
+
+# ❓¿Preguntas?
+
+¡Gracias por la atención!
+
+```
+
+---
+
