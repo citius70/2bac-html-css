@@ -1,110 +1,217 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico completo para aprender HTML y CSS desde cero">
+      
+      
+        <meta name="author" content="Profesor TIC 2º Bachillerato">
+      
+      
+        <link rel="canonical" href="https://citius70.github.io/2bac-html-css/pruebas/contraste-responsive/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Pruebas de Contraste y Legibilidad (Responsive) - Curso HTML y CSS - 2º Bachillerato</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
 
-<html class="no-js" lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Material didáctico completo para aprender HTML y CSS desde cero" name="description"/>
-<meta content="Profesor TIC 2º Bachillerato" name="author"/>
-<link href="https://citius70.github.io/2bac-html-css/pruebas/contraste-responsive/" rel="canonical"/>
-<link href="../../recursos/css-cheatsheet/" rel="prev"/>
-<link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.22" name="generator"/>
-<title>Pruebas de Contraste y Legibilidad (Responsive) - Curso HTML y CSS - 2º Bachillerato</title>
-<link href="../../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Nunito,+sans-serif:300,300i,400,400i,700,700i%7CCascadia+Code,+monospace:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Nunito, sans-serif";--md-code-font:"Cascadia Code, monospace"}</style>
-<link href="../../stylesheets/extra.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
-<body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#pruebas-rapidas-legibilidad-y-contraste">3. 
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito,+sans-serif:300,300i,400,400i,700,700i%7CCascadia+Code,+monospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Nunito, sans-serif";--md-code-font:"Cascadia Code, monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pruebas-rapidas-legibilidad-y-contraste" class="md-skip">
           Saltar a contenido
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
 <header class="md-header" data-md-component="header">
-<nav aria-label="Cabecera" class="md-header__inner md-grid">
-<a aria-label="Curso HTML y CSS - 2º Bachillerato" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Curso HTML y CSS - 2º Bachillerato">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Curso HTML y CSS - 2º Bachillerato" class="md-header__button md-logo" aria-label="Curso HTML y CSS - 2º Bachillerato" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             Curso HTML y CSS - 2º Bachillerato
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Pruebas de Contraste y Legibilidad (Responsive)
             
           </span>
-</div>
-</div>
-</div>
-<form class="md-header__option" data-md-component="palette">
-<input aria-label="Cambiar a modo oscuro" class="md-option" data-md-color-accent="blue" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Cambiar a modo oscuro">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
-</label>
-<input aria-label="Cambiar a modo claro" class="md-option" data-md-color-accent="blue" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Cambiar a modo claro">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
-</label>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
 </form>
-<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Búsqueda" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Búsqueda" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
-</label>
-<nav aria-label="Buscar" class="md-search__options">
-<button aria-label="Limpiar" class="md-search__icon md-icon" tabindex="-1" title="Limpiar" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
-</button>
-</nav>
-<div class="md-search__suggest" data-md-component="search-suggest"></div>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Inicializando búsqueda
           </div>
-<ol class="md-search-result__list" role="presentation"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</nav>
+      
+    
+    
+  </nav>
+  
 </header>
-<div class="md-container" data-md-component="container">
-<nav aria-label="Pestañas" class="md-tabs" data-md-component="tabs">
-<div class="md-grid">
-<ul class="md-tabs__list">
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../..">
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -113,9 +220,19 @@
   Presentación del curso
 
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../apuntes/01-introduccion/">
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../apuntes/01-introduccion/" class="md-tabs__link">
           
   
   
@@ -124,9 +241,20 @@
   Teoría
 
         </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../ejercicios/introduccion-ejercicios/">
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ejercicios/introduccion-ejercicios/" class="md-tabs__link">
           
   
   
@@ -135,9 +263,20 @@
   Ejercicios resueltos
 
         </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../ejercicios-evaluables/1-html-basico-evaluable/">
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ejercicios-evaluables/1-html-basico-evaluable/" class="md-tabs__link">
           
   
   
@@ -146,20 +285,27 @@
   Ejercicios evaluables
 
         </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../proyecto/descripcion/">
-          
+      </li>
+    
+  
+
+      
+        
+  
+  
   
   
     
+    
+      
   
-  Proyecto Web
-
-        </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../recursos/html-cheatsheet/">
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../recursos/html-cheatsheet/" class="md-tabs__link">
           
   
   
@@ -168,514 +314,1264 @@
   Recursos
 
         </a>
-</li>
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
-          
-  
-  
+      </li>
     
   
-  Pruebas
 
-        </a>
-</li>
-</ul>
-</div>
+    
+  
+
+      
+    </ul>
+  </div>
 </nav>
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navegación" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="Curso HTML y CSS - 2º Bachillerato" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Curso HTML y CSS - 2º Bachillerato">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
-</a>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Curso HTML y CSS - 2º Bachillerato" class="md-nav__button md-logo" aria-label="Curso HTML y CSS - 2º Bachillerato" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
     Curso HTML y CSS - 2º Bachillerato
   </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../..">
-<span class="md-ellipsis">
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Presentación del curso
     
   </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
     Teoría
     
   </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_2">
-<span class="md-nav__icon md-icon"></span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
             Teoría
           </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/01-introduccion/">
-<span class="md-ellipsis">
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/01-introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Introducción
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/02-html-basico/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/02-html-basico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     HTML básico
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/02-01-html-semantico/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/02-01-html-semantico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     HTML semántico
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/03-html-avanzado/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/03-html-avanzado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     HTML avanzado
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/04-css-fundamentos/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/04-css-fundamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     CSS fundamentos
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/05-css-boxmodel/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/05-css-boxmodel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     CSS box model
     
   </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
     CSS Layout
     
   </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_7_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_7">
-<span class="md-nav__icon md-icon"></span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
             CSS Layout
           </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/06-css-layout/">
-<span class="md-ellipsis">
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/06-css-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Introducción al Layout
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/07-css-layout-display/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/07-css-layout-display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Display
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/08-css-layout-position/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/08-css-layout-position/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Position
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/09-css-layout-flexbox/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/09-css-layout-flexbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Flexbox
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/05-04-css-layout-grid/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/05-04-css-layout-grid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Grid
     
   </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/06-responsive/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/06-responsive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Diseño adaptable
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../apuntes/04-01-css-efectos.md">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apuntes/05-css-efectos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     CSS efectos
     
   </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
     Ejercicios resueltos
     
   </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_3">
-<span class="md-nav__icon md-icon"></span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
             Ejercicios resueltos
           </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios/introduccion-ejercicios/">
-<span class="md-ellipsis">
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios/introduccion-ejercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Introducción Ejercicios
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios/html-basico/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios/html-basico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     HTML Básico
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios/html-avanzado/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios/html-avanzado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     HTML Avanzado
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios/css-basico/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios/css-basico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     CSS Básico
     
   </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
     CSS Avanzado
     
   </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_5">
-<span class="md-nav__icon md-icon"></span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
             CSS Avanzado
           </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios/css-flexbox/">
-<span class="md-ellipsis">
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios/css-flexbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     CSS Flexbox
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios/css-grid/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios/css-grid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     CSS Grid
     
   </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
     Ejercicios evaluables
     
   </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
             Ejercicios evaluables
           </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/1-html-basico-evaluable/">
-<span class="md-ellipsis">
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/1-html-basico-evaluable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     1. HTML básico (evaluable)
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/2-html-semantico-evaluable/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/2-html-semantico-evaluable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     2. HTML semántico (evaluable)
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/3-html-avanzado-evaluable/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/3-html-avanzado-evaluable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     3. HTML avanzado (evaluable)
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/4-css-fundamentos-evaluable/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/4-css-fundamentos-evaluable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     4. CSS fundamentos (evaluable)
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/5-css-boxmodel-ejercicios/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/5-css-boxmodel-ejercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     5. CSS box model (evaluable)
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/6-css-display-evaluable/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/6-css-display-evaluable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     6. CSS display (evaluable)
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/7-css-position-evaluable/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/7-css-position-evaluable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     7. CSS position (evaluable)
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ejercicios-evaluables/8-css-flexbox-evaluable/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejercicios-evaluables/8-css-flexbox-evaluable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     8. CSS flexbox (evaluable)
     
   </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-<span class="md-ellipsis">
-    Proyecto Web
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
-<span class="md-nav__icon md-icon"></span>
-            Proyecto Web
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../proyecto/descripcion/">
-<span class="md-ellipsis">
-    Descripción General
+      
+      
+  
+  
+  
+  
     
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-<span class="md-ellipsis">
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
     Recursos
     
   </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
-<span class="md-nav__icon md-icon"></span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
             Recursos
           </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../recursos/html-cheatsheet/">
-<span class="md-ellipsis">
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Cheatsheets
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Cheatsheets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/html-cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Cheatsheet HTML
     
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../recursos/css-cheatsheet/">
-<span class="md-ellipsis">
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/css-cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     Cheatsheet CSS
     
   </span>
-</a>
-</li>
-</ul>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/presentaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentaciones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
-<span class="md-ellipsis">
-    Pruebas
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="En esta página">
+  
+  
+  
     
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_7">
-<span class="md-nav__icon md-icon"></span>
-            Pruebas
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Contraste y legibilidad (responsive)
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
-<span class="md-ellipsis">
-    Contraste y legibilidad (responsive)
-    
-  </span>
-</a>
-<nav aria-label="En esta página" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       En esta página
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pares-de-color-de-ejemplo">3.1 
-<span class="md-ellipsis">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pares-de-color-de-ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
       Pares de color de ejemplo
     </span>
-</a>
+  </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#consejos-de-uso">3.2 
-<span class="md-ellipsis">
+      
+        <li class="md-nav__item">
+  <a href="#consejos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
       Consejos de uso
     </span>
-</a>
+  </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#verificacion-rapida-con-devtools">3.3 
-<span class="md-ellipsis">
+      
+        <li class="md-nav__item">
+  <a href="#verificacion-rapida-con-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
       Verificación rápida con DevTools
     </span>
-</a>
+  </a>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="En esta página" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      En esta página
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pares-de-color-de-ejemplo">3.1 
-<span class="md-ellipsis">
-      Pares de color de ejemplo
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#consejos-de-uso">3.2 
-<span class="md-ellipsis">
-      Consejos de uso
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#verificacion-rapida-con-devtools">3.3 
-<span class="md-ellipsis">
-      Verificación rápida con DevTools
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
-<h1 id="pruebas-rapidas-legibilidad-y-contraste"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.</span> Pruebas rápidas: legibilidad y contraste<a class="headerlink" href="#pruebas-rapidas-legibilidad-y-contraste" title="Permanent link">¶</a></h1>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pruebas-rapidas-legibilidad-y-contraste">Pruebas rápidas: legibilidad y contraste<a class="headerlink" href="#pruebas-rapidas-legibilidad-y-contraste" title="Permanent link">&para;</a></h1>
 <p>Esta página ofrece comprobaciones visuales rápidas para probar legibilidad y contraste en distintos anchos (simula dispositivos comunes). Sigue las instrucciones abajo para un test manual rápido.</p>
 <p><strong>Instrucciones rápidas</strong></p>
 <ul>
@@ -700,157 +1596,193 @@
 .small{font-size:14px}
 .code{font-family:monospace;background:#f5f5f5;padding:2px 6px;border-radius:4px}
 </style>
-<h2 id="pares-de-color-de-ejemplo"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1</span> Pares de color de ejemplo<a class="headerlink" href="#pares-de-color-de-ejemplo" title="Permanent link">¶</a></h2>
+
+<h2 id="pares-de-color-de-ejemplo">Pares de color de ejemplo<a class="headerlink" href="#pares-de-color-de-ejemplo" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Comprobar</strong> estos pares visualmente y después pásalos al Contrast Checker.</li>
 </ul>
 <div class="prueba-grid">
+
 <div class="device sm">
-<div class="label">Mobile — 320px</div>
-<div class="viewport">
-<div class="swatch" style="background:#ffffff">
-<div class="color-box" style="background:#ffffff"></div>
-<div>
-<div class="sample-text" style="color:#000000">Texto: negro sobre blanco — contraste alto</div>
-<div class="small">Colores: <span class="code">#000000</span> / <span class="code">#ffffff</span></div>
+  <div class="label">Mobile — 320px</div>
+  <div class="viewport">
+    <div class="swatch" style="background:#ffffff">
+      <div class="color-box" style="background:#ffffff"></div>
+      <div>
+        <div class="sample-text" style="color:#000000">Texto: negro sobre blanco — contraste alto</div>
+        <div class="small">Colores: <span class="code">#000000</span> / <span class="code">#ffffff</span></div>
+      </div>
+    </div>
+
+    <div class="swatch" style="background:#ffffff">
+      <div class="color-box" style="background:#1a73e8"></div>
+      <div>
+        <div class="sample-text" style="color:#1a73e8">Enlace/CTA: azul sobre blanco</div>
+        <div class="small">Colores: <span class="code">#1a73e8</span> / <span class="code">#ffffff</span></div>
+      </div>
+    </div>
+
+    <div class="swatch" style="background:#222222">
+      <div class="color-box" style="background:#f5f5f5"></div>
+      <div>
+        <div class="sample-text" style="color:#f5f5f5">Texto claro sobre fondo oscuro</div>
+        <div class="small">Colores: <span class="code">#f5f5f5</span> / <span class="code">#222222</span></div>
+      </div>
+    </div>
+
+  </div>
 </div>
-</div>
-<div class="swatch" style="background:#ffffff">
-<div class="color-box" style="background:#1a73e8"></div>
-<div>
-<div class="sample-text" style="color:#1a73e8">Enlace/CTA: azul sobre blanco</div>
-<div class="small">Colores: <span class="code">#1a73e8</span> / <span class="code">#ffffff</span></div>
-</div>
-</div>
-<div class="swatch" style="background:#222222">
-<div class="color-box" style="background:#f5f5f5"></div>
-<div>
-<div class="sample-text" style="color:#f5f5f5">Texto claro sobre fondo oscuro</div>
-<div class="small">Colores: <span class="code">#f5f5f5</span> / <span class="code">#222222</span></div>
-</div>
-</div>
-</div>
-</div>
+
 <div class="device xs">
-<div class="label">Mobile — 375px</div>
-<div class="viewport">
-<div class="swatch" style="background:#ffffff">
-<div class="color-box" style="background:#ffb300"></div>
-<div>
-<div class="sample-text" style="color:#ffffff;background:#ffb300;padding:4px;border-radius:3px">Texto sobre color (ej. botón)</div>
-<div class="small">Colores: <span class="code">#ffffff</span> / <span class="code">#ffb300</span></div>
+  <div class="label">Mobile — 375px</div>
+  <div class="viewport">
+    <div class="swatch" style="background:#ffffff">
+      <div class="color-box" style="background:#ffb300"></div>
+      <div>
+        <div class="sample-text" style="color:#ffffff;background:#ffb300;padding:4px;border-radius:3px">Texto sobre color (ej. botón)</div>
+        <div class="small">Colores: <span class="code">#ffffff</span> / <span class="code">#ffb300</span></div>
+      </div>
+    </div>
+
+    <div class="swatch" style="background:#ffffff">
+      <div class="color-box" style="background:#666666"></div>
+      <div>
+        <div class="sample-text" style="color:#666666">Texto gris sobre fondo blanco (contraste medio)</div>
+        <div class="small">Colores: <span class="code">#666666</span> / <span class="code">#ffffff</span></div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="swatch" style="background:#ffffff">
-<div class="color-box" style="background:#666666"></div>
-<div>
-<div class="sample-text" style="color:#666666">Texto gris sobre fondo blanco (contraste medio)</div>
-<div class="small">Colores: <span class="code">#666666</span> / <span class="code">#ffffff</span></div>
-</div>
-</div>
-</div>
-</div>
+
 <div class="device md">
-<div class="label">Tablet — 480px</div>
-<div class="viewport">
-<div class="swatch" style="background:#ffffff">
-<div class="color-box" style="background:#0f9d58"></div>
-<div>
-<div class="sample-text" style="color:#ffffff;background:#0f9d58;padding:6px;border-radius:3px">CTA verde</div>
-<div class="small">Colores: <span class="code">#ffffff</span> / <span class="code">#0f9d58</span></div>
+  <div class="label">Tablet — 480px</div>
+  <div class="viewport">
+    <div class="swatch" style="background:#ffffff">
+      <div class="color-box" style="background:#0f9d58"></div>
+      <div>
+        <div class="sample-text" style="color:#ffffff;background:#0f9d58;padding:6px;border-radius:3px">CTA verde</div>
+        <div class="small">Colores: <span class="code">#ffffff</span> / <span class="code">#0f9d58</span></div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
+
 <div class="device lg">
-<div class="label">Desktop — 768px</div>
-<div class="viewport">
-<div class="swatch" style="background:#ffffff">
-<div class="color-box" style="background:#333333"></div>
-<div>
-<div class="sample-text" style="color:#333333">Texto principal en desktop</div>
-<div class="small">Colores: <span class="code">#333333</span> / <span class="code">#ffffff</span></div>
+  <div class="label">Desktop — 768px</div>
+  <div class="viewport">
+    <div class="swatch" style="background:#ffffff">
+      <div class="color-box" style="background:#333333"></div>
+      <div>
+        <div class="sample-text" style="color:#333333">Texto principal en desktop</div>
+        <div class="small">Colores: <span class="code">#333333</span> / <span class="code">#ffffff</span></div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
+
 <div class="device xl">
-<div class="label">Large — 1024px</div>
-<div class="viewport">
-<div class="swatch" style="background:#ffffff">
-<div class="color-box" style="background:#ff5252"></div>
-<div>
-<div class="sample-text" style="color:#ffffff;background:#ff5252;padding:6px;border-radius:3px">Alerta/Destructivo</div>
-<div class="small">Colores: <span class="code">#ffffff</span> / <span class="code">#ff5252</span></div>
+  <div class="label">Large — 1024px</div>
+  <div class="viewport">
+    <div class="swatch" style="background:#ffffff">
+      <div class="color-box" style="background:#ff5252"></div>
+      <div>
+        <div class="sample-text" style="color:#ffffff;background:#ff5252;padding:6px;border-radius:3px">Alerta/Destructivo</div>
+        <div class="small">Colores: <span class="code">#ffffff</span> / <span class="code">#ff5252</span></div>
+      </div>
+    </div>
+  </div>
 </div>
+
 </div>
-</div>
-</div>
-</div>
-<h2 id="consejos-de-uso"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.2</span> Consejos de uso<a class="headerlink" href="#consejos-de-uso" title="Permanent link">¶</a></h2>
+
+<h2 id="consejos-de-uso">Consejos de uso<a class="headerlink" href="#consejos-de-uso" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Para cada par: copia los hex y pégalos en el Contrast Checker de WebAIM. Debes buscar un ratio &gt;= 4.5:1 para texto normal y &gt;= 3:1 para texto grande.</li>
 <li>Comprueba también tamaños de fuente pequeños y elementos de UI con bajo contraste (ej. placeholders, labels desactivados).</li>
 <li>Si usas colores semitransparentes sobre imágenes, comprueba el contraste con la composición final (puedes tomar capturas y probarlas en la herramienta).</li>
 </ul>
-<h2 id="verificacion-rapida-con-devtools"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3</span> Verificación rápida con DevTools<a class="headerlink" href="#verificacion-rapida-con-devtools" title="Permanent link">¶</a></h2>
+<h2 id="verificacion-rapida-con-devtools">Verificación rápida con DevTools<a class="headerlink" href="#verificacion-rapida-con-devtools" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Abre DevTools (F12) y activa Device Toolbar (Ctrl+Shift+M) — selecciona un dispositivo o usa anchura personalizada.</li>
 <li>Revisa las cajas de ejemplo y confirma que los textos sean legibles a cada ancho.</li>
 <li>Usa la función de inspección para copiar valores de color si necesitas pasarlos al comprobador.</li>
 </ol>
-<hr/>
+<hr />
 <blockquote>
 <p>Nota: Esta página es para pruebas manuales rápidas. Para pruebas automatizadas de contraste considera integrar herramientas como <code>axe-core</code> o <code>pa11y</code> en tu proceso de CI.</p>
 </blockquote>
-</article>
-</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-</div>
-<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
   Volver al principio
 </button>
-</main>
-<footer class="md-footer">
-<nav aria-label="Pie" class="md-footer__inner md-grid">
-<a aria-label="Anterior: Cheatsheet CSS" class="md-footer__link md-footer__link--prev" href="../../recursos/css-cheatsheet/">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
-</div>
-<div class="md-footer__title">
-<span class="md-footer__direction">
-                Anterior
-              </span>
-<div class="md-ellipsis">
-                Cheatsheet CSS
-              </div>
-</div>
-</a>
-</nav>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-copyright">
-<div class="md-copyright__highlight">
-      Copyright © 2025 - Curso HTML y CSS 2º Bachillerato TIC
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 - Curso HTML y CSS 2º Bachillerato TIC
     </div>
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
     </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.numbered", "navigation.indexes", "navigation.breadcrumbs", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "header.autohide", "navigation.sections.collapsible", "navigation.prev_next"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
-<script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
-<script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
-<script src="../../javascripts/extra.js"></script>
-</body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.numbered", "navigation.indexes", "navigation.breadcrumbs", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "header.autohide", "navigation.sections.collapsible", "navigation.prev_next"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
 </html>

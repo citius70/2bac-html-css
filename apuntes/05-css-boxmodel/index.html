@@ -149,17 +149,6 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../proyecto/descripcion/">
-          
-  
-  
-    
-  
-  Proyecto Web
-
-        </a>
-</li>
-<li class="md-tabs__item">
 <a class="md-tabs__link" href="../../recursos/html-cheatsheet/">
           
   
@@ -167,17 +156,6 @@
     
   
   Recursos
-
-        </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../pruebas/contraste-responsive/">
-          
-  
-  
-    
-  
-  Pruebas
 
         </a>
 </li>
@@ -436,7 +414,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../04-01-css-efectos.md">
+<a class="md-nav__link" href="../05-css-efectos/">
 <span class="md-ellipsis">
     CSS efectos
     
@@ -616,7 +594,7 @@
 <input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
 <span class="md-ellipsis">
-    Proyecto Web
+    Recursos
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -624,33 +602,22 @@
 <nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
-            Proyecto Web
+            Recursos
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../proyecto/descripcion/">
-<span class="md-ellipsis">
-    Descripción General
-    
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_5_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
 <span class="md-ellipsis">
-    Recursos
+    Cheatsheets
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
+<nav aria-expanded="false" aria-labelledby="__nav_5_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_1">
 <span class="md-nav__icon md-icon"></span>
-            Recursos
+            Cheatsheets
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -669,31 +636,16 @@
   </span>
 </a>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-<span class="md-ellipsis">
-    Pruebas
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_7">
-<span class="md-nav__icon md-icon"></span>
-            Pruebas
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../pruebas/contraste-responsive/">
+<a class="md-nav__link" href="../../recursos/presentaciones/">
 <span class="md-ellipsis">
-    Contraste y legibilidad (responsive)
+    Presentaciones
     
   </span>
 </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1117,20 +1069,22 @@ Párrafo con <strong>margin grande</strong>. El espacio entre este párrafo y el
 * <code>box-sizing</code>: border-box</p>
 <p>Por defecto, el modelo de caja (box model) se comporta como <strong>content-box</strong>. Si queremos que se comporte de la otra forma (<strong>border-box</strong>) hay que indicarlo.</p>
 <p>Estos dos valores hacen que el significado de las propiedades <code>width</code>y <code>height</code> cambien.</p>
-<pre class="mermaid"><code>graph TD
-    A[Modelo de caja&lt;br&gt; o&lt;br&gt; Box Model]--&gt;B[1.- **content-box**]
-    A--&gt;C[2.- **border-box**]
+<p>```mermaid
+graph TD
+    A[Modelo de caja<br/> o<br/> Box Model]--&gt;B[1.- <strong>content-box</strong>]
+    A--&gt;C[2.- <strong>border-box</strong>]</p>
+<div class="language-text highlight"><pre><span></span><code>B--&gt;|width y heigth|D(Son las medidas de **CONTENT**)
 
-    B--&gt;|width y heigth|D(Son las medidas de **CONTENT**)
-
-    C--&gt;|width y height|E(Son las medidas de **BORDER**)</code></pre>
+C--&gt;|width y height|E(Son las medidas de **BORDER**)
+</code></pre></div>
+<p>```</p>
 <p><img alt="boxmodel" src="../../img/boxmodel.png"/> </p>
 <h3 id="content-box"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.3.1</span> Content-box<a class="headerlink" href="#content-box" title="Permanent link">¶</a></h3>
 <p><img align="right" alt="boxmodel" src="../../img/boxmodel5.png" width="30%"/></p>
 <p>Por defecto (comportamiento como content-box), cuando dices <code>width: 300px</code>, estás aplicando esta medida al <strong>contenido</strong> (párrafo, botón, imagen...). En la imagen superior en color blanco.</p>
 <p>Vamos a centrar el estudio en <code>width</code> (con <code>height</code>es similar).</p>
 <p>El código de este model box es:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><input id="__tabbed_6_3" name="__tabbed_6" type="radio"/><div class="tabbed-labels"><label for="__tabbed_6_1">Archivo .css</label><label for="__tabbed_6_2">Archivo .html</label><label for="__tabbed_6_3">Resultado</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"/><input id="__tabbed_6_3" name="__tabbed_6" type="radio"/><div class="tabbed-labels"><label for="__tabbed_6_1">Archivo .css</label><label for="__tabbed_6_2">Archivo .html</label><label for="__tabbed_6_3">Resultado</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
@@ -1174,10 +1128,10 @@ Párrafo con <strong>margin grande</strong>. El espacio entre este párrafo y el
 </div></p>
 </div>
 </div>
-</input></input></div>
+</input></div>
 <p>En este caso el:</p>
-<p><strong>Ancho total real</strong> = 300px (content) + 30px (2 veces padding)  + 10px (2 veces borde)= <strong>340px</strong> 😞 <br/>
-¿Podrías calcular el <strong>alto total real</strong>?</p>
+<p><strong>Ancho total real</strong> = 300px (content) + 30px (2 veces padding)  + 10px (2 veces borde)= <strong>340px</strong> 😞 <br>
+¿Podrías calcular el <strong>alto total real</strong>?</br></p>
 <p>El <strong>elemento ocupa más espacio</strong> de lo que esperabas porque hay que sumarle eñ padding y border .</p>
 <p><strong>Ancho total real = Width + 2 veces Padding + 2 veces Border</strong></p>
 <h3 id="la-solucion-border-box"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.3.2</span> La solución: border-box<a class="headerlink" href="#la-solucion-border-box" title="Permanent link">¶</a></h3>
@@ -1237,8 +1191,8 @@ Párrafo con <strong>margin grande</strong>. El espacio entre este párrafo y el
 </div>
 </div>
 <p>En este caso <code>width</code> no se refiere al ancho del content (contenido), será el <strong>ancho del exterior del border (borde)</strong>. De este modo podemos estructurar la página de una manera más precisa.</p>
-<p>Ahora el <strong>Ancho total real: = 300px</strong> <br/>
-¿Podrías calcular el <strong>alto total real</strong>?</p>
+<p>Ahora el <strong>Ancho total real: = 300px</strong> <br>
+¿Podrías calcular el <strong>alto total real</strong>?</br></p>
 <p>Vamos a calcular al ancho del content (contenido):</p>
 <p><strong>Ancho total real del content:</strong> = 300px (content) - 30px (2 veces padding)  - 10px (2 veces border) = <strong>260px</strong> </p>
 <h3 id="ejemplo-con-elementos-reales"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.3.3</span> Ejemplo con elementos reales<a class="headerlink" href="#ejemplo-con-elementos-reales" title="Permanent link">¶</a></h3>
