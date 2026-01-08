@@ -1069,15 +1069,13 @@ Párrafo con <strong>margin grande</strong>. El espacio entre este párrafo y el
 * <code>box-sizing</code>: border-box</p>
 <p>Por defecto, el modelo de caja (box model) se comporta como <strong>content-box</strong>. Si queremos que se comporte de la otra forma (<strong>border-box</strong>) hay que indicarlo.</p>
 <p>Estos dos valores hacen que el significado de las propiedades <code>width</code>y <code>height</code> cambien.</p>
-<p>```mermaid
-graph TD
-    A[Modelo de caja<br/> o<br/> Box Model]--&gt;B[1.- <strong>content-box</strong>]
-    A--&gt;C[2.- <strong>border-box</strong>]</p>
-<div class="language-text highlight"><pre><span></span><code>B--&gt;|width y heigth|D(Son las medidas de **CONTENT**)
+<pre class="mermaid"><code>graph TD
+    A[Modelo de caja&lt;br&gt; o&lt;br&gt; Box Model]--&gt;B[1.- **content-box**]
+    A--&gt;C[2.- **border-box**]
 
-C--&gt;|width y height|E(Son las medidas de **BORDER**)
-</code></pre></div>
-<p>```</p>
+    B--&gt;|width y heigth|D(Son las medidas de **CONTENT**)
+
+    C--&gt;|width y height|E(Son las medidas de **BORDER**)</code></pre>
 <p><img alt="boxmodel" src="../../img/boxmodel.png"/> </p>
 <h3 id="content-box"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.3.1</span> Content-box<a class="headerlink" href="#content-box" title="Permanent link">¶</a></h3>
 <p><img align="right" alt="boxmodel" src="../../img/boxmodel5.png" width="30%"/></p>
@@ -1130,8 +1128,8 @@ C--&gt;|width y height|E(Son las medidas de **BORDER**)
 </div>
 </input></div>
 <p>En este caso el:</p>
-<p><strong>Ancho total real</strong> = 300px (content) + 30px (2 veces padding)  + 10px (2 veces borde)= <strong>340px</strong> 😞 <br>
-¿Podrías calcular el <strong>alto total real</strong>?</br></p>
+<p><strong>Ancho total real</strong> = 300px (content) + 30px (2 veces padding)  + 10px (2 veces borde)= <strong>340px</strong> 😞 <br/>
+¿Podrías calcular el <strong>alto total real</strong>?</p>
 <p>El <strong>elemento ocupa más espacio</strong> de lo que esperabas porque hay que sumarle eñ padding y border .</p>
 <p><strong>Ancho total real = Width + 2 veces Padding + 2 veces Border</strong></p>
 <h3 id="la-solucion-border-box"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.3.2</span> La solución: border-box<a class="headerlink" href="#la-solucion-border-box" title="Permanent link">¶</a></h3>
@@ -1191,8 +1189,8 @@ C--&gt;|width y height|E(Son las medidas de **BORDER**)
 </div>
 </div>
 <p>En este caso <code>width</code> no se refiere al ancho del content (contenido), será el <strong>ancho del exterior del border (borde)</strong>. De este modo podemos estructurar la página de una manera más precisa.</p>
-<p>Ahora el <strong>Ancho total real: = 300px</strong> <br>
-¿Podrías calcular el <strong>alto total real</strong>?</br></p>
+<p>Ahora el <strong>Ancho total real: = 300px</strong> <br/>
+¿Podrías calcular el <strong>alto total real</strong>?</p>
 <p>Vamos a calcular al ancho del content (contenido):</p>
 <p><strong>Ancho total real del content:</strong> = 300px (content) - 30px (2 veces padding)  - 10px (2 veces border) = <strong>260px</strong> </p>
 <h3 id="ejemplo-con-elementos-reales"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.3.3</span> Ejemplo con elementos reales<a class="headerlink" href="#ejemplo-con-elementos-reales" title="Permanent link">¶</a></h3>
