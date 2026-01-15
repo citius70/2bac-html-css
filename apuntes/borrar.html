@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solución Ejercicio CSS Inline</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases vs Etiquetas</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <h1>Mis Libros Favoritos</h1>
+  
+  <main>
+    <div class="libro">
+      <h2>El Quijote</h2>
+      <p class="autor">Cervantes</p>
+      <p>Un clásico de la literatura española.</p>
+    </div>
 
-    <h1 style="color: blue; text-align: center;">Fundamentos de CSS</h1>
+    <div class="libro">
+      <h2>1984</h2>
+      <p class="autor">George Orwell</p>
+      <p>Una novela de ciencia ficción distópica.</p>
+    </div>
 
-    <p style="font-size: 20px;">CSS es el lenguaje que da vida visual a la web. HTML estructura y CSS decora.</p>
+    <div class="libro destacado">
+      <h2>Harry Potter</h2>
+      <p class="autor">J.K. Rowling</p>
+      <p>La saga más famosa del siglo XXI.</p>
+    </div>
+  </main>
 
-    <h2 style="background-color: #f5f5f5; color: #333;">Propiedades importantes</h2>
-
-    <p>Podemos cambiar los colores. Por ejemplo, esta palabra quiero que sea <span style="color: red;">ROJA</span>, y esta otra quiero que tenga un <span style="background-color: yellow;">FONDO AMARILLO</span>.</p>
-
-    <h3>Tipografía y Alineación</h3>
-
-    <p style="text-align: center; font-family: Arial, sans-serif;">Este párrafo debería estar alineado al centro y usar la fuente Arial.</p>
-
-    <p style="font-weight: bold; font-style: italic;">Este párrafo quiero que esté en negrita y cursiva a la vez.</p>
-
-    <h3>Decoración y Espaciado</h3>
-
-    <p style="text-decoration: underline; text-transform: uppercase;">Este texto debe estar subrayado y transformado a mayúsculas.</p>
-
-    <p style="line-height: 2.5; letter-spacing: 3px;">Este es el último párrafo. Vamos a darle mucho espaciado entre líneas y entre letras para que ocupe más espacio.</p>
-
+  <footer>
+    <p>&copy; 2025 Mi Biblioteca</p>
+    <p class="contacto">Email: biblioteca@ejemplo.com</p>
+  </footer>
 </body>
 </html>
