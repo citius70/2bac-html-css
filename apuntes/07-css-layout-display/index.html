@@ -680,7 +680,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="css-display"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.</span> CSS Display<a class="headerlink" href="#css-display" title="Permanent link">¶</a></h1>
 <p>La propiedad <code>display</code> en CSS es la que decide <strong>cómo se muestran y distribuyen los elementos en una página web</strong>. </p>
-<p>Gracias a <code>display</code>, puedes controlar si un elemento ocupa <em>toda una línea</em>, <em>si se coloca junto a otros</em>, si se adapta a un <em>diseño flexible</em> o si directamente <em>desaparece</em> de la vista.  <br/>
+<p>Gracias a <code>display</code>, puedes controlar si un elemento ocupa <mark><em>toda una línea</em>, <em>si se coloca junto a otros</em>, si se adapta a un <em>diseño flexible</em> o si directamente <em>desaparece</em> de la vista.</mark> <br/>
 Es la base para crear tanto estructuras simples (como menús o párrafos) como diseños complejos (galerías, layouts adaptables, etc.).</p>
 <div class="admonition note">
 <p class="admonition-title">Display</p>
@@ -688,12 +688,13 @@ Es la base para crear tanto estructuras simples (como menús o párrafos) como d
 </div>
 <h2 id="sintaxis-basica"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.1</span> Sintaxis básica<a class="headerlink" href="#sintaxis-basica" title="Permanent link">¶</a></h2>
 <p><div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">elemento</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="n">valor</span><span class="p">;</span>
-</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="hll"><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="n">valor</span><span class="p">;</span>
+</span></span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span>
 </span></code></pre></div>
 El <strong>elemento</strong> puede ser cualquier entidad de HTML: párrafo, título, imagen.... Pero, ¿qué <strong>valores</strong> puede tomar?</p>
 <h2 id="opciones-display"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.2</span> Opciones <code>display:</code><a class="headerlink" href="#opciones-display" title="Permanent link">¶</a></h2>
 <p>La propiedad <code>display</code> acepta hasta 24 opciones distintas, siendo <code>inline</code>, <code>block</code> y <code>inline-block</code> las más ytilizadas.</p>
+<p><img alt="display2" src="../../img/display2.png"/> </p>
 <table>
 <thead>
 <tr>
@@ -732,7 +733,6 @@ El <strong>elemento</strong> puede ser cualquier entidad de HTML: párrafo, tít
 </tr>
 </tbody>
 </table>
-<p><img alt="display1" src="../../img/display1.png"/> </p>
 <h2 id="valores-principales"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.3</span> Valores principales<a class="headerlink" href="#valores-principales" title="Permanent link">¶</a></h2>
 <h3 id="display-inline"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.3.1</span> <code>Display: inline</code><a class="headerlink" href="#display-inline" title="Permanent link">¶</a></h3>
 <p>Un elemento con <code>display: inline</code> <strong>fluye con el texto</strong>, ocupa solo el espacio de su contenido y no respeta <code>width</code> ni <code>height</code> aunque se definan.</p>
@@ -744,7 +744,7 @@ El <strong>elemento</strong> puede ser cualquier entidad de HTML: párrafo, tít
 <li>✅ Fluye con el texto naturalmente: Los elementos se alinean horizontalmente como palabras</li>
 <li>✅ No rompe la línea: Otros elementos pueden estar a su lado</li>
 </ul>
-<p>El elemento HTML más común para una caja en línea es el elemento <span>, aunque hay otras.</span></p>
+<p>El elemento HTML más común para una caja en línea es el elemento <code>&lt;span&gt;</code>, aunque hay otras.</p>
 <p><strong>Elementos HTML con <code>display: inline</code> por defecto:</strong></p>
 <ul>
 <li>
