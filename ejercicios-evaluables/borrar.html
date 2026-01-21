@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio evaluable: Display en CSS</title>
+    <style>
+        .menu-item {
+            display: block;           /* Cada opción en línea diferente */
+            background: #f8bbd0;
+            margin: 8px 0;
+            padding: 6px;
+            border-radius: 4px;
+        }
+        .intereses {
+            margin: 20px 0;
+        }
+        .intereses span {
+            display: inline;          /* Todos juntos, fluye como texto */
+            background: #b2dfdb;
+            margin-right: 10px;
+            padding: 4px 9px;
+            border-radius: 4px;
+        }
+        .card {
+            display: inline-block;    /* Se alinean en horizontal, puedes ajustar tamaño */
+            background: #fff9c4;
+            border: 2px solid #fbc02d;
+            width: 140px;
+            height: 90px;
+            padding: 8px;
+            margin: 9px;
+            border-radius: 6px;
+            vertical-align: top;
+        }
+
+        /* Comentario: block para menú porque se separa mejor, inline para intereses, inline-block para mostrar tarjetas alineadas y definir tamaño */
+    </style>
+</head>
+<body>
+    <h2>Menú de Navegación (display: block)</h2>
+    <div class="menu-item">Inicio</div>
+    <div class="menu-item">Sobre mí</div>
+    <div class="menu-item">Contacto</div>
+    
+    <h2>Intereses (display: inline)</h2>
+    <div class="intereses">
+        <span>Tecnología</span>
+        <span>Fotografía</span>
+        <span>Literatura</span>
+        <span>Música</span>
+    </div>
+    
+    <h2>Tarjetas de Perfil (display: inline-block)</h2>
+    <div class="card">
+        <strong>Nombre:</strong> Ana<br>
+        <strong>Edad:</strong> 17
+    </div>
+    <div class="card">
+        <strong>Nombre:</strong> Juan<br>
+        <strong>Edad:</strong> 18
+    </div>
+    <div class="card">
+        <strong>Nombre:</strong> Eva<br>
+        <strong>Edad:</strong> 17
+    </div>
+
+</body>
+</html>
