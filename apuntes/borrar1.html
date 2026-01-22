@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>position: absolute (ventana)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      height: 1500px;
+      /* Para que haya scroll */
+      background: linear-gradient(180deg, #e3f2fd, #bbdefb);
+    }
+
+    .caja-info {
+      /* position: absolute;
+      top: 20px;
+      right: 50px; */
+      background-color: #ffeb3b;
+      border: 2px solid #fbc02d;
+      padding: 10px 15px;
+      /* AQUÍ IRÁ position: absolute */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>position: absolute respecto a la ventana del navegador</h1>
+
+  <p>
+    Desplázate (scroll con el ratón) hacia abajo y observa qué pasa con la caja amarilla cuando le aplicas <strong>position: absolute</strong>.
+  </p>
+
+  <div class="caja-info">
+    Caja absoluta (debe ir a 20px de arriba y a 50px de la derecha)
+  </div>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  <p>Sigue bajando para ver más texto y comprobar la posición...</p>
+  <p>Contenido de relleno para generar scroll.</p>
+</body>
+
+</html>
