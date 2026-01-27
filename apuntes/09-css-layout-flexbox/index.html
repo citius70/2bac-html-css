@@ -673,9 +673,10 @@
 <h1 id="css-flexbox"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.</span> CSS Flexbox<a class="headerlink" href="#css-flexbox" title="Permanent link">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Flexbox</p>
-<p><strong>Flexbox</strong> es un sistema de diseño en CSS que facilita la organización, alineación y distribución del espacio entre elementos dentro de un contenedor.<br/>
-Está pensado para trabajar en <strong>una sola dimensión</strong>: en fila (horizontal) <strong>o</strong> columna (vertical).</p>
+<p><strong>Flexbox</strong> es un sistema de diseño en CSS que facilita la organización, alineación y distribución del espacio entre  <mark>elementos o ítems(hijos)</mark> dentro de un <mark>contenedor (padre)</mark>.<br/>
+Está pensado para trabajar en <strong>una sola dimensión</strong>: <mark>en fila</mark> (horizontal) <strong>o</strong> <mark>en columna</mark> (vertical).</p>
 </div>
+<p><img alt="flex" src="../../img/flex.png"/> </p>
 <h2 id="por-que-usar-flexbox"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.1</span> ¿Por qué usar Flexbox?<a class="headerlink" href="#por-que-usar-flexbox" title="Permanent link">¶</a></h2>
 <ul>
 <li>Hace sencillo <strong>alinear elementos tanto en vertical como en horizontal</strong>.</li>
@@ -706,7 +707,7 @@ Flexbox es ideal para layouts lineales; para estructuras en 2 dimensiones (filas
 <li><strong>CONTENEDOR (flex container):</strong><br/>
   Es el elemento al que se le aplica <code>display: flex;</code>. Es el "padre" que contiene a varios <em>ítems</em> y controla el comportamiento del layout.  </li>
 <li><strong>ÍTEMs (flex item):</strong><br/>
-  Cada Ítem 1 de los elementos hijos directos dentro del contenedor flex. Son los "hijos" que se distribuyen y alinean según las reglas del contenedor flex. </li>
+  Cada uno de los elementos hijos directos dentro del contenedor flex. Son los "hijos" que se distribuyen y alinean según las reglas del contenedor flex. </li>
 </ul>
 <blockquote>
 <p>Podemos asimilar el <strong>contenedor</strong> como una <em>caja grande</em> en la que vamos a introducir varias <em>cajas pequeñas</em> (<strong>ítems</strong>). Estas cajas pequeñas podemos disponerlas dentro de la grande de varias maneras (centradas, a la izquierda, que ocupen toda la caja grande, arrimadas a la parte de arriba...)</p>
